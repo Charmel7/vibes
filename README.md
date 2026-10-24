@@ -4,6 +4,21 @@ Page statique (HTML, CSS, JS sans dépendance, police Inter via Google Fonts).
 Illustrations (autocollants, personnages, icônes) : SVG intégrés dans `index.html`, aux couleurs de la palette VIBES.
 Tokens issus de `vibes_design_system_v1.md`.
 
+## Langues
+
+- Français : `index.html` (source, à modifier en premier).
+- Anglais : `en/index.html`, **généré** depuis le français. Ne pas le modifier à la main.
+
+Après chaque modification du texte français :
+
+```
+python3 tools/make_en.py
+```
+
+Le script s'arrête et indique la phrase à mettre à jour dans `tools/make_en.py` si un texte français a changé.
+Les noms du projet (Mon Mood, My Safe Place, Tips VIBES, Étincelles, Crew, Souvenirs) restent en français, avec « Sparks » en explication à la première mention.
+Les captures d'écran de l'application restent en français : elles sont à traduire côté maquettes.
+
 ## Lancer en local
 
 ```

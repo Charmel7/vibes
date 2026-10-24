@@ -6,7 +6,7 @@
   function setMenu(open) {
     menu.classList.toggle('is-open', open);
     toggle.setAttribute('aria-expanded', String(open));
-    toggle.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu');
+    toggle.setAttribute('aria-label', open ? toggle.dataset.labelClose : toggle.dataset.labelOpen);
     toggle.querySelector('use').setAttribute('href', open ? '#i-x' : '#i-menu');
   }
 

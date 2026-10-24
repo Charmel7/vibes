@@ -1,0 +1,736 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VIBES · Less scroll. More life. More us.</title>
+  <meta name="description" content="VIBES is a student-led initiative for well-being on campus: find young people who share your passions, take care of yourself and build habits that do you good.">
+  <meta name="theme-color" content="#0154AE">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="VIBES · Less scroll. More life. More us.">
+  <meta property="og:description" content="Student well-being, differently: discover, equip yourself, anchor good habits.">
+  <meta name="twitter:card" content="summary">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<!-- ============ Bibliothèque d'illustrations (SVG) ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <!-- Icônes à traits (style Lucide) -->
+    <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    <symbol id="i-activity" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
+    <symbol id="i-wind" viewBox="0 0 24 24"><path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2"/><path d="M9.6 4.6A2 2 0 1 1 11 8H2"/><path d="M12.6 19.4A2 2 0 1 0 14 16H2"/></symbol>
+    <symbol id="i-apple" viewBox="0 0 24 24"><path d="M12 20.94c1.5 0 2.75 1.06 4 1.06 3 0 6-8 6-12.22A4.91 4.91 0 0 0 17 5c-2.22 0-4 1.44-5 2-1-.56-2.78-2-5-2a4.9 4.9 0 0 0-5 4.78C2 14 5 22 8 22c1.25 0 2.5-1.06 4-1.06Z"/><path d="M10 2c1 .5 2 2 2 5"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 22V4M5 4h13l-2 4 2 4H5"/></symbol>
+
+    <!-- Marque : petit soleil du logo -->
+    <symbol id="s-logo-sun" viewBox="0 0 24 24"><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M19.4 4.6l-2.1 2.1M6.7 17.3l-2.1 2.1"/></g><circle cx="12" cy="12" r="5" fill="#FDDF32" stroke="currentColor" stroke-width="2"/></symbol>
+
+    <!-- Autocollants : contour bleu nuit, couleurs de la palette -->
+    <symbol id="s-ball" viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="#fff" stroke="#141E2E" stroke-width="3"/><polygon points="32,22 41.5,29 37.9,40 26.1,40 22.5,29" fill="#141E2E"/><path d="M32 22V5M41.5 29L57 24M37.9 40L47 54M26.1 40L17 54M22.5 29L7 24" stroke="#141E2E" stroke-width="3" fill="none" stroke-linecap="round"/></symbol>
+    <symbol id="s-note" viewBox="0 0 64 64"><path d="M22 14 50 8v8L22 22Z" fill="#4A2987" stroke="#141E2E" stroke-width="3" stroke-linejoin="round"/><path d="M22 18v26M50 12v28" stroke="#141E2E" stroke-width="3.5" fill="none" stroke-linecap="round"/><ellipse cx="15" cy="46" rx="9" ry="7" fill="#FDDF32" stroke="#141E2E" stroke-width="3"/><ellipse cx="43" cy="42" rx="9" ry="7" fill="#FDDF32" stroke="#141E2E" stroke-width="3"/></symbol>
+    <symbol id="s-camera" viewBox="0 0 64 64"><path d="M20 18l4-8h16l4 8" fill="#4A2987" stroke="#141E2E" stroke-width="3" stroke-linejoin="round"/><rect x="6" y="18" width="52" height="36" rx="9" fill="#B0EEF2" stroke="#141E2E" stroke-width="3"/><circle cx="32" cy="36" r="12" fill="#fff" stroke="#141E2E" stroke-width="3"/><circle cx="32" cy="36" r="5" fill="#0154AE"/><circle cx="50" cy="26" r="2.5" fill="#141E2E"/></symbol>
+    <symbol id="s-book" viewBox="0 0 64 64"><path d="M32 18C24 12 12 12 6 14v36c6-2 18-2 26 4Z" fill="#fff" stroke="#141E2E" stroke-width="3" stroke-linejoin="round"/><path d="M32 18c8-6 20-6 26-4v36c-6-2-18-2-26 4Z" fill="#B0EEF2" stroke="#141E2E" stroke-width="3" stroke-linejoin="round"/><path d="M14 24h12M14 32h12M38 24h12M38 32h12" stroke="#141E2E" stroke-width="2.5" stroke-linecap="round"/></symbol>
+    <symbol id="s-spark" viewBox="0 0 64 64"><path d="M32 3Q35 27 61 32Q35 37 32 61Q29 37 3 32Q29 27 32 3Z" fill="#FDDF32" stroke="#141E2E" stroke-width="3" stroke-linejoin="round"/></symbol>
+    <symbol id="s-sun" viewBox="0 0 64 64"><g stroke="#141E2E" stroke-width="3.5" stroke-linecap="round"><path d="M32 4v8M32 52v8M4 32h8M52 32h8M12 12l6 6M46 46l6 6M52 12l-6 6M12 52l6-6"/></g><circle cx="32" cy="32" r="14" fill="#FDDF32" stroke="#141E2E" stroke-width="3"/></symbol>
+    <symbol id="s-bubble" viewBox="0 0 64 64"><path d="M10 8h44a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6H34L22 56V44H10a6 6 0 0 1-6-6V14a6 6 0 0 1 6-6Z" fill="#fff" stroke="#141E2E" stroke-width="3" stroke-linejoin="round"/><path d="M32 36C22 29 22 20 28 20c2 0 4 2 4 3 0-1 2-3 4-3 6 0 6 9-4 16Z" fill="#4A2987"/></symbol>
+    <symbol id="s-foot" viewBox="0 0 64 64"><g stroke="#141E2E" stroke-width="2.6" stroke-linejoin="round"><path d="M10 34c-3-9 0-19 7-19s9 9 7 19c-1 6-3 10-7 10s-6-4-7-10Z" fill="#B0EEF2"/><circle cx="9" cy="12" r="2.6" fill="#B0EEF2"/><circle cx="15" cy="8" r="2.6" fill="#B0EEF2"/><circle cx="21" cy="8" r="2.6" fill="#B0EEF2"/><circle cx="27" cy="12" r="2.6" fill="#B0EEF2"/><path d="M34 52c-3-9 0-19 7-19s9 9 7 19c-1 6-3 10-7 10s-6-4-7-10Z" fill="#FDDF32"/><circle cx="33" cy="30" r="2.6" fill="#FDDF32"/><circle cx="39" cy="26" r="2.6" fill="#FDDF32"/><circle cx="45" cy="26" r="2.6" fill="#FDDF32"/><circle cx="51" cy="30" r="2.6" fill="#FDDF32"/></g></symbol>
+    <symbol id="s-sprout" viewBox="0 0 64 64"><path d="M32 58V30" stroke="#141E2E" stroke-width="3.5" stroke-linecap="round"/><path d="M32 36C16 36 10 24 10 14c14 0 22 8 22 22Z" fill="#B0EEF2" stroke="#141E2E" stroke-width="3" stroke-linejoin="round"/><path d="M32 30c0-12 8-20 22-20 0 12-8 20-22 20Z" fill="#FDDF32" stroke="#141E2E" stroke-width="3" stroke-linejoin="round"/><path d="M20 58h24" stroke="#141E2E" stroke-width="3.5" stroke-linecap="round"/></symbol>
+    <symbol id="s-pin" viewBox="0 0 64 64"><path d="M32 60S10 38 10 24a22 22 0 0 1 44 0C54 38 32 60 32 60Z" fill="#0154AE" stroke="#141E2E" stroke-width="3" stroke-linejoin="round"/><circle cx="32" cy="24" r="8" fill="#FDDF32" stroke="#141E2E" stroke-width="3"/></symbol>
+    <symbol id="s-heart" viewBox="0 0 64 64"><path d="M32 56C6 38 6 14 22 12c6-1 10 4 10 6 0-2 4-7 10-6 16 2 16 26-10 44Z" fill="#4A2987" stroke="#141E2E" stroke-width="3" stroke-linejoin="round"/></symbol>
+    <symbol id="s-bolt" viewBox="0 0 64 64"><path d="M36 4 12 36h16l-4 24 28-36H36Z" fill="#FDDF32" stroke="#141E2E" stroke-width="3" stroke-linejoin="round"/></symbol>
+    <symbol id="s-cloud" viewBox="0 0 64 64"><path d="M18 48a12 12 0 0 1 2-24 16 16 0 0 1 30 4 10 10 0 0 1 0 20Z" fill="#fff" stroke="#141E2E" stroke-width="3" stroke-linejoin="round"/></symbol>
+    <symbol id="s-search" viewBox="0 0 64 64"><circle cx="27" cy="27" r="17" fill="#B0EEF2" stroke="#141E2E" stroke-width="3"/><path d="m40 40 18 18" stroke="#141E2E" stroke-width="6" stroke-linecap="round"/></symbol>
+    <symbol id="s-apple" viewBox="0 0 64 64"><path d="M32 18C20 10 6 18 8 34c2 14 12 24 24 20 12 4 22-6 24-20 2-16-12-24-24-16Z" fill="#FDDF32" stroke="#141E2E" stroke-width="3" stroke-linejoin="round"/><path d="M32 18c0-6 4-10 10-12-1 6-4 10-10 12Z" fill="#B0EEF2" stroke="#141E2E" stroke-width="3" stroke-linejoin="round"/></symbol>
+    <symbol id="s-mic" viewBox="0 0 64 64"><rect x="22" y="6" width="20" height="32" rx="10" fill="#4A2987" stroke="#141E2E" stroke-width="3"/><path d="M14 30c0 12 8 18 18 18s18-6 18-18M32 48v10M22 58h20" stroke="#141E2E" stroke-width="3" fill="none" stroke-linecap="round"/></symbol>
+    <symbol id="s-hand" viewBox="0 0 64 64"><path d="M20 34V14a4 4 0 0 1 8 0v14V10a4 4 0 0 1 8 0v18V14a4 4 0 0 1 8 0v22c0 14-6 22-16 22-8 0-12-6-16-14l-6-12a4 4 0 0 1 7-4Z" fill="#FDDF32" stroke="#141E2E" stroke-width="3" stroke-linejoin="round"/></symbol>
+
+    <!-- Personnages (buste) : couleurs pilotées par --skin --cloth --hair --acc -->
+    <symbol id="p-afro" viewBox="0 0 120 140">
+      <circle cx="60" cy="46" r="34" fill="var(--hair,#1B1410)"/>
+      <path d="M8 140C8 104 32 90 60 90s52 14 52 50Z" fill="var(--cloth,#0154AE)"/>
+      <rect x="51" y="76" width="18" height="20" rx="6" fill="var(--skin,#8C5A3A)"/>
+      <ellipse cx="60" cy="56" rx="24" ry="27" fill="var(--skin,#8C5A3A)"/>
+      <path d="M36 52Q38 32 60 30t24 22Q74 42 60 42T36 52Z" fill="var(--hair,#1B1410)"/>
+      <circle cx="51" cy="58" r="2.8" fill="#141E2E"/><circle cx="69" cy="58" r="2.8" fill="#141E2E"/>
+      <path d="M52 68q8 7 16 0" stroke="#141E2E" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="p-phones" viewBox="0 0 120 140">
+      <path d="M8 140C8 104 32 90 60 90s52 14 52 50Z" fill="var(--cloth,#0154AE)"/>
+      <rect x="51" y="76" width="18" height="20" rx="6" fill="var(--skin,#8C5A3A)"/>
+      <ellipse cx="60" cy="56" rx="24" ry="27" fill="var(--skin,#8C5A3A)"/>
+      <path d="M36 52Q34 28 60 27t24 25Q76 40 60 40T36 52Z" fill="var(--hair,#1B1410)"/>
+      <path d="M34 56A26 26 0 0 1 86 56" stroke="var(--acc,#FDDF32)" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <rect x="28" y="50" width="11" height="22" rx="5.5" fill="var(--acc,#FDDF32)" stroke="#141E2E" stroke-width="2"/>
+      <rect x="81" y="50" width="11" height="22" rx="5.5" fill="var(--acc,#FDDF32)" stroke="#141E2E" stroke-width="2"/>
+      <circle cx="51" cy="58" r="2.8" fill="#141E2E"/><circle cx="69" cy="58" r="2.8" fill="#141E2E"/>
+      <path d="M52 68q8 7 16 0" stroke="#141E2E" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="p-bun" viewBox="0 0 120 140">
+      <circle cx="60" cy="16" r="13" fill="var(--hair,#1B1410)"/>
+      <path d="M8 140C8 104 32 90 60 90s52 14 52 50Z" fill="var(--cloth,#0154AE)"/>
+      <rect x="51" y="76" width="18" height="20" rx="6" fill="var(--skin,#8C5A3A)"/>
+      <ellipse cx="60" cy="56" rx="24" ry="27" fill="var(--skin,#8C5A3A)"/>
+      <path d="M35 54Q33 26 60 26t25 28Q75 40 60 40T35 54Z" fill="var(--hair,#1B1410)"/>
+      <circle cx="51" cy="58" r="2.8" fill="#141E2E"/><circle cx="69" cy="58" r="2.8" fill="#141E2E"/>
+      <path d="M52 68q8 7 16 0" stroke="#141E2E" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="p-wrap" viewBox="0 0 120 140">
+      <path d="M8 140C8 104 32 90 60 90s52 14 52 50Z" fill="var(--cloth,#0154AE)"/>
+      <rect x="51" y="76" width="18" height="20" rx="6" fill="var(--skin,#8C5A3A)"/>
+      <ellipse cx="60" cy="56" rx="24" ry="27" fill="var(--skin,#8C5A3A)"/>
+      <path d="M35 54Q31 22 60 20t25 34Q74 40 60 40T35 54Z" fill="var(--acc,#FDDF32)" stroke="#141E2E" stroke-width="2" stroke-linejoin="round"/>
+      <circle cx="82" cy="26" r="9" fill="var(--acc,#FDDF32)" stroke="#141E2E" stroke-width="2"/>
+      <circle cx="51" cy="58" r="2.8" fill="#141E2E"/><circle cx="69" cy="58" r="2.8" fill="#141E2E"/>
+      <path d="M52 68q8 7 16 0" stroke="#141E2E" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+    </symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#contenu">Skip to content</a>
+
+<!-- ============ 1. Navigation ============ -->
+<header class="nav" id="haut">
+  <div class="wrap nav__bar">
+    <a class="logo" href="#haut" aria-label="VIBES, back to top"><span>VIBES</span><svg class="logo__sun" aria-hidden="true"><use href="#s-logo-sun"/></svg></a>
+
+    <nav class="nav__links" id="menu" aria-label="Main navigation">
+      <a href="#constat">Vision</a>
+      <a href="#intentions">Approach</a>
+      <a href="#experience">Experience</a>
+      <a href="#engagements">Commitments</a>
+      <a class="lang" href="../" hreflang="fr" lang="fr" title="Lire cette page en français">FR | <b>EN</b></a>
+      <a class="btn btn--blue nav__cta" href="#contribuer">Contribute</a>
+    </nav>
+
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu" data-label-open="Open menu" data-label-close="Close menu">
+      <svg class="ico" aria-hidden="true"><use href="#i-menu"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="contenu">
+
+  <!-- ============ 2. Hero ============ -->
+  <section class="hero">
+    <div class="wrap hero__grid">
+      <div class="hero__text">
+        <p class="eyebrow">VIBES · Student well-being, differently</p>
+        <h1 class="hero__title">Less scroll.<br><span class="hl">More life.</span> More us.</h1>
+        <p class="lead">What if your phone helped you live more, instead of keeping you connected all day?</p>
+        <p class="hero__sub">VIBES helps you find young people who share your passions, take care of yourself and build habits that do you good.</p>
+        <div class="actions">
+          <a class="btn btn--yellow" href="#intentions">Discover VIBES <span aria-hidden="true">→</span></a>
+          <a class="btn btn--ghost" href="#constat">Our vision</a>
+        </div>
+        <p class="status">In design: the app is not available to download yet. Want to lend a hand? <a href="#contribuer">Contribute</a></p>
+      </div>
+
+      <div class="hero__visual stage">
+        <div class="stage__panel" aria-hidden="true">
+          <i class="blob blob--turq"></i><i class="blob blob--purple"></i>
+        </div>
+        <svg class="fig fig--bl" aria-hidden="true" style="--skin:#7A4A2E;--cloth:#FDDF32;--hair:#1B1410"><use href="#p-afro"/></svg>
+        <svg class="fig fig--br" aria-hidden="true" style="--skin:#A06A45;--cloth:#B0EEF2;--hair:#1B1410;--acc:#FDDF32"><use href="#p-wrap"/></svg>
+
+        <figure class="phone phone--hero" data-shot>
+          <img src="../assets/screens/01_accueil.png" alt="Mockup of the VIBES home screen: activities near you and a campus activity happening now" decoding="async" fetchpriority="high">
+          <figcaption class="phone__missing">Mockup to add: 01_accueil.png</figcaption>
+        </figure>
+
+        <svg class="stk stk--a bob" aria-hidden="true"><use href="#s-ball"/></svg>
+        <svg class="stk stk--b bob" aria-hidden="true"><use href="#s-sun"/></svg>
+        <svg class="stk stk--c bob" aria-hidden="true"><use href="#s-note"/></svg>
+        <svg class="stk stk--d bob" aria-hidden="true"><use href="#s-camera"/></svg>
+        <svg class="stk stk--e bob" aria-hidden="true"><use href="#s-book"/></svg>
+        <svg class="stk stk--f bob" aria-hidden="true"><use href="#s-spark"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bandeau des passions -->
+  <div class="marquee" role="region" aria-label="Passions for everyone: football, music, photography, anime, choir, urban hiking, board games, cinema, reading, group study">
+    <div class="marquee__track">
+      <ul>
+        <li><svg aria-hidden="true"><use href="#s-ball"/></svg>Football</li>
+        <li><svg aria-hidden="true"><use href="#s-note"/></svg>Music</li>
+        <li><svg aria-hidden="true"><use href="#s-camera"/></svg>Photography</li>
+        <li><svg aria-hidden="true"><use href="#s-spark"/></svg>Anime</li>
+        <li><svg aria-hidden="true"><use href="#s-mic"/></svg>Choir</li>
+        <li><svg aria-hidden="true"><use href="#s-foot"/></svg>Urban hiking</li>
+        <li><svg aria-hidden="true"><use href="#s-bolt"/></svg>Board games</li>
+        <li><svg aria-hidden="true"><use href="#s-camera"/></svg>Cinema</li>
+        <li><svg aria-hidden="true"><use href="#s-book"/></svg>Reading</li>
+        <li><svg aria-hidden="true"><use href="#s-bubble"/></svg>Group study</li>
+      </ul>
+      <ul aria-hidden="true">
+        <li><svg><use href="#s-ball"/></svg>Football</li>
+        <li><svg><use href="#s-note"/></svg>Music</li>
+        <li><svg><use href="#s-camera"/></svg>Photography</li>
+        <li><svg><use href="#s-spark"/></svg>Anime</li>
+        <li><svg><use href="#s-mic"/></svg>Choir</li>
+        <li><svg><use href="#s-foot"/></svg>Urban hiking</li>
+        <li><svg><use href="#s-bolt"/></svg>Board games</li>
+        <li><svg><use href="#s-camera"/></svg>Cinema</li>
+        <li><svg><use href="#s-book"/></svg>Reading</li>
+        <li><svg><use href="#s-bubble"/></svg>Group study</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============ 3. Le constat ============ -->
+  <section class="section" id="constat">
+    <svg class="deco deco--m bob" style="--s:44px;top:28px;right:20px" aria-hidden="true"><use href="#s-spark"/></svg>
+    <svg class="deco bob" style="--s:60px;bottom:40px;left:3%" aria-hidden="true"><use href="#s-cloud"/></svg>
+    <div class="wrap constat">
+      <div class="constat__text reveal">
+        <p class="eyebrow eyebrow--blue">The situation</p>
+        <h2>Always connected. What if we met up more?</h2>
+        <p>Between classes, screens and days that all look alike, it isn't always easy to meet new people, find activities that suit us or take time for ourselves.</p>
+        <p>Yet a shared passion, an impromptu activity or a small habit can open the door to new experiences.</p>
+        <p class="transition">That's the idea VIBES was born from.</p>
+      </div>
+
+      <div class="duo reveal">
+        <figure class="scene-card scene-card--dark">
+          <figcaption>On the screen</figcaption>
+          <svg class="scene" viewBox="0 0 300 340" role="img" aria-label="Illustration: a person alone in front of a screen full of notifications">
+            <use href="#s-spark" x="236" y="212" width="26" height="26" opacity=".55"/>
+            <use href="#s-spark" x="30" y="70" width="18" height="18" opacity=".45"/>
+            <rect x="104" y="50" width="150" height="262" rx="24" fill="#0B1320" stroke="#3B4B68" stroke-width="3"/>
+            <rect x="116" y="68" width="126" height="226" rx="14" fill="#16233A"/>
+            <circle cx="138" cy="92" r="14" fill="#3B4B68"/><rect x="160" y="84" width="64" height="8" rx="4" fill="#4A5C7C"/><rect x="160" y="98" width="42" height="8" rx="4" fill="#3B4B68"/>
+            <rect x="126" y="120" width="106" height="62" rx="10" fill="#223250"/>
+            <circle cx="138" cy="204" r="14" fill="#3B4B68"/><rect x="160" y="196" width="64" height="8" rx="4" fill="#4A5C7C"/><rect x="160" y="210" width="42" height="8" rx="4" fill="#3B4B68"/>
+            <rect x="126" y="232" width="106" height="46" rx="10" fill="#223250"/>
+            <rect x="186" y="22" width="86" height="28" rx="14" fill="#FDDF32"/><circle cx="202" cy="36" r="5" fill="#141E2E"/><rect x="214" y="32" width="46" height="8" rx="4" fill="#141E2E" opacity=".7"/>
+            <rect x="214" y="150" width="70" height="24" rx="12" fill="#B0EEF2"/><circle cx="228" cy="162" r="4.5" fill="#141E2E"/><rect x="238" y="158" width="36" height="8" rx="4" fill="#141E2E" opacity=".7"/>
+            <use href="#p-phones" x="8" y="206" width="110" height="128" style="--skin:#A06A45;--cloth:#3B4B68;--hair:#1B1410"/>
+          </svg>
+        </figure>
+
+        <figure class="scene-card scene-card--turq">
+          <figcaption>Outside</figcaption>
+          <svg class="scene" viewBox="0 0 300 340" role="img" aria-label="Illustration: three students gathering around a ball">
+            <use href="#s-sun" x="214" y="20" width="62" height="62"/>
+            <use href="#s-note" x="30" y="60" width="46" height="46"/>
+            <use href="#s-spark" x="150" y="30" width="26" height="26"/>
+            <use href="#p-wrap" x="-6" y="214" width="112" height="131" style="--skin:#7A4A2E;--cloth:#0154AE;--acc:#FDDF32"/>
+            <use href="#p-phones" x="194" y="214" width="112" height="131" style="--skin:#5A3322;--cloth:#FDDF32;--hair:#1B1410;--acc:#4A2987"/>
+            <use href="#p-afro" x="84" y="178" width="132" height="154" style="--skin:#A06A45;--cloth:#4A2987;--hair:#1B1410"/>
+            <use href="#s-ball" x="118" y="268" width="64" height="64"/>
+          </svg>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Les quatre couches ============ -->
+  <section class="section section--white" id="couches">
+    <div class="wrap">
+      <header class="section__head reveal">
+        <p class="eyebrow eyebrow--blue">Why VIBES exists</p>
+        <h2>Behind the screen, four things that add up.</h2>
+        <p class="section__intro">It's not a lack of willpower. It's what we see around us, on campus.</p>
+      </header>
+
+      <ol class="layers">
+        <li class="layer reveal">
+          <svg class="layer__ico" aria-hidden="true"><use href="#s-bolt"/></svg>
+          <span class="layer__n">1</span>
+          <h3>Attraction</h3>
+          <p>Scrolling is designed to hold you. Staying says nothing about your willpower.</p>
+        </li>
+        <li class="layer reveal">
+          <svg class="layer__ico" aria-hidden="true"><use href="#s-cloud"/></svg>
+          <span class="layer__n">2</span>
+          <h3>The void</h3>
+          <p>When you put the phone down, you don't always know what to do that's as good, or with whom.</p>
+        </li>
+        <li class="layer reveal">
+          <svg class="layer__ico" aria-hidden="true"><use href="#s-bubble"/></svg>
+          <span class="layer__n">3</span>
+          <h3>The silence</h3>
+          <p>We often know what we need. What's missing is a place to admit it without being judged.</p>
+        </li>
+        <li class="layer reveal">
+          <svg class="layer__ico" aria-hidden="true"><use href="#s-search"/></svg>
+          <span class="layer__n">4</span>
+          <h3>The invisible</h3>
+          <p>Well-being tools exist, but many students don't know about them, or don't see themselves in them.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ 4. Les trois intentions ============ -->
+  <section class="section" id="intentions">
+    <svg class="deco" style="--s:56px;top:60px;right:4%" aria-hidden="true"><use href="#s-spark"/></svg>
+    <svg class="deco" style="--s:64px;bottom:90px;left:2%" aria-hidden="true"><use href="#s-ball"/></svg>
+    <div class="wrap">
+      <header class="section__head reveal">
+        <p class="eyebrow eyebrow--blue">The approach</p>
+        <h2>Three gestures. Another way to live campus life.</h2>
+      </header>
+
+      <div class="cards3">
+        <article class="card card--blue reveal">
+          <svg class="card__scene" viewBox="0 0 280 150" aria-hidden="true">
+            <circle cx="140" cy="150" r="120" fill="#fff" opacity=".1"/>
+            <use href="#s-pin" x="24" y="16" width="82" height="82"/>
+            <use href="#s-ball" x="116" y="12" width="40" height="40"/>
+            <use href="#s-spark" x="236" y="14" width="26" height="26"/>
+            <use href="#p-wrap" x="128" y="62" width="84" height="98" style="--skin:#7A4A2E;--cloth:#FDDF32;--acc:#B0EEF2"/>
+            <use href="#p-phones" x="188" y="72" width="80" height="94" style="--skin:#A06A45;--cloth:#B0EEF2;--hair:#1B1410;--acc:#FDDF32"/>
+          </svg>
+          <h3>Discover</h3>
+          <p>Meet young people who share your passions. Explore activities, discover clubs and find chances to take the first step.</p>
+        </article>
+
+        <article class="card card--turq reveal">
+          <svg class="card__scene" viewBox="0 0 280 150" aria-hidden="true">
+            <circle cx="140" cy="150" r="120" fill="#fff" opacity=".45"/>
+            <use href="#s-sun" x="22" y="16" width="66" height="66"/>
+            <use href="#s-bubble" x="188" y="10" width="62" height="62"/>
+            <use href="#s-cloud" x="96" y="14" width="44" height="44"/>
+            <use href="#p-bun" x="96" y="54" width="92" height="107" style="--skin:#8C5A3A;--cloth:#4A2987;--hair:#1B1410"/>
+            <use href="#s-heart" x="196" y="92" width="38" height="38"/>
+          </svg>
+          <h3>Equip yourself</h3>
+          <p>Take a moment for yourself, put words on your mood and discover simple tips to take better care of yourself.</p>
+        </article>
+
+        <article class="card card--purple reveal">
+          <svg class="card__scene" viewBox="0 0 280 150" aria-hidden="true">
+            <circle cx="140" cy="150" r="120" fill="#fff" opacity=".08"/>
+            <use href="#s-sprout" x="104" y="20" width="96" height="96"/>
+            <use href="#s-foot" x="22" y="40" width="64" height="64"/>
+            <use href="#s-bolt" x="214" y="24" width="44" height="44"/>
+            <use href="#s-spark" x="212" y="92" width="30" height="30"/>
+            <use href="#s-spark" x="62" y="12" width="22" height="22"/>
+          </svg>
+          <h3>Anchor</h3>
+          <p>Turn small intentions into habits. Try new activities, take on small Étincelles (Sparks) and move at your own pace.</p>
+        </article>
+      </div>
+
+      <p class="closing reveal">No need to change everything. Sometimes one small action is enough to get started.</p>
+    </div>
+  </section>
+
+  <!-- ============ 5. Les cinq dimensions ============ -->
+  <section class="section section--white" id="dimensions">
+    <i class="blob blob--turq blob--sec" aria-hidden="true"></i>
+    <div class="wrap">
+      <header class="section__head reveal">
+        <p class="eyebrow eyebrow--blue">Well-being, in five dimensions</p>
+        <h2>Taking care of yourself also means living fully.</h2>
+        <p class="section__intro">Well-being isn't just one part of our life. It is built through our relationships, our body, our emotions, our mind and our daily life.</p>
+      </header>
+
+      <ul class="dims">
+        <li class="reveal"><span class="dim__ico dim--1"><svg class="ico" aria-hidden="true"><use href="#i-users"/></svg></span><h3>Social connection</h3><p>Building bonds, sharing passions and finding your place.</p></li>
+        <li class="reveal"><span class="dim__ico dim--2"><svg class="ico" aria-hidden="true"><use href="#i-activity"/></svg></span><h3>Physical well-being</h3><p>Moving, walking and rediscovering the joy of accessible activities.</p></li>
+        <li class="reveal"><span class="dim__ico dim--3"><svg class="ico" aria-hidden="true"><use href="#i-heart"/></svg></span><h3>Emotional balance</h3><p>Understanding what you feel and knowing who to turn to when you need to.</p></li>
+        <li class="reveal"><span class="dim__ico dim--4"><svg class="ico" aria-hidden="true"><use href="#i-wind"/></svg></span><h3>Mental well-being</h3><p>Stepping back, taking a breath, learning and creating.</p></li>
+        <li class="reveal"><span class="dim__ico dim--5"><svg class="ico" aria-hidden="true"><use href="#i-apple"/></svg></span><h3>Food</h3><p>Discovering simple guidelines to take better care of yourself every day.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ 6. Aperçu de l'expérience ============ -->
+  <section class="section" id="experience">
+    <div class="wrap">
+      <header class="section__head reveal">
+        <p class="eyebrow eyebrow--blue">The experience</p>
+        <h2>Made for the real moments of student life.</h2>
+        <p class="section__intro">From discovering an activity to the little moment you give yourself, VIBES wants to make first steps easier.</p>
+      </header>
+
+      <div class="exp reveal">
+        <div class="exp__text">
+          <h3>Explore activities</h3>
+          <p>Find chances to play, create, move or share a passion with other students.</p>
+          <ul class="chips" aria-label="Examples of activity categories">
+            <li><svg aria-hidden="true"><use href="#s-ball"/></svg>Sport</li>
+            <li><svg aria-hidden="true"><use href="#s-camera"/></svg>Culture</li>
+            <li><svg aria-hidden="true"><use href="#s-cloud"/></svg>Relaxation</li>
+            <li><svg aria-hidden="true"><use href="#s-hand"/></svg>Solidarity</li>
+          </ul>
+        </div>
+        <div class="exp__shots exp__shots--pair exp__shots--blue">
+          <figure class="phone" data-shot>
+            <img src="../assets/screens/02_explorer_activites.png" alt="Mockup of the Activities screen: activities filterable by category, with date, place and price" loading="lazy" decoding="async">
+            <figcaption class="phone__missing">Mockup to add: 02_explorer_activites.png</figcaption>
+          </figure>
+          <figure class="phone phone--offset" data-shot>
+            <img src="../assets/screens/03_detail_activite.png" alt="Mockup of an activity page: friendly campus match, description and “Je participe” (I'm in) button" loading="lazy" decoding="async">
+            <figcaption class="phone__missing">Mockup to add: 03_detail_activite.png</figcaption>
+          </figure>
+          <svg class="stk stk--x bob" aria-hidden="true"><use href="#s-pin"/></svg>
+        </div>
+      </div>
+
+      <div class="exp exp--rev exp--turq reveal">
+        <div class="exp__text">
+          <h3>Take a moment for yourself</h3>
+          <p>With Mon Mood and My Safe Place, discover a personal space to express how you feel and find ideas that fit your needs.</p>
+          <p class="exp__note">Optional, private, no score and no diagnosis.</p>
+        </div>
+        <div class="exp__shots">
+          <figure class="phone" data-shot>
+            <img src="../assets/screens/07_mon_mood.png" alt="Mockup of Mon Mood: choose how you feel today, with access to My Safe Place" loading="lazy" decoding="async">
+            <figcaption class="phone__missing">Mockup to add: 07_mon_mood.png</figcaption>
+          </figure>
+          <svg class="stk stk--y bob" aria-hidden="true"><use href="#s-sun"/></svg>
+          <svg class="stk stk--z bob" aria-hidden="true"><use href="#s-heart"/></svg>
+        </div>
+      </div>
+
+      <div class="exp reveal">
+        <div class="exp__text">
+          <h3>Make good habits last</h3>
+          <p>With Étincelles (Sparks), tips and gentle reminders, move at your own pace, with no pressure and no competition.</p>
+          <p class="exp__note">Étincelles (Sparks), for example:</p>
+          <ul class="chips" aria-label="Examples of planned Étincelles">
+            <li><svg aria-hidden="true"><use href="#s-foot"/></svg>A walk</li>
+            <li><svg aria-hidden="true"><use href="#s-bubble"/></svg>A message to a classmate</li>
+            <li><svg aria-hidden="true"><use href="#s-cloud"/></svg>A screen-free break</li>
+            <li><svg aria-hidden="true"><use href="#s-apple"/></svg>A balanced meal</li>
+          </ul>
+        </div>
+        <div class="exp__shots exp__shots--purple">
+          <figure class="phone" data-shot>
+            <img src="../assets/screens/09_tips_vibes.png" alt="Mockup of the Tips VIBES library: short tips sorted by theme" loading="lazy" decoding="async">
+            <figcaption class="phone__missing">Mockup to add: 09_tips_vibes.png</figcaption>
+          </figure>
+          <svg class="stk stk--y bob" aria-hidden="true"><use href="#s-sprout"/></svg>
+          <svg class="stk stk--z bob" aria-hidden="true"><use href="#s-spark"/></svg>
+        </div>
+      </div>
+
+      <p class="closing reveal">Technology opens the door. Experiences are lived outside.</p>
+    </div>
+  </section>
+
+  <!-- ============ Heures vécues ============ -->
+  <section class="section section--night" id="heures">
+    <svg class="deco" style="--s:52px;top:48px;left:4%" aria-hidden="true"><use href="#s-spark"/></svg>
+    <div class="wrap heures">
+      <div class="heures__text reveal">
+        <p class="eyebrow eyebrow--yellow">What sets us apart</p>
+        <h2>We're not trying to keep you in the app.</h2>
+        <p>Many apps are measured by the time you spend in them. VIBES is measured by the time you spend in it <strong>less</strong>.</p>
+        <p>Our central indicator: <strong>lived hours</strong>. These are the real hours of matches, walks, choir rehearsals or creating that VIBES helped trigger.</p>
+        <p>Time spent in the app is tracked as a warning signal, not as a goal.</p>
+        <p class="tag"><svg class="ico" aria-hidden="true"><use href="#i-flag"/></svg>Indicator still being defined. No result is claimed at this stage.</p>
+      </div>
+      <div class="clock reveal" aria-hidden="true">
+        <svg viewBox="-24 -8 368 336">
+          <circle cx="160" cy="160" r="136" fill="#B0EEF2" stroke="#FDDF32" stroke-width="10"/>
+          <g stroke="#141E2E" stroke-width="5" stroke-linecap="round">
+            <path d="M160 46v18M160 256v18M46 160h18M256 160h18"/>
+          </g>
+          <g stroke="#141E2E" stroke-width="3" stroke-linecap="round" opacity=".5">
+            <path d="M217 61l-9 15M259 103l-15 9M259 217l-15-9M217 259l-9-15M103 259l9-15M61 217l15-9M61 103l15 9M103 61l9 15"/>
+          </g>
+          <path d="M160 160V84M160 160l46 28" stroke="#141E2E" stroke-width="9" stroke-linecap="round"/>
+          <circle cx="160" cy="160" r="11" fill="#FDDF32" stroke="#141E2E" stroke-width="4"/>
+          <circle cx="40" cy="270" r="46" fill="#fff"/><use href="#s-ball" x="6" y="236" width="68" height="68"/>
+          <circle cx="282" cy="48" r="40" fill="#FDDF32"/><use href="#s-note" x="254" y="20" width="56" height="56"/>
+          <circle cx="278" cy="272" r="40" fill="#fff"/><use href="#s-foot" x="250" y="244" width="56" height="56"/>
+          <use href="#s-spark" x="22" y="40" width="38" height="38"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 7. Le Crew ============ -->
+  <section class="section section--blue" id="crew">
+    <svg class="deco" style="--s:56px;top:44px;right:5%" aria-hidden="true"><use href="#s-spark"/></svg>
+    <div class="wrap crew">
+      <div class="crew__text reveal">
+        <p class="eyebrow eyebrow--yellow">The Crew</p>
+        <h2>The first step is easier when you're not alone.</h2>
+        <p>A match, a walk, a music session or a new activity: sometimes all it takes is finding a few people to share the moment with.</p>
+        <p>With the Crew, VIBES wants to make it easier to organise who's coming and help everyone approach a first group experience more calmly.</p>
+        <p class="signature">Shared passions. Experiences to live.</p>
+
+        <ol class="steps">
+          <li><span>1</span>You spot an activity that speaks to you.</li>
+          <li><span>2</span>You join a small group to get organised.</li>
+          <li><span>3</span>You meet up in person, for real.</li>
+        </ol>
+        <p class="crew__note">Planned: a chat reserved for people signed up to the activity, with no private messages. The Crew is for taking part, not for replacing real life.</p>
+      </div>
+
+      <div class="stage stage--crew reveal">
+        <div class="stage__panel stage__panel--light" aria-hidden="true">
+          <i class="blob blob--yellow"></i>
+        </div>
+        <svg class="fig fig--bl" aria-hidden="true" style="--skin:#A06A45;--cloth:#4A2987;--hair:#1B1410;--acc:#FDDF32"><use href="#p-phones"/></svg>
+        <svg class="fig fig--br" aria-hidden="true" style="--skin:#5A3322;--cloth:#0154AE;--hair:#1B1410"><use href="#p-bun"/></svg>
+        <figure class="phone phone--light" data-shot>
+          <img src="../assets/screens/05_mon_crew.png" alt="Mockup of the Mon crew screen: small groups to share, move and discover together" loading="lazy" decoding="async">
+          <figcaption class="phone__missing">Mockup to add: 05_mon_crew.png</figcaption>
+        </figure>
+        <svg class="stk stk--a bob" aria-hidden="true"><use href="#s-ball"/></svg>
+        <svg class="stk stk--c bob" aria-hidden="true"><use href="#s-hand"/></svg>
+        <svg class="stk stk--e bob" aria-hidden="true"><use href="#s-spark"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Pensé pour notre quotidien ============ -->
+  <section class="section" id="ici">
+    <svg class="deco" style="--s:58px;top:50px;right:4%" aria-hidden="true"><use href="#s-sun"/></svg>
+    <div class="wrap">
+      <header class="section__head reveal">
+        <p class="eyebrow eyebrow--blue">Made for here</p>
+        <h2>Made for the daily life of students in Benin.</h2>
+        <p class="section__intro">Little mobile data, a tight budget, sometimes long commutes: we think about it from the start. <span class="pill">Planned in the design</span></p>
+      </header>
+
+      <ul class="here">
+        <li class="reveal"><svg aria-hidden="true"><use href="#s-cloud"/></svg><h3>A lightweight app</h3><p>A web app, designed for small data plans and older phones.</p></li>
+        <li class="reveal"><svg aria-hidden="true"><use href="#s-pin"/></svg><h3>Know before you go</h3><p>Real cost, distance and duration shown before you commit.</p></li>
+        <li class="reveal"><svg aria-hidden="true"><use href="#s-spark"/></svg><h3>Free first</h3><p>Free activities highlighted, so that budget doesn't get in the way of wanting to go.</p></li>
+        <li class="reveal"><svg aria-hidden="true"><use href="#s-bubble"/></svg><h3>In our own words</h3><p>French first, with tips written by young Beninese people. Local languages are being studied.</p></li>
+        <li class="reveal"><svg aria-hidden="true"><use href="#s-sprout"/></svg><h3>For beginners</h3><p>Activities open to all levels, with accessibility information.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ 8. Confiance et respect ============ -->
+  <section class="section section--white" id="engagements">
+    <div class="wrap">
+      <header class="section__head reveal">
+        <p class="eyebrow eyebrow--blue">Our commitments</p>
+        <h2>Your well-being. Your pace. Your choices.</h2>
+      </header>
+
+      <div class="trust">
+        <article class="reveal">
+          <h3>Respect for your privacy</h3>
+          <p>What you share in your personal space stays private, according to the rules set by VIBES.</p>
+        </article>
+        <article class="reveal">
+          <h3>Freedom to choose</h3>
+          <p>You choose which activities you want to join and what you want to share.</p>
+        </article>
+        <article class="reveal">
+          <h3>No pressure</h3>
+          <p>No competition over your well-being, no guilt when you take a break.</p>
+        </article>
+        <article class="reveal">
+          <h3>Supervised activities</h3>
+          <p>Events are checked before publication, and organisers must follow the safety rules set by the project.</p>
+        </article>
+        <article class="reveal">
+          <h3>Help that's easy to find</h3>
+          <p>A “Need help?” access is planned on the screens, to point you to a trusted person or service.</p>
+        </article>
+        <article class="trust__limit reveal">
+          <h3>A clear limit</h3>
+          <p>VIBES is a prevention and well-being initiative. It is not a care service, a diagnostic tool, or medical or psychological advice.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ État du projet ============ -->
+  <section class="section" id="etat">
+    <div class="wrap">
+      <header class="section__head reveal">
+        <p class="eyebrow eyebrow--blue">In full transparency</p>
+        <h2>Where is VIBES at?</h2>
+        <p class="section__intro">VIBES is a student project under construction. Here is what exists, what is moving and what is envisioned.</p>
+      </header>
+
+      <div class="roadmap">
+        <article class="rm rm--done reveal">
+          <h3><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Already here</h3>
+          <ul>
+            <li>A project design document</li>
+            <li>A Design System</li>
+            <li>10 mockup screens</li>
+            <li>A survey on the UNSTIM campus, launched on 21 September</li>
+          </ul>
+        </article>
+        <article class="rm rm--now reveal">
+          <h3><svg class="ico" aria-hidden="true"><use href="#i-clock"/></svg>In progress</h3>
+          <ul>
+            <li>Building a first lightweight web MVP</li>
+            <li>Designing with students: interviews and mockup tests</li>
+          </ul>
+        </article>
+        <article class="rm rm--next reveal">
+          <h3><svg class="ico" aria-hidden="true"><use href="#i-flag"/></svg>Envisioned</h3>
+          <ul>
+            <li>A pilot on campus</li>
+            <li>Surveys in other schools and universities</li>
+            <li>Leads with venues and associations. No partnership is announced at this stage.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Contribuer ============ -->
+  <section class="section section--turq" id="contribuer">
+    <svg class="deco" style="--s:62px;top:44px;right:4%" aria-hidden="true"><use href="#s-hand"/></svg>
+    <svg class="deco" style="--s:48px;bottom:60px;left:3%" aria-hidden="true"><use href="#s-spark"/></svg>
+    <div class="wrap">
+      <header class="section__head section__head--wide reveal">
+        <p class="eyebrow eyebrow--purple">Contribute</p>
+        <h2>VIBES is built with you.</h2>
+        <p class="section__intro">The project is being designed, and right now your opinion matters most. Pick what suits you.</p>
+      </header>
+
+      <ul class="give">
+        <li class="reveal">
+          <svg aria-hidden="true"><use href="#s-bubble"/></svg>
+          <h3>Write Tips</h3>
+          <p>Join young people to write short tips, in our own words and with our culture.</p>
+          <a class="link" href="https://github.com/Charmel7/vibes/issues/new?title=Contribution%3A%20write%20Tips&body=Hi!%20I'd%20like%20to%20contribute%20to%20VIBES%20by%20writing%20Tips.%0A%0AWhat%20I'm%20offering%3A%20%0A%0AMy%20field%20%2F%20school%3A%20%0A%0A%28This%20page%20is%20public%3A%20don't%20share%20a%20phone%20number%20or%20an%20e-mail.%29" target="_blank" rel="noopener">I'd like to help <span aria-hidden="true">→</span><span class="sr">, write Tips (opens in a new tab)</span></a>
+        </li>
+        <li class="reveal">
+          <svg aria-hidden="true"><use href="#s-search"/></svg>
+          <h3>Test and give your feedback</h3>
+          <p>Interviews, mockup tests: tell us what speaks to you and what doesn't.</p>
+          <a class="link" href="https://github.com/Charmel7/vibes/issues/new?title=Contribution%3A%20test%20and%20give%20feedback&body=Hi!%20I'd%20like%20to%20test%20VIBES%20and%20give%20my%20feedback.%0A%0AWhat%20I'm%20offering%3A%20%0A%0AMy%20field%20%2F%20school%3A%20%0A%0A%28This%20page%20is%20public%3A%20don't%20share%20a%20phone%20number%20or%20an%20e-mail.%29" target="_blank" rel="noopener">I'd like to help <span aria-hidden="true">→</span><span class="sr">, test and give feedback (opens in a new tab)</span></a>
+        </li>
+        <li class="reveal">
+          <svg aria-hidden="true"><use href="#s-ball"/></svg>
+          <h3>Suggest an activity or a club</h3>
+          <p>Match, karaoke, walk, workshop: make yourself known as an organiser. Every event is checked before publication.</p>
+          <a class="link" href="https://github.com/Charmel7/vibes/issues/new?title=Contribution%3A%20suggest%20an%20activity%20or%20a%20club&body=Hi!%20I'd%20like%20to%20suggest%20an%20activity%20or%20a%20club%20on%20VIBES.%0A%0AThe%20activity%20or%20club%3A%20%0A%0AMy%20field%20%2F%20school%3A%20%0A%0A%28This%20page%20is%20public%3A%20don't%20share%20a%20phone%20number%20or%20an%20e-mail.%29" target="_blank" rel="noopener">I'd like to help <span aria-hidden="true">→</span><span class="sr">, suggest an activity or a club (opens in a new tab)</span></a>
+        </li>
+        <li class="reveal">
+          <svg aria-hidden="true"><use href="#s-mic"/></svg>
+          <h3>Become an ambassador</h3>
+          <p>Spread the word about VIBES and help launch the first activities on your campus.</p>
+          <a class="link" href="https://github.com/Charmel7/vibes/issues/new?title=Contribution%3A%20become%20an%20ambassador&body=Hi!%20I'd%20like%20to%20become%20a%20VIBES%20ambassador.%0A%0AMy%20campus%3A%20%0A%0AMy%20field%3A%20%0A%0A%28This%20page%20is%20public%3A%20don't%20share%20a%20phone%20number%20or%20an%20e-mail.%29" target="_blank" rel="noopener">I'd like to help <span aria-hidden="true">→</span><span class="sr">, become an ambassador (opens in a new tab)</span></a>
+        </li>
+        <li class="reveal">
+          <svg aria-hidden="true"><use href="#s-apple"/></svg>
+          <h3>Review health content</h3>
+          <p>Final-year health student or professional: help us check the tips before they are published.</p>
+          <a class="link" href="https://github.com/Charmel7/vibes/issues/new?title=Contribution%3A%20review%20health%20content&body=Hi!%20I'd%20like%20to%20review%20VIBES%20health%20content.%0A%0AMy%20profile%20%28training%20%2F%20job%29%3A%20%0A%0A%28This%20page%20is%20public%3A%20don't%20share%20a%20phone%20number%20or%20an%20e-mail.%29" target="_blank" rel="noopener">I'd like to help <span aria-hidden="true">→</span><span class="sr">, review health content (opens in a new tab)</span></a>
+        </li>
+        <li class="reveal">
+          <svg aria-hidden="true"><use href="#s-pin"/></svg>
+          <h3>Venues, clubs and associations</h3>
+          <p>Do you run a venue or an association? Let's talk about what we could do together.</p>
+          <a class="link" href="https://github.com/Charmel7/vibes/issues/new?title=Contribution%3A%20venue%2C%20club%20or%20association&body=Hi!%20I%20represent%20a%20venue%2C%20a%20club%20or%20an%20association%20and%20I'd%20like%20to%20talk.%0A%0AName%3A%20%0A%0AWhat%20we%20could%20do%20together%3A%20%0A%0A%28This%20page%20is%20public%3A%20don't%20share%20a%20phone%20number%20or%20an%20e-mail.%29" target="_blank" rel="noopener">I'd like to help <span aria-hidden="true">→</span><span class="sr">, venues, clubs and associations (opens in a new tab)</span></a>
+        </li>
+      </ul>
+
+      <div class="give__more reveal">
+        <a class="btn btn--yellow" href="https://github.com/Charmel7/vibes/issues/new?title=An%20idea%20for%20VIBES&body=Hi!%20I%20have%20an%20idea%20for%20VIBES%3A%0A%0A%28This%20page%20is%20public%3A%20don't%20share%20a%20phone%20number%20or%20an%20e-mail.%29" target="_blank" rel="noopener">I have another idea <span aria-hidden="true">→</span><span class="sr"> (opens in a new tab)</span></a>
+        <p class="note">Messages go through GitHub and are public: don't put a phone number or an e-mail address in them.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Frequently asked questions ============ -->
+  <section class="section section--white" id="faq">
+    <div class="wrap faq">
+      <header class="section__head reveal">
+        <p class="eyebrow eyebrow--blue">Frequently asked questions</p>
+        <h2>Simple answers.</h2>
+      </header>
+
+      <div class="faq__list reveal">
+        <details>
+          <summary>Is VIBES available yet?</summary>
+          <p>Not yet. The project is being designed: the mockups exist, but the app can't be downloaded yet.</p>
+        </details>
+        <details>
+          <summary>Is VIBES a medical service?</summary>
+          <p>No. It's a prevention and well-being initiative. VIBES makes no diagnosis, gives no score, and points you to a trusted person or service if it's too much.</p>
+        </details>
+        <details>
+          <summary>Does what I write stay private?</summary>
+          <p>What you write in My Safe Place is private, according to the rules set by VIBES. Answers about how you feel are optional.</p>
+        </details>
+        <details>
+          <summary>What is the Crew?</summary>
+          <p>A small group that forms around an activity, to get organised and confirm who's coming. The idea: not having to show up alone the first time.</p>
+        </details>
+        <details>
+          <summary>Is VIBES a social network or a dating app?</summary>
+          <p>No. No public feed, no likes, no rankings. Activities are public and are lived in small groups.</p>
+        </details>
+        <details>
+          <summary>Does it need a lot of mobile data?</summary>
+          <p>The goal is a lightweight web app, designed for small data plans and older phones.</p>
+        </details>
+        <details>
+          <summary>Who is behind VIBES?</summary>
+          <p>A team of UNSTIM students in Abomey, Benin. The app's content is written with young people, and health content is reviewed before publication.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 9. Appel à l'action final ============ -->
+  <section class="final">
+    <svg class="deco" style="--s:56px;top:40px;left:5%" aria-hidden="true"><use href="#s-spark"/></svg>
+    <svg class="deco" style="--s:64px;top:70px;right:6%" aria-hidden="true"><use href="#s-ball"/></svg>
+    <div class="wrap final__inner">
+      <div class="final__text reveal">
+        <h2>What if the next good thing started here?</h2>
+        <p>A passion to discover. An activity to try. A habit to build.</p>
+        <p>VIBES wants to help students make more room for what does them good.</p>
+        <div class="actions">
+          <a class="btn btn--yellow" href="#constat">Discover our vision <span aria-hidden="true">→</span></a>
+          <a class="btn btn--ghost-light" href="#contribuer">Contribute</a>
+        </div>
+      </div>
+      <div class="final__crowd" aria-hidden="true">
+        <svg class="fig" style="--skin:#7A4A2E;--cloth:#FDDF32;--acc:#B0EEF2"><use href="#p-wrap"/></svg>
+        <svg class="fig fig--tall" style="--skin:#A06A45;--cloth:#B0EEF2;--hair:#1B1410"><use href="#p-afro"/></svg>
+        <svg class="fig" style="--skin:#5A3322;--cloth:#0154AE;--hair:#1B1410;--acc:#FDDF32"><use href="#p-phones"/></svg>
+        <svg class="fig fig--tall" style="--skin:#8C5A3A;--cloth:#FDDF32;--hair:#1B1410"><use href="#p-bun"/></svg>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ 10. Footer ============ -->
+<footer class="footer">
+  <div class="wrap footer__grid">
+    <div>
+      <a class="logo logo--light" href="#haut" aria-label="VIBES, back to top"><span>VIBES</span><svg class="logo__sun" aria-hidden="true"><use href="#s-logo-sun"/></svg></a>
+      <p class="footer__tag">Less scroll. More life. More us.</p>
+      <p class="footer__note">Student project, UNSTIM, Abomey (Benin). In design.</p>
+    </div>
+    <nav aria-label="Footer">
+      <a href="#constat">Vision</a>
+      <a href="#intentions">Approach</a>
+      <a href="#experience">Experience</a>
+      <a href="#engagements">Commitments</a>
+      <a href="#etat">Where is VIBES at?</a>
+      <a href="#contribuer">Contribute</a>
+      <a href="#faq">Questions</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="../main.js" defer></script>
+</body>
+</html>
