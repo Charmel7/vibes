@@ -88,6 +88,11 @@ h3 { font-size: 20px; line-height: 1.3; font-weight: 600; }
 .logo__sun { width: 14px; height: 14px; margin-top: -2px; }
 .logo--light { color: #fff; }
 
+/* Logo image (vrai logo graphique) */
+.logo--img { background: none; padding: 0; }
+.logo__img { display: block; height: 36px; width: auto; object-fit: contain; }
+.logo--footer .logo__img { height: 28px; filter: brightness(0) invert(1); }
+
 /* Navigation */
 .nav { position: sticky; top: 0; z-index: 50; background: var(--color-canvas); border-bottom: 1px solid var(--line); }
 .nav__bar { height: var(--nav-h); display: flex; align-items: center; justify-content: space-between; }
