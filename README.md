@@ -46,7 +46,7 @@ Tant qu'un fichier manque, un cadre en pointillés indique son nom.
 ## Éléments non fournis (non inventés)
 
 - Logo officiel : le mot « VIBES » est écrit en texte (Inter Bold, bleu VIBES).
-- Photographies d'étudiants : aucune n'est utilisée (illustrations vectorielles à la place).
+- Photographies : trois photos Unsplash (Iwaria Inc, Muhammad-Taha Ibrahim) dans `assets/photos/`, versions web optimisées. Les originaux sont dans `assets/photos/source/`. Crédit affiché dans le pied de page.
 - Section « Contribuer » : les boutons ouvrent un nouveau ticket sur `github.com/Charmel7/vibes/issues` (public). À remplacer par un formulaire ou une adresse officielle quand elle existe.
 - Contact, réseaux sociaux, pages légales, lien de téléchargement ou d'inscription : aucun.
 - Image de partage social (`og:image`) : à ajouter quand elle existe.

@@ -81,8 +81,6 @@ T = [
     ("<figcaption>Dehors</figcaption>", "<figcaption>Outside</figcaption>"),
     ("Illustration : une personne seule devant un écran plein de notifications",
      "Illustration: a person alone in front of a screen full of notifications"),
-    ("Illustration : trois étudiants qui se retrouvent autour d'un ballon",
-     "Illustration: three students gathering around a ball"),
 
     # --- quatre couches ---
     ("Pourquoi VIBES existe", "Why VIBES exists"),
@@ -330,6 +328,13 @@ T = [
      "VIBES wants to help students make more room for what does them good."),
     ("Découvrir notre vision <span", "Discover our vision <span"),
     ('href="#contribuer">Contribuer</a>\n        </div>', 'href="#contribuer">Contribute</a>\n        </div>'),
+
+    # --- photos ---
+    ("Étudiantes qui rient ensemble sur un terrain de sport", "Students laughing together on a sports court"),
+    ("Quatre étudiants assis sur des marches avec des ordinateurs portables, l'un d'eux prend un selfie",
+     "Four students sitting on steps with laptops, one of them taking a selfie"),
+    ("Cinq mains qui forment une étoile vers le ciel", "Five hands forming a star against the sky"),
+    ("Photos : Iwaria Inc et Muhammad-Taha Ibrahim, via Unsplash.", "Photos: Iwaria Inc and Muhammad-Taha Ibrahim, via Unsplash."),
 
     # --- footer ---
     ("Moins de scroll. Plus de vie. Plus de nous.</p>", "Less scroll. More life. More us.</p>"),
