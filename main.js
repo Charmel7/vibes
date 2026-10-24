@@ -1,4 +1,4 @@
-// VIBES — landing page : menu mobile et repli si une maquette est absente.
+// VIBES — landing page : menu mobile, apparition douce des blocs, repli si une maquette est absente.
 (function () {
   var toggle = document.querySelector('.nav__toggle');
   var menu = document.getElementById('menu');
@@ -22,6 +22,9 @@
       toggle.focus();
     }
   });
+  window.matchMedia('(min-width: 960px)').addEventListener('change', function (e) {
+    if (e.matches) setMenu(false);
+  });
 
   // Si un fichier de maquette est introuvable, on l'indique au lieu d'afficher une image cassée.
   document.querySelectorAll('[data-shot] img').forEach(function (img) {
@@ -29,4 +32,18 @@
     if (img.complete && img.naturalWidth === 0) flag();
     img.addEventListener('error', flag);
   });
+
+  // Apparition douce au défilement (sans effet si l'utilisateur préfère réduire les animations).
+  var items = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window)) {
+    items.forEach(function (el) { el.classList.add('in'); });
+    return;
+  }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) {
+      // Visible, ou déjà dépassé (ex. saut par un lien d'ancre) : on l'affiche.
+      if (en.isIntersecting || en.boundingClientRect.top < 0) { en.target.classList.add('in'); io.unobserve(en.target); }
+    });
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+  items.forEach(function (el) { io.observe(el); });
 })();

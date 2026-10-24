@@ -11,6 +11,7 @@
   <meta property="og:title" content="VIBES · Moins de scroll. Plus de vie. Plus de nous.">
   <meta property="og:description" content="Le bien-être étudiant autrement : découvrir, s'outiller, ancrer de bonnes habitudes.">
   <meta name="twitter:card" content="summary">
+  <script>document.documentElement.classList.add('js');</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
@@ -18,31 +19,99 @@
 </head>
 <body>
 
-<!-- Icônes (style Lucide : traits réguliers) -->
+<!-- ============ Bibliothèque d'illustrations (SVG) ============ -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
-  <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
-  <symbol id="i-activity" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></symbol>
-  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
-  <symbol id="i-wind" viewBox="0 0 24 24"><path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2"/><path d="M9.6 4.6A2 2 0 1 1 11 8H2"/><path d="M12.6 19.4A2 2 0 1 0 14 16H2"/></symbol>
-  <symbol id="i-apple" viewBox="0 0 24 24"><path d="M12 20.94c1.5 0 2.75 1.06 4 1.06 3 0 6-8 6-12.22A4.91 4.91 0 0 0 17 5c-2.22 0-4 1.44-5 2-1-.56-2.78-2-5-2a4.9 4.9 0 0 0-5 4.78C2 14 5 22 8 22c1.25 0 2.5-1.06 4-1.06Z"/><path d="M10 2c1 .5 2 2 2 5"/></symbol>
-  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
-  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></symbol>
-  <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></symbol>
-  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
-  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+  <defs>
+    <!-- Icônes à traits (style Lucide) -->
+    <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    <symbol id="i-activity" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
+    <symbol id="i-wind" viewBox="0 0 24 24"><path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2"/><path d="M9.6 4.6A2 2 0 1 1 11 8H2"/><path d="M12.6 19.4A2 2 0 1 0 14 16H2"/></symbol>
+    <symbol id="i-apple" viewBox="0 0 24 24"><path d="M12 20.94c1.5 0 2.75 1.06 4 1.06 3 0 6-8 6-12.22A4.91 4.91 0 0 0 17 5c-2.22 0-4 1.44-5 2-1-.56-2.78-2-5-2a4.9 4.9 0 0 0-5 4.78C2 14 5 22 8 22c1.25 0 2.5-1.06 4-1.06Z"/><path d="M10 2c1 .5 2 2 2 5"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 22V4M5 4h13l-2 4 2 4H5"/></symbol>
+
+    <!-- Marque : petit soleil du logo -->
+    <symbol id="s-logo-sun" viewBox="0 0 24 24"><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M19.4 4.6l-2.1 2.1M6.7 17.3l-2.1 2.1"/></g><circle cx="12" cy="12" r="5" fill="#FDDF32" stroke="currentColor" stroke-width="2"/></symbol>
+
+    <!-- Autocollants : contour bleu nuit, couleurs de la palette -->
+    <symbol id="s-ball" viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="#fff" stroke="#141E2E" stroke-width="3"/><polygon points="32,22 41.5,29 37.9,40 26.1,40 22.5,29" fill="#141E2E"/><path d="M32 22V5M41.5 29L57 24M37.9 40L47 54M26.1 40L17 54M22.5 29L7 24" stroke="#141E2E" stroke-width="3" fill="none" stroke-linecap="round"/></symbol>
+    <symbol id="s-note" viewBox="0 0 64 64"><path d="M22 14 50 8v8L22 22Z" fill="#4A2987" stroke="#141E2E" stroke-width="3" stroke-linejoin="round"/><path d="M22 18v26M50 12v28" stroke="#141E2E" stroke-width="3.5" fill="none" stroke-linecap="round"/><ellipse cx="15" cy="46" rx="9" ry="7" fill="#FDDF32" stroke="#141E2E" stroke-width="3"/><ellipse cx="43" cy="42" rx="9" ry="7" fill="#FDDF32" stroke="#141E2E" stroke-width="3"/></symbol>
+    <symbol id="s-camera" viewBox="0 0 64 64"><path d="M20 18l4-8h16l4 8" fill="#4A2987" stroke="#141E2E" stroke-width="3" stroke-linejoin="round"/><rect x="6" y="18" width="52" height="36" rx="9" fill="#B0EEF2" stroke="#141E2E" stroke-width="3"/><circle cx="32" cy="36" r="12" fill="#fff" stroke="#141E2E" stroke-width="3"/><circle cx="32" cy="36" r="5" fill="#0154AE"/><circle cx="50" cy="26" r="2.5" fill="#141E2E"/></symbol>
+    <symbol id="s-book" viewBox="0 0 64 64"><path d="M32 18C24 12 12 12 6 14v36c6-2 18-2 26 4Z" fill="#fff" stroke="#141E2E" stroke-width="3" stroke-linejoin="round"/><path d="M32 18c8-6 20-6 26-4v36c-6-2-18-2-26 4Z" fill="#B0EEF2" stroke="#141E2E" stroke-width="3" stroke-linejoin="round"/><path d="M14 24h12M14 32h12M38 24h12M38 32h12" stroke="#141E2E" stroke-width="2.5" stroke-linecap="round"/></symbol>
+    <symbol id="s-spark" viewBox="0 0 64 64"><path d="M32 3Q35 27 61 32Q35 37 32 61Q29 37 3 32Q29 27 32 3Z" fill="#FDDF32" stroke="#141E2E" stroke-width="3" stroke-linejoin="round"/></symbol>
+    <symbol id="s-sun" viewBox="0 0 64 64"><g stroke="#141E2E" stroke-width="3.5" stroke-linecap="round"><path d="M32 4v8M32 52v8M4 32h8M52 32h8M12 12l6 6M46 46l6 6M52 12l-6 6M12 52l6-6"/></g><circle cx="32" cy="32" r="14" fill="#FDDF32" stroke="#141E2E" stroke-width="3"/></symbol>
+    <symbol id="s-bubble" viewBox="0 0 64 64"><path d="M10 8h44a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6H34L22 56V44H10a6 6 0 0 1-6-6V14a6 6 0 0 1 6-6Z" fill="#fff" stroke="#141E2E" stroke-width="3" stroke-linejoin="round"/><path d="M32 36C22 29 22 20 28 20c2 0 4 2 4 3 0-1 2-3 4-3 6 0 6 9-4 16Z" fill="#4A2987"/></symbol>
+    <symbol id="s-foot" viewBox="0 0 64 64"><g stroke="#141E2E" stroke-width="2.6" stroke-linejoin="round"><path d="M10 34c-3-9 0-19 7-19s9 9 7 19c-1 6-3 10-7 10s-6-4-7-10Z" fill="#B0EEF2"/><circle cx="9" cy="12" r="2.6" fill="#B0EEF2"/><circle cx="15" cy="8" r="2.6" fill="#B0EEF2"/><circle cx="21" cy="8" r="2.6" fill="#B0EEF2"/><circle cx="27" cy="12" r="2.6" fill="#B0EEF2"/><path d="M34 52c-3-9 0-19 7-19s9 9 7 19c-1 6-3 10-7 10s-6-4-7-10Z" fill="#FDDF32"/><circle cx="33" cy="30" r="2.6" fill="#FDDF32"/><circle cx="39" cy="26" r="2.6" fill="#FDDF32"/><circle cx="45" cy="26" r="2.6" fill="#FDDF32"/><circle cx="51" cy="30" r="2.6" fill="#FDDF32"/></g></symbol>
+    <symbol id="s-sprout" viewBox="0 0 64 64"><path d="M32 58V30" stroke="#141E2E" stroke-width="3.5" stroke-linecap="round"/><path d="M32 36C16 36 10 24 10 14c14 0 22 8 22 22Z" fill="#B0EEF2" stroke="#141E2E" stroke-width="3" stroke-linejoin="round"/><path d="M32 30c0-12 8-20 22-20 0 12-8 20-22 20Z" fill="#FDDF32" stroke="#141E2E" stroke-width="3" stroke-linejoin="round"/><path d="M20 58h24" stroke="#141E2E" stroke-width="3.5" stroke-linecap="round"/></symbol>
+    <symbol id="s-pin" viewBox="0 0 64 64"><path d="M32 60S10 38 10 24a22 22 0 0 1 44 0C54 38 32 60 32 60Z" fill="#0154AE" stroke="#141E2E" stroke-width="3" stroke-linejoin="round"/><circle cx="32" cy="24" r="8" fill="#FDDF32" stroke="#141E2E" stroke-width="3"/></symbol>
+    <symbol id="s-heart" viewBox="0 0 64 64"><path d="M32 56C6 38 6 14 22 12c6-1 10 4 10 6 0-2 4-7 10-6 16 2 16 26-10 44Z" fill="#4A2987" stroke="#141E2E" stroke-width="3" stroke-linejoin="round"/></symbol>
+    <symbol id="s-bolt" viewBox="0 0 64 64"><path d="M36 4 12 36h16l-4 24 28-36H36Z" fill="#FDDF32" stroke="#141E2E" stroke-width="3" stroke-linejoin="round"/></symbol>
+    <symbol id="s-cloud" viewBox="0 0 64 64"><path d="M18 48a12 12 0 0 1 2-24 16 16 0 0 1 30 4 10 10 0 0 1 0 20Z" fill="#fff" stroke="#141E2E" stroke-width="3" stroke-linejoin="round"/></symbol>
+    <symbol id="s-search" viewBox="0 0 64 64"><circle cx="27" cy="27" r="17" fill="#B0EEF2" stroke="#141E2E" stroke-width="3"/><path d="m40 40 18 18" stroke="#141E2E" stroke-width="6" stroke-linecap="round"/></symbol>
+    <symbol id="s-apple" viewBox="0 0 64 64"><path d="M32 18C20 10 6 18 8 34c2 14 12 24 24 20 12 4 22-6 24-20 2-16-12-24-24-16Z" fill="#FDDF32" stroke="#141E2E" stroke-width="3" stroke-linejoin="round"/><path d="M32 18c0-6 4-10 10-12-1 6-4 10-10 12Z" fill="#B0EEF2" stroke="#141E2E" stroke-width="3" stroke-linejoin="round"/></symbol>
+    <symbol id="s-mic" viewBox="0 0 64 64"><rect x="22" y="6" width="20" height="32" rx="10" fill="#4A2987" stroke="#141E2E" stroke-width="3"/><path d="M14 30c0 12 8 18 18 18s18-6 18-18M32 48v10M22 58h20" stroke="#141E2E" stroke-width="3" fill="none" stroke-linecap="round"/></symbol>
+    <symbol id="s-hand" viewBox="0 0 64 64"><path d="M20 34V14a4 4 0 0 1 8 0v14V10a4 4 0 0 1 8 0v18V14a4 4 0 0 1 8 0v22c0 14-6 22-16 22-8 0-12-6-16-14l-6-12a4 4 0 0 1 7-4Z" fill="#FDDF32" stroke="#141E2E" stroke-width="3" stroke-linejoin="round"/></symbol>
+
+    <!-- Personnages (buste) : couleurs pilotées par --skin --cloth --hair --acc -->
+    <symbol id="p-afro" viewBox="0 0 120 140">
+      <circle cx="60" cy="46" r="34" fill="var(--hair,#1B1410)"/>
+      <path d="M8 140C8 104 32 90 60 90s52 14 52 50Z" fill="var(--cloth,#0154AE)"/>
+      <rect x="51" y="76" width="18" height="20" rx="6" fill="var(--skin,#8C5A3A)"/>
+      <ellipse cx="60" cy="56" rx="24" ry="27" fill="var(--skin,#8C5A3A)"/>
+      <path d="M36 52Q38 32 60 30t24 22Q74 42 60 42T36 52Z" fill="var(--hair,#1B1410)"/>
+      <circle cx="51" cy="58" r="2.8" fill="#141E2E"/><circle cx="69" cy="58" r="2.8" fill="#141E2E"/>
+      <path d="M52 68q8 7 16 0" stroke="#141E2E" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="p-phones" viewBox="0 0 120 140">
+      <path d="M8 140C8 104 32 90 60 90s52 14 52 50Z" fill="var(--cloth,#0154AE)"/>
+      <rect x="51" y="76" width="18" height="20" rx="6" fill="var(--skin,#8C5A3A)"/>
+      <ellipse cx="60" cy="56" rx="24" ry="27" fill="var(--skin,#8C5A3A)"/>
+      <path d="M36 52Q34 28 60 27t24 25Q76 40 60 40T36 52Z" fill="var(--hair,#1B1410)"/>
+      <path d="M34 56A26 26 0 0 1 86 56" stroke="var(--acc,#FDDF32)" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <rect x="28" y="50" width="11" height="22" rx="5.5" fill="var(--acc,#FDDF32)" stroke="#141E2E" stroke-width="2"/>
+      <rect x="81" y="50" width="11" height="22" rx="5.5" fill="var(--acc,#FDDF32)" stroke="#141E2E" stroke-width="2"/>
+      <circle cx="51" cy="58" r="2.8" fill="#141E2E"/><circle cx="69" cy="58" r="2.8" fill="#141E2E"/>
+      <path d="M52 68q8 7 16 0" stroke="#141E2E" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="p-bun" viewBox="0 0 120 140">
+      <circle cx="60" cy="16" r="13" fill="var(--hair,#1B1410)"/>
+      <path d="M8 140C8 104 32 90 60 90s52 14 52 50Z" fill="var(--cloth,#0154AE)"/>
+      <rect x="51" y="76" width="18" height="20" rx="6" fill="var(--skin,#8C5A3A)"/>
+      <ellipse cx="60" cy="56" rx="24" ry="27" fill="var(--skin,#8C5A3A)"/>
+      <path d="M35 54Q33 26 60 26t25 28Q75 40 60 40T35 54Z" fill="var(--hair,#1B1410)"/>
+      <circle cx="51" cy="58" r="2.8" fill="#141E2E"/><circle cx="69" cy="58" r="2.8" fill="#141E2E"/>
+      <path d="M52 68q8 7 16 0" stroke="#141E2E" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="p-wrap" viewBox="0 0 120 140">
+      <path d="M8 140C8 104 32 90 60 90s52 14 52 50Z" fill="var(--cloth,#0154AE)"/>
+      <rect x="51" y="76" width="18" height="20" rx="6" fill="var(--skin,#8C5A3A)"/>
+      <ellipse cx="60" cy="56" rx="24" ry="27" fill="var(--skin,#8C5A3A)"/>
+      <path d="M35 54Q31 22 60 20t25 34Q74 40 60 40T35 54Z" fill="var(--acc,#FDDF32)" stroke="#141E2E" stroke-width="2" stroke-linejoin="round"/>
+      <circle cx="82" cy="26" r="9" fill="var(--acc,#FDDF32)" stroke="#141E2E" stroke-width="2"/>
+      <circle cx="51" cy="58" r="2.8" fill="#141E2E"/><circle cx="69" cy="58" r="2.8" fill="#141E2E"/>
+      <path d="M52 68q8 7 16 0" stroke="#141E2E" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+    </symbol>
+  </defs>
 </svg>
 
 <a class="skip" href="#contenu">Aller au contenu</a>
 
+<!-- ============ 1. Navigation ============ -->
 <header class="nav" id="haut">
   <div class="wrap nav__bar">
-    <a class="logo" href="#haut" aria-label="VIBES, retour en haut de page">VIBES</a>
+    <a class="logo" href="#haut" aria-label="VIBES, retour en haut de page"><span>VIBES</span><svg class="logo__sun" aria-hidden="true"><use href="#s-logo-sun"/></svg></a>
 
     <nav class="nav__links" id="menu" aria-label="Navigation principale">
       <a href="#constat">Vision</a>
+      <a href="#intentions">Approche</a>
       <a href="#experience">Expérience</a>
       <a href="#engagements">Engagements</a>
-      <a class="btn btn--blue nav__cta" href="#intentions">Découvrir VIBES</a>
+      <a class="btn btn--blue nav__cta" href="#contribuer">Contribuer</a>
     </nav>
 
     <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu">
@@ -53,7 +122,7 @@
 
 <main id="contenu">
 
-  <!-- 2. HERO -->
+  <!-- ============ 2. Hero ============ -->
   <section class="hero">
     <div class="wrap hero__grid">
       <div class="hero__text">
@@ -65,109 +134,242 @@
           <a class="btn btn--yellow" href="#intentions">Découvrir VIBES <span aria-hidden="true">→</span></a>
           <a class="btn btn--ghost" href="#constat">Notre vision</a>
         </div>
-        <p class="status">En cours de conception : l'application n'est pas encore disponible au téléchargement.</p>
+        <p class="status">En cours de conception : l'application n'est pas encore disponible au téléchargement. Envie de donner un coup de main ? <a href="#contribuer">Contribuer</a></p>
       </div>
 
-      <div class="hero__visual">
-        <div class="hero__panel" aria-hidden="true"></div>
+      <div class="hero__visual stage">
+        <div class="stage__panel" aria-hidden="true">
+          <i class="blob blob--turq"></i><i class="blob blob--purple"></i>
+        </div>
+        <svg class="fig fig--bl" aria-hidden="true" style="--skin:#7A4A2E;--cloth:#FDDF32;--hair:#1B1410"><use href="#p-afro"/></svg>
+        <svg class="fig fig--br" aria-hidden="true" style="--skin:#A06A45;--cloth:#B0EEF2;--hair:#1B1410;--acc:#FDDF32"><use href="#p-wrap"/></svg>
+
         <figure class="phone phone--hero" data-shot>
           <img src="assets/screens/01_accueil.png" alt="Maquette de l'écran d'accueil de VIBES : activités près de toi et activité en cours au campus" decoding="async" fetchpriority="high">
           <figcaption class="phone__missing">Maquette à ajouter : 01_accueil.png</figcaption>
+        </figure>
+
+        <svg class="stk stk--a bob" aria-hidden="true"><use href="#s-ball"/></svg>
+        <svg class="stk stk--b bob" aria-hidden="true"><use href="#s-sun"/></svg>
+        <svg class="stk stk--c bob" aria-hidden="true"><use href="#s-note"/></svg>
+        <svg class="stk stk--d bob" aria-hidden="true"><use href="#s-camera"/></svg>
+        <svg class="stk stk--e bob" aria-hidden="true"><use href="#s-book"/></svg>
+        <svg class="stk stk--f bob" aria-hidden="true"><use href="#s-spark"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bandeau des passions -->
+  <div class="marquee" role="region" aria-label="Des passions pour tous : football, musique, photo, animés, chorale, randonnée urbaine, jeux de société, cinéma, lecture, révision collective">
+    <div class="marquee__track">
+      <ul>
+        <li><svg aria-hidden="true"><use href="#s-ball"/></svg>Football</li>
+        <li><svg aria-hidden="true"><use href="#s-note"/></svg>Musique</li>
+        <li><svg aria-hidden="true"><use href="#s-camera"/></svg>Photo</li>
+        <li><svg aria-hidden="true"><use href="#s-spark"/></svg>Animés</li>
+        <li><svg aria-hidden="true"><use href="#s-mic"/></svg>Chorale</li>
+        <li><svg aria-hidden="true"><use href="#s-foot"/></svg>Randonnée urbaine</li>
+        <li><svg aria-hidden="true"><use href="#s-bolt"/></svg>Jeux de société</li>
+        <li><svg aria-hidden="true"><use href="#s-camera"/></svg>Cinéma</li>
+        <li><svg aria-hidden="true"><use href="#s-book"/></svg>Lecture</li>
+        <li><svg aria-hidden="true"><use href="#s-bubble"/></svg>Révision collective</li>
+      </ul>
+      <ul aria-hidden="true">
+        <li><svg><use href="#s-ball"/></svg>Football</li>
+        <li><svg><use href="#s-note"/></svg>Musique</li>
+        <li><svg><use href="#s-camera"/></svg>Photo</li>
+        <li><svg><use href="#s-spark"/></svg>Animés</li>
+        <li><svg><use href="#s-mic"/></svg>Chorale</li>
+        <li><svg><use href="#s-foot"/></svg>Randonnée urbaine</li>
+        <li><svg><use href="#s-bolt"/></svg>Jeux de société</li>
+        <li><svg><use href="#s-camera"/></svg>Cinéma</li>
+        <li><svg><use href="#s-book"/></svg>Lecture</li>
+        <li><svg><use href="#s-bubble"/></svg>Révision collective</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============ 3. Le constat ============ -->
+  <section class="section" id="constat">
+    <svg class="deco deco--m bob" style="--s:44px;top:28px;right:20px" aria-hidden="true"><use href="#s-spark"/></svg>
+    <svg class="deco bob" style="--s:60px;bottom:40px;left:3%" aria-hidden="true"><use href="#s-cloud"/></svg>
+    <div class="wrap constat">
+      <div class="constat__text reveal">
+        <p class="eyebrow eyebrow--blue">Le constat</p>
+        <h2>Toujours connectés. Et si nous nous retrouvions davantage ?</h2>
+        <p>Entre les cours, les écrans et les journées qui se ressemblent, il n'est pas toujours facile de rencontrer de nouvelles personnes, de trouver des activités qui nous correspondent ou de prendre du temps pour soi.</p>
+        <p>Pourtant, une passion partagée, une activité improvisée ou une petite habitude peuvent ouvrir la porte à de nouvelles expériences.</p>
+        <p class="transition">C'est de cette idée qu'est né VIBES.</p>
+      </div>
+
+      <div class="duo reveal">
+        <figure class="scene-card scene-card--dark">
+          <figcaption>Dans l'écran</figcaption>
+          <svg class="scene" viewBox="0 0 300 340" role="img" aria-label="Illustration : une personne seule devant un écran plein de notifications">
+            <use href="#s-spark" x="236" y="212" width="26" height="26" opacity=".55"/>
+            <use href="#s-spark" x="30" y="70" width="18" height="18" opacity=".45"/>
+            <rect x="104" y="50" width="150" height="262" rx="24" fill="#0B1320" stroke="#3B4B68" stroke-width="3"/>
+            <rect x="116" y="68" width="126" height="226" rx="14" fill="#16233A"/>
+            <circle cx="138" cy="92" r="14" fill="#3B4B68"/><rect x="160" y="84" width="64" height="8" rx="4" fill="#4A5C7C"/><rect x="160" y="98" width="42" height="8" rx="4" fill="#3B4B68"/>
+            <rect x="126" y="120" width="106" height="62" rx="10" fill="#223250"/>
+            <circle cx="138" cy="204" r="14" fill="#3B4B68"/><rect x="160" y="196" width="64" height="8" rx="4" fill="#4A5C7C"/><rect x="160" y="210" width="42" height="8" rx="4" fill="#3B4B68"/>
+            <rect x="126" y="232" width="106" height="46" rx="10" fill="#223250"/>
+            <rect x="186" y="22" width="86" height="28" rx="14" fill="#FDDF32"/><circle cx="202" cy="36" r="5" fill="#141E2E"/><rect x="214" y="32" width="46" height="8" rx="4" fill="#141E2E" opacity=".7"/>
+            <rect x="214" y="150" width="70" height="24" rx="12" fill="#B0EEF2"/><circle cx="228" cy="162" r="4.5" fill="#141E2E"/><rect x="238" y="158" width="36" height="8" rx="4" fill="#141E2E" opacity=".7"/>
+            <use href="#p-phones" x="8" y="206" width="110" height="128" style="--skin:#A06A45;--cloth:#3B4B68;--hair:#1B1410"/>
+          </svg>
+        </figure>
+
+        <figure class="scene-card scene-card--turq">
+          <figcaption>Dehors</figcaption>
+          <svg class="scene" viewBox="0 0 300 340" role="img" aria-label="Illustration : trois étudiants qui se retrouvent autour d'un ballon">
+            <use href="#s-sun" x="214" y="20" width="62" height="62"/>
+            <use href="#s-note" x="30" y="60" width="46" height="46"/>
+            <use href="#s-spark" x="150" y="30" width="26" height="26"/>
+            <use href="#p-wrap" x="-6" y="214" width="112" height="131" style="--skin:#7A4A2E;--cloth:#0154AE;--acc:#FDDF32"/>
+            <use href="#p-phones" x="194" y="214" width="112" height="131" style="--skin:#5A3322;--cloth:#FDDF32;--hair:#1B1410;--acc:#4A2987"/>
+            <use href="#p-afro" x="84" y="178" width="132" height="154" style="--skin:#A06A45;--cloth:#4A2987;--hair:#1B1410"/>
+            <use href="#s-ball" x="118" y="268" width="64" height="64"/>
+          </svg>
         </figure>
       </div>
     </div>
   </section>
 
-  <!-- 3. LE CONSTAT -->
-  <section class="section section--tight" id="constat">
+  <!-- ============ Les quatre couches ============ -->
+  <section class="section section--white" id="couches">
     <div class="wrap">
-      <div class="constat">
-        <div class="constat__text">
-          <p class="eyebrow eyebrow--blue">Le constat</p>
-          <h2>Toujours connectés. Et si nous nous retrouvions davantage ?</h2>
-          <p>Entre les cours, les écrans et les journées qui se ressemblent, il n'est pas toujours facile de rencontrer de nouvelles personnes, de trouver des activités qui nous correspondent ou de prendre du temps pour soi.</p>
-          <p>Pourtant, une passion partagée, une activité improvisée ou une petite habitude peuvent ouvrir la porte à de nouvelles expériences.</p>
-          <p class="transition">C'est de cette idée qu'est né VIBES.</p>
-        </div>
+      <header class="section__head reveal">
+        <p class="eyebrow eyebrow--blue">Pourquoi VIBES existe</p>
+        <h2>Derrière l'écran, quatre choses qui s'additionnent.</h2>
+        <p class="section__intro">Ce n'est pas un manque de volonté. C'est ce que nous observons autour de nous, sur le campus.</p>
+      </header>
 
-        <div class="contrast" aria-hidden="true">
-          <div class="contrast__a">
-            <span class="contrast__label">Dans l'écran</span>
-            <div class="feed"><i></i><i></i><i></i><i></i><i></i><i></i></div>
-          </div>
-          <div class="contrast__b">
-            <span class="contrast__label">Dehors</span>
-            <div class="crew-dots"><i></i><i></i><i></i><i></i></div>
-          </div>
-        </div>
-      </div>
+      <ol class="layers">
+        <li class="layer reveal">
+          <svg class="layer__ico" aria-hidden="true"><use href="#s-bolt"/></svg>
+          <span class="layer__n">1</span>
+          <h3>L'attraction</h3>
+          <p>Le scroll est conçu pour retenir. Y rester ne dit rien de ta volonté.</p>
+        </li>
+        <li class="layer reveal">
+          <svg class="layer__ico" aria-hidden="true"><use href="#s-cloud"/></svg>
+          <span class="layer__n">2</span>
+          <h3>Le vide</h3>
+          <p>Quand on pose le téléphone, on ne sait pas toujours quoi faire d'aussi bien, ni avec qui.</p>
+        </li>
+        <li class="layer reveal">
+          <svg class="layer__ico" aria-hidden="true"><use href="#s-bubble"/></svg>
+          <span class="layer__n">3</span>
+          <h3>Le silence</h3>
+          <p>On sait souvent de quoi on a besoin. Il manque un endroit pour se l'avouer sans être jugé.</p>
+        </li>
+        <li class="layer reveal">
+          <svg class="layer__ico" aria-hidden="true"><use href="#s-search"/></svg>
+          <span class="layer__n">4</span>
+          <h3>L'invisible</h3>
+          <p>Des outils de bien-être existent, mais beaucoup d'étudiants ne les connaissent pas, ou ne s'y reconnaissent pas.</p>
+        </li>
+      </ol>
     </div>
   </section>
 
-  <!-- 4. LES TROIS INTENTIONS -->
+  <!-- ============ 4. Les trois intentions ============ -->
   <section class="section" id="intentions">
+    <svg class="deco" style="--s:56px;top:60px;right:4%" aria-hidden="true"><use href="#s-spark"/></svg>
+    <svg class="deco" style="--s:64px;bottom:90px;left:2%" aria-hidden="true"><use href="#s-ball"/></svg>
     <div class="wrap">
-      <header class="section__head">
+      <header class="section__head reveal">
         <p class="eyebrow eyebrow--blue">L'approche</p>
         <h2>Trois gestes. Une autre façon de vivre le campus.</h2>
       </header>
 
       <div class="cards3">
-        <article class="card card--blue">
-          <span class="card__ico"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg></span>
+        <article class="card card--blue reveal">
+          <svg class="card__scene" viewBox="0 0 280 150" aria-hidden="true">
+            <circle cx="140" cy="150" r="120" fill="#fff" opacity=".1"/>
+            <use href="#s-pin" x="24" y="16" width="82" height="82"/>
+            <use href="#s-ball" x="116" y="12" width="40" height="40"/>
+            <use href="#s-spark" x="236" y="14" width="26" height="26"/>
+            <use href="#p-wrap" x="128" y="62" width="84" height="98" style="--skin:#7A4A2E;--cloth:#FDDF32;--acc:#B0EEF2"/>
+            <use href="#p-phones" x="188" y="72" width="80" height="94" style="--skin:#A06A45;--cloth:#B0EEF2;--hair:#1B1410;--acc:#FDDF32"/>
+          </svg>
           <h3>Découvrir</h3>
           <p>Retrouve des jeunes qui partagent tes passions. Explore les activités, découvre les clubs et trouve des occasions de faire le premier pas.</p>
         </article>
-        <article class="card card--turq">
-          <span class="card__ico"><svg class="ico" aria-hidden="true"><use href="#i-sun"/></svg></span>
+
+        <article class="card card--turq reveal">
+          <svg class="card__scene" viewBox="0 0 280 150" aria-hidden="true">
+            <circle cx="140" cy="150" r="120" fill="#fff" opacity=".45"/>
+            <use href="#s-sun" x="22" y="16" width="66" height="66"/>
+            <use href="#s-bubble" x="188" y="10" width="62" height="62"/>
+            <use href="#s-cloud" x="96" y="14" width="44" height="44"/>
+            <use href="#p-bun" x="96" y="54" width="92" height="107" style="--skin:#8C5A3A;--cloth:#4A2987;--hair:#1B1410"/>
+            <use href="#s-heart" x="196" y="92" width="38" height="38"/>
+          </svg>
           <h3>S'outiller</h3>
           <p>Prends un moment pour toi, mets des mots sur ton humeur et découvre des conseils simples pour mieux prendre soin de toi.</p>
         </article>
-        <article class="card card--purple">
-          <span class="card__ico"><svg class="ico" aria-hidden="true"><use href="#i-zap"/></svg></span>
+
+        <article class="card card--purple reveal">
+          <svg class="card__scene" viewBox="0 0 280 150" aria-hidden="true">
+            <circle cx="140" cy="150" r="120" fill="#fff" opacity=".08"/>
+            <use href="#s-sprout" x="104" y="20" width="96" height="96"/>
+            <use href="#s-foot" x="22" y="40" width="64" height="64"/>
+            <use href="#s-bolt" x="214" y="24" width="44" height="44"/>
+            <use href="#s-spark" x="212" y="92" width="30" height="30"/>
+            <use href="#s-spark" x="62" y="12" width="22" height="22"/>
+          </svg>
           <h3>Ancrer</h3>
           <p>Transforme les petites intentions en habitudes. Essaie de nouvelles activités, relève de petites Étincelles et avance à ton rythme.</p>
         </article>
       </div>
 
-      <p class="closing">Pas besoin de tout changer. Parfois, une petite action suffit pour commencer.</p>
+      <p class="closing reveal">Pas besoin de tout changer. Parfois, une petite action suffit pour commencer.</p>
     </div>
   </section>
 
-  <!-- 5. LES CINQ DIMENSIONS -->
+  <!-- ============ 5. Les cinq dimensions ============ -->
   <section class="section section--white" id="dimensions">
+    <i class="blob blob--turq blob--sec" aria-hidden="true"></i>
     <div class="wrap">
-      <header class="section__head">
+      <header class="section__head reveal">
         <p class="eyebrow eyebrow--blue">Le bien-être, en cinq dimensions</p>
         <h2>Prendre soin de soi, c'est aussi vivre pleinement.</h2>
         <p class="section__intro">Le bien-être ne se résume pas à un seul aspect de notre vie. Il se construit à travers nos relations, notre corps, nos émotions, notre esprit et notre quotidien.</p>
       </header>
 
       <ul class="dims">
-        <li><span class="dim__ico"><svg class="ico" aria-hidden="true"><use href="#i-users"/></svg></span><h3>Le lien social</h3><p>Créer des liens, partager ses passions et trouver sa place.</p></li>
-        <li><span class="dim__ico"><svg class="ico" aria-hidden="true"><use href="#i-activity"/></svg></span><h3>Le bien-être physique</h3><p>Bouger, marcher et retrouver le plaisir des activités accessibles.</p></li>
-        <li><span class="dim__ico"><svg class="ico" aria-hidden="true"><use href="#i-heart"/></svg></span><h3>L'équilibre émotionnel</h3><p>Mieux comprendre ce que l'on ressent et savoir vers qui se tourner lorsqu'on en a besoin.</p></li>
-        <li><span class="dim__ico"><svg class="ico" aria-hidden="true"><use href="#i-wind"/></svg></span><h3>Le bien-être mental</h3><p>Prendre du recul, souffler, apprendre et créer.</p></li>
-        <li><span class="dim__ico"><svg class="ico" aria-hidden="true"><use href="#i-apple"/></svg></span><h3>L'alimentation</h3><p>Découvrir des repères simples pour mieux prendre soin de soi au quotidien.</p></li>
+        <li class="reveal"><span class="dim__ico dim--1"><svg class="ico" aria-hidden="true"><use href="#i-users"/></svg></span><h3>Le lien social</h3><p>Créer des liens, partager ses passions et trouver sa place.</p></li>
+        <li class="reveal"><span class="dim__ico dim--2"><svg class="ico" aria-hidden="true"><use href="#i-activity"/></svg></span><h3>Le bien-être physique</h3><p>Bouger, marcher et retrouver le plaisir des activités accessibles.</p></li>
+        <li class="reveal"><span class="dim__ico dim--3"><svg class="ico" aria-hidden="true"><use href="#i-heart"/></svg></span><h3>L'équilibre émotionnel</h3><p>Mieux comprendre ce que l'on ressent et savoir vers qui se tourner lorsqu'on en a besoin.</p></li>
+        <li class="reveal"><span class="dim__ico dim--4"><svg class="ico" aria-hidden="true"><use href="#i-wind"/></svg></span><h3>Le bien-être mental</h3><p>Prendre du recul, souffler, apprendre et créer.</p></li>
+        <li class="reveal"><span class="dim__ico dim--5"><svg class="ico" aria-hidden="true"><use href="#i-apple"/></svg></span><h3>L'alimentation</h3><p>Découvrir des repères simples pour mieux prendre soin de soi au quotidien.</p></li>
       </ul>
     </div>
   </section>
 
-  <!-- 6. APERÇU DE L'EXPÉRIENCE -->
+  <!-- ============ 6. Aperçu de l'expérience ============ -->
   <section class="section" id="experience">
     <div class="wrap">
-      <header class="section__head">
+      <header class="section__head reveal">
         <p class="eyebrow eyebrow--blue">L'expérience</p>
         <h2>Pensé pour les vrais moments de la vie étudiante.</h2>
         <p class="section__intro">De la découverte d'une activité au petit moment que l'on s'accorde pour soi, VIBES veut rendre les premiers pas plus simples.</p>
       </header>
 
-      <div class="exp">
+      <div class="exp reveal">
         <div class="exp__text">
           <h3>Explorer les activités</h3>
           <p>Trouve des occasions de jouer, de créer, de bouger ou de partager une passion avec d'autres étudiants.</p>
+          <ul class="chips" aria-label="Exemples de catégories d'activités">
+            <li><svg aria-hidden="true"><use href="#s-ball"/></svg>Sport</li>
+            <li><svg aria-hidden="true"><use href="#s-camera"/></svg>Culture</li>
+            <li><svg aria-hidden="true"><use href="#s-cloud"/></svg>Détente</li>
+            <li><svg aria-hidden="true"><use href="#s-hand"/></svg>Solidarité</li>
+          </ul>
         </div>
-        <div class="exp__shots exp__shots--pair">
+        <div class="exp__shots exp__shots--pair exp__shots--blue">
           <figure class="phone" data-shot>
             <img src="assets/screens/02_explorer_activites.png" alt="Maquette de l'écran Activités : liste d'activités filtrables par catégorie, avec date, lieu et prix" loading="lazy" decoding="async">
             <figcaption class="phone__missing">Maquette à ajouter : 02_explorer_activites.png</figcaption>
@@ -176,104 +378,343 @@
             <img src="assets/screens/03_detail_activite.png" alt="Maquette du détail d'une activité : match amical au campus, description et bouton Je participe" loading="lazy" decoding="async">
             <figcaption class="phone__missing">Maquette à ajouter : 03_detail_activite.png</figcaption>
           </figure>
+          <svg class="stk stk--x bob" aria-hidden="true"><use href="#s-pin"/></svg>
         </div>
       </div>
 
-      <div class="exp exp--rev exp--turq">
+      <div class="exp exp--rev exp--turq reveal">
         <div class="exp__text">
           <h3>Prendre un moment pour soi</h3>
           <p>Avec Mon Mood et My Safe Place, découvre un espace personnel pour exprimer ton ressenti et trouver des pistes adaptées à tes besoins.</p>
+          <p class="exp__note">Facultatif, privé, sans score et sans diagnostic.</p>
         </div>
         <div class="exp__shots">
           <figure class="phone" data-shot>
             <img src="assets/screens/07_mon_mood.png" alt="Maquette de Mon Mood : choix de ressenti du jour, avec accès à My Safe Place" loading="lazy" decoding="async">
             <figcaption class="phone__missing">Maquette à ajouter : 07_mon_mood.png</figcaption>
           </figure>
+          <svg class="stk stk--y bob" aria-hidden="true"><use href="#s-sun"/></svg>
+          <svg class="stk stk--z bob" aria-hidden="true"><use href="#s-heart"/></svg>
         </div>
       </div>
 
-      <div class="exp">
+      <div class="exp reveal">
         <div class="exp__text">
           <h3>Faire durer les bonnes habitudes</h3>
           <p>Grâce aux Étincelles, aux conseils et aux rappels doux, avance à ton rythme, sans pression ni compétition.</p>
+          <p class="exp__note">Des Étincelles, par exemple :</p>
+          <ul class="chips" aria-label="Exemples d'Étincelles envisagées">
+            <li><svg aria-hidden="true"><use href="#s-foot"/></svg>Une marche</li>
+            <li><svg aria-hidden="true"><use href="#s-bubble"/></svg>Un message à un camarade</li>
+            <li><svg aria-hidden="true"><use href="#s-cloud"/></svg>Une pause sans écran</li>
+            <li><svg aria-hidden="true"><use href="#s-apple"/></svg>Un repas équilibré</li>
+          </ul>
         </div>
-        <div class="exp__shots">
+        <div class="exp__shots exp__shots--purple">
           <figure class="phone" data-shot>
             <img src="assets/screens/09_tips_vibes.png" alt="Maquette de la bibliothèque des Tips VIBES : conseils courts classés par thème" loading="lazy" decoding="async">
             <figcaption class="phone__missing">Maquette à ajouter : 09_tips_vibes.png</figcaption>
           </figure>
+          <svg class="stk stk--y bob" aria-hidden="true"><use href="#s-sprout"/></svg>
+          <svg class="stk stk--z bob" aria-hidden="true"><use href="#s-spark"/></svg>
         </div>
       </div>
 
-      <p class="closing">La technologie ouvre la porte. Les expériences se vivent dehors.</p>
+      <p class="closing reveal">La technologie ouvre la porte. Les expériences se vivent dehors.</p>
     </div>
   </section>
 
-  <!-- 7. LE CREW -->
+  <!-- ============ Heures vécues ============ -->
+  <section class="section section--night" id="heures">
+    <svg class="deco" style="--s:52px;top:48px;left:4%" aria-hidden="true"><use href="#s-spark"/></svg>
+    <div class="wrap heures">
+      <div class="heures__text reveal">
+        <p class="eyebrow eyebrow--yellow">Ce qui nous distingue</p>
+        <h2>On ne cherche pas à te garder dans l'application.</h2>
+        <p>Beaucoup d'applications se mesurent au temps qu'on y passe. VIBES se mesure à celui qu'on y passe <strong>en moins</strong>.</p>
+        <p>Notre indicateur central : les <strong>heures vécues</strong>. Ce sont les heures réelles de match, de marche, de répétition de chorale ou de création que VIBES a aidé à déclencher.</p>
+        <p>Le temps passé dans l'application est suivi comme un signal d'alerte, pas comme un objectif.</p>
+        <p class="tag"><svg class="ico" aria-hidden="true"><use href="#i-flag"/></svg>Indicateur en cours de définition. Aucun résultat n'est avancé à ce stade.</p>
+      </div>
+      <div class="clock reveal" aria-hidden="true">
+        <svg viewBox="-24 -8 368 336">
+          <circle cx="160" cy="160" r="136" fill="#B0EEF2" stroke="#FDDF32" stroke-width="10"/>
+          <g stroke="#141E2E" stroke-width="5" stroke-linecap="round">
+            <path d="M160 46v18M160 256v18M46 160h18M256 160h18"/>
+          </g>
+          <g stroke="#141E2E" stroke-width="3" stroke-linecap="round" opacity=".5">
+            <path d="M217 61l-9 15M259 103l-15 9M259 217l-15-9M217 259l-9-15M103 259l9-15M61 217l15-9M61 103l15 9M103 61l9 15"/>
+          </g>
+          <path d="M160 160V84M160 160l46 28" stroke="#141E2E" stroke-width="9" stroke-linecap="round"/>
+          <circle cx="160" cy="160" r="11" fill="#FDDF32" stroke="#141E2E" stroke-width="4"/>
+          <circle cx="40" cy="270" r="46" fill="#fff"/><use href="#s-ball" x="6" y="236" width="68" height="68"/>
+          <circle cx="282" cy="48" r="40" fill="#FDDF32"/><use href="#s-note" x="254" y="20" width="56" height="56"/>
+          <circle cx="278" cy="272" r="40" fill="#fff"/><use href="#s-foot" x="250" y="244" width="56" height="56"/>
+          <use href="#s-spark" x="22" y="40" width="38" height="38"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 7. Le Crew ============ -->
   <section class="section section--blue" id="crew">
+    <svg class="deco" style="--s:56px;top:44px;right:5%" aria-hidden="true"><use href="#s-spark"/></svg>
     <div class="wrap crew">
-      <div class="crew__text">
+      <div class="crew__text reveal">
         <p class="eyebrow eyebrow--yellow">Le Crew</p>
         <h2>Le premier pas est plus simple quand on n'est pas seul.</h2>
         <p>Un match, une marche, une séance de musique ou une nouvelle activité : parfois, il suffit de trouver quelques personnes avec qui partager le moment.</p>
         <p>Avec le Crew, VIBES veut faciliter l'organisation des participations et aider chacun à aborder une première expérience collective plus sereinement.</p>
         <p class="signature">Des passions en commun. Des expériences à vivre.</p>
+
+        <ol class="steps">
+          <li><span>1</span>Tu repères une activité qui te parle.</li>
+          <li><span>2</span>Tu rejoins un petit groupe pour t'organiser.</li>
+          <li><span>3</span>Vous vous retrouvez sur place, pour de vrai.</li>
+        </ol>
+        <p class="crew__note">Prévu : un chat réservé aux inscrits de l'activité, sans messages privés. Le Crew sert à participer, pas à remplacer la vraie vie.</p>
       </div>
-      <figure class="phone phone--light" data-shot>
-        <img src="assets/screens/05_mon_crew.png" alt="Maquette de l'écran Mon crew : petits groupes pour partager, bouger et découvrir ensemble" loading="lazy" decoding="async">
-        <figcaption class="phone__missing">Maquette à ajouter : 05_mon_crew.png</figcaption>
-      </figure>
+
+      <div class="stage stage--crew reveal">
+        <div class="stage__panel stage__panel--light" aria-hidden="true">
+          <i class="blob blob--yellow"></i>
+        </div>
+        <svg class="fig fig--bl" aria-hidden="true" style="--skin:#A06A45;--cloth:#4A2987;--hair:#1B1410;--acc:#FDDF32"><use href="#p-phones"/></svg>
+        <svg class="fig fig--br" aria-hidden="true" style="--skin:#5A3322;--cloth:#0154AE;--hair:#1B1410"><use href="#p-bun"/></svg>
+        <figure class="phone phone--light" data-shot>
+          <img src="assets/screens/05_mon_crew.png" alt="Maquette de l'écran Mon crew : petits groupes pour partager, bouger et découvrir ensemble" loading="lazy" decoding="async">
+          <figcaption class="phone__missing">Maquette à ajouter : 05_mon_crew.png</figcaption>
+        </figure>
+        <svg class="stk stk--a bob" aria-hidden="true"><use href="#s-ball"/></svg>
+        <svg class="stk stk--c bob" aria-hidden="true"><use href="#s-hand"/></svg>
+        <svg class="stk stk--e bob" aria-hidden="true"><use href="#s-spark"/></svg>
+      </div>
     </div>
   </section>
 
-  <!-- 8. CONFIANCE ET RESPECT -->
-  <section class="section" id="engagements">
+  <!-- ============ Pensé pour notre quotidien ============ -->
+  <section class="section" id="ici">
+    <svg class="deco" style="--s:58px;top:50px;right:4%" aria-hidden="true"><use href="#s-sun"/></svg>
     <div class="wrap">
-      <header class="section__head">
+      <header class="section__head reveal">
+        <p class="eyebrow eyebrow--blue">Pensé pour ici</p>
+        <h2>Fait pour le quotidien des étudiants du Bénin.</h2>
+        <p class="section__intro">Peu de données mobiles, un budget serré, des trajets parfois longs : on y pense dès la conception. <span class="pill">Prévu dans la conception</span></p>
+      </header>
+
+      <ul class="here">
+        <li class="reveal"><svg aria-hidden="true"><use href="#s-cloud"/></svg><h3>Une application légère</h3><p>Une application web, pensée pour les petits forfaits de données et les téléphones plus anciens.</p></li>
+        <li class="reveal"><svg aria-hidden="true"><use href="#s-pin"/></svg><h3>Tout savoir avant d'y aller</h3><p>Le coût réel, la distance et la durée affichés avant de s'engager.</p></li>
+        <li class="reveal"><svg aria-hidden="true"><use href="#s-spark"/></svg><h3>Le gratuit d'abord</h3><p>Des activités gratuites mises en avant, pour que le budget ne bloque pas l'envie.</p></li>
+        <li class="reveal"><svg aria-hidden="true"><use href="#s-bubble"/></svg><h3>Dans nos mots</h3><p>Le français d'abord, des conseils écrits par des jeunes béninois. Les langues locales sont à l'étude.</p></li>
+        <li class="reveal"><svg aria-hidden="true"><use href="#s-sprout"/></svg><h3>Pour les débutants</h3><p>Des activités ouvertes à tous les niveaux, avec des informations d'accessibilité.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ 8. Confiance et respect ============ -->
+  <section class="section section--white" id="engagements">
+    <div class="wrap">
+      <header class="section__head reveal">
         <p class="eyebrow eyebrow--blue">Nos engagements</p>
         <h2>Ton bien-être. Ton rythme. Tes choix.</h2>
       </header>
 
       <div class="trust">
-        <article>
+        <article class="reveal">
           <h3>Respect de la vie privée</h3>
           <p>Ce que tu partages dans ton espace personnel reste privé selon les règles prévues par VIBES.</p>
         </article>
-        <article>
+        <article class="reveal">
           <h3>La liberté de choisir</h3>
           <p>Tu choisis les activités auxquelles tu souhaites participer et ce que tu veux partager.</p>
         </article>
-        <article>
+        <article class="reveal">
           <h3>Pas de pression</h3>
           <p>Pas de compétition sur ton bien-être, pas de culpabilisation lorsque tu prends une pause.</p>
         </article>
-        <article>
+        <article class="reveal">
           <h3>Des activités encadrées</h3>
           <p>Les événements sont soumis à une validation et les organisateurs doivent respecter les règles de sécurité prévues par le projet.</p>
         </article>
+        <article class="reveal">
+          <h3>Une aide facile à trouver</h3>
+          <p>Un accès « Besoin d'aide ? » est prévu sur les écrans, pour t'orienter vers une personne ou un service fiable.</p>
+        </article>
+        <article class="trust__limit reveal">
+          <h3>Une limite claire</h3>
+          <p>VIBES est une initiative de prévention et de bien-être. Ce n'est ni un service de soins, ni un outil de diagnostic, ni un conseil médical ou psychologique.</p>
+        </article>
       </div>
-
-      <p class="limit"><strong>Une limite claire.</strong> VIBES est une initiative de prévention et de bien-être. Ce n'est ni un service de soins, ni un outil de diagnostic, ni un conseil médical ou psychologique.</p>
     </div>
   </section>
 
-  <!-- 9. APPEL À L'ACTION FINAL -->
+  <!-- ============ État du projet ============ -->
+  <section class="section" id="etat">
+    <div class="wrap">
+      <header class="section__head reveal">
+        <p class="eyebrow eyebrow--blue">En toute transparence</p>
+        <h2>Où en est VIBES ?</h2>
+        <p class="section__intro">VIBES est un projet étudiant en construction. Voici ce qui existe, ce qui avance et ce qui est envisagé.</p>
+      </header>
+
+      <div class="roadmap">
+        <article class="rm rm--done reveal">
+          <h3><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Déjà là</h3>
+          <ul>
+            <li>Un dossier de conception du projet</li>
+            <li>Un Design System</li>
+            <li>10 écrans de maquette</li>
+            <li>Une enquête sur le campus de l'UNSTIM, lancée le 21 septembre</li>
+          </ul>
+        </article>
+        <article class="rm rm--now reveal">
+          <h3><svg class="ico" aria-hidden="true"><use href="#i-clock"/></svg>En cours</h3>
+          <ul>
+            <li>La construction d'un premier MVP web léger</li>
+            <li>La conception avec les étudiants : entretiens et tests de maquettes</li>
+          </ul>
+        </article>
+        <article class="rm rm--next reveal">
+          <h3><svg class="ico" aria-hidden="true"><use href="#i-flag"/></svg>Envisagé</h3>
+          <ul>
+            <li>Un pilote sur campus</li>
+            <li>Des enquêtes dans d'autres écoles et universités</li>
+            <li>Des pistes avec des lieux et des associations. Aucun partenariat n'est annoncé à ce stade.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Contribuer ============ -->
+  <section class="section section--turq" id="contribuer">
+    <svg class="deco" style="--s:62px;top:44px;right:4%" aria-hidden="true"><use href="#s-hand"/></svg>
+    <svg class="deco" style="--s:48px;bottom:60px;left:3%" aria-hidden="true"><use href="#s-spark"/></svg>
+    <div class="wrap">
+      <header class="section__head section__head--wide reveal">
+        <p class="eyebrow eyebrow--purple">Contribuer</p>
+        <h2>VIBES se construit avec toi.</h2>
+        <p class="section__intro">Le projet est en cours de conception, et c'est maintenant que ton avis compte le plus. Choisis ce qui te ressemble.</p>
+      </header>
+
+      <ul class="give">
+        <li class="reveal">
+          <svg aria-hidden="true"><use href="#s-bubble"/></svg>
+          <h3>Écrire des Tips</h3>
+          <p>Rejoins des jeunes pour rédiger des conseils courts, dans nos mots et avec notre culture.</p>
+          <a class="link" href="https://github.com/Charmel7/vibes/issues/new?title=Contribution%20%3A%20%C3%A9crire%20des%20Tips&body=Salut%20!%20Je%20voudrais%20contribuer%20%C3%A0%20VIBES%20en%20%C3%A9crivant%20des%20Tips.%0A%0ACe%20que%20je%20propose%20%3A%20%0A%0AMa%20fili%C3%A8re%20%2F%20mon%20%C3%A9tablissement%20%3A%20%0A%0A(Cette%20page%20est%20publique%20%3A%20ne%20partage%20ni%20num%C3%A9ro%20ni%20e-mail.)" target="_blank" rel="noopener">Je me propose <span aria-hidden="true">→</span><span class="sr">, écrire des Tips (s'ouvre dans un nouvel onglet)</span></a>
+        </li>
+        <li class="reveal">
+          <svg aria-hidden="true"><use href="#s-search"/></svg>
+          <h3>Tester et donner ton avis</h3>
+          <p>Entretiens, essais de maquettes : dis-nous ce qui te parle et ce qui ne te parle pas.</p>
+          <a class="link" href="https://github.com/Charmel7/vibes/issues/new?title=Contribution%20%3A%20tester%20et%20donner%20mon%20avis&body=Salut%20!%20Je%20voudrais%20tester%20VIBES%20et%20donner%20mon%20avis.%0A%0ACe%20que%20je%20propose%20%3A%20%0A%0AMa%20fili%C3%A8re%20%2F%20mon%20%C3%A9tablissement%20%3A%20%0A%0A(Cette%20page%20est%20publique%20%3A%20ne%20partage%20ni%20num%C3%A9ro%20ni%20e-mail.)" target="_blank" rel="noopener">Je me propose <span aria-hidden="true">→</span><span class="sr">, tester et donner mon avis (s'ouvre dans un nouvel onglet)</span></a>
+        </li>
+        <li class="reveal">
+          <svg aria-hidden="true"><use href="#s-ball"/></svg>
+          <h3>Proposer une activité ou un club</h3>
+          <p>Match, karaoké, marche, atelier : fais-toi connaître comme organisateur ou organisatrice. Chaque événement est validé avant publication.</p>
+          <a class="link" href="https://github.com/Charmel7/vibes/issues/new?title=Contribution%20%3A%20proposer%20une%20activit%C3%A9%20ou%20un%20club&body=Salut%20!%20Je%20voudrais%20proposer%20une%20activit%C3%A9%20ou%20un%20club%20sur%20VIBES.%0A%0AL'activit%C3%A9%20ou%20le%20club%20%3A%20%0A%0AMa%20fili%C3%A8re%20%2F%20mon%20%C3%A9tablissement%20%3A%20%0A%0A(Cette%20page%20est%20publique%20%3A%20ne%20partage%20ni%20num%C3%A9ro%20ni%20e-mail.)" target="_blank" rel="noopener">Je me propose <span aria-hidden="true">→</span><span class="sr">, proposer une activité ou un club (s'ouvre dans un nouvel onglet)</span></a>
+        </li>
+        <li class="reveal">
+          <svg aria-hidden="true"><use href="#s-mic"/></svg>
+          <h3>Devenir ambassadeur ou ambassadrice</h3>
+          <p>Fais connaître VIBES autour de toi et aide à lancer les premières activités sur ton campus.</p>
+          <a class="link" href="https://github.com/Charmel7/vibes/issues/new?title=Contribution%20%3A%20devenir%20ambassadeur%20ou%20ambassadrice&body=Salut%20!%20Je%20voudrais%20devenir%20ambassadeur%20%2F%20ambassadrice%20de%20VIBES.%0A%0AMon%20campus%20%3A%20%0A%0AMa%20fili%C3%A8re%20%3A%20%0A%0A(Cette%20page%20est%20publique%20%3A%20ne%20partage%20ni%20num%C3%A9ro%20ni%20e-mail.)" target="_blank" rel="noopener">Je me propose <span aria-hidden="true">→</span><span class="sr">, devenir ambassadeur ou ambassadrice (s'ouvre dans un nouvel onglet)</span></a>
+        </li>
+        <li class="reveal">
+          <svg aria-hidden="true"><use href="#s-apple"/></svg>
+          <h3>Relire les contenus santé</h3>
+          <p>Étudiant·e en fin de formation de santé ou professionnel·le : aide-nous à vérifier les conseils avant leur publication.</p>
+          <a class="link" href="https://github.com/Charmel7/vibes/issues/new?title=Contribution%20%3A%20relire%20les%20contenus%20sant%C3%A9&body=Salut%20!%20Je%20voudrais%20relire%20les%20contenus%20sant%C3%A9%20de%20VIBES.%0A%0AMon%20profil%20(formation%20%2F%20m%C3%A9tier)%20%3A%20%0A%0A(Cette%20page%20est%20publique%20%3A%20ne%20partage%20ni%20num%C3%A9ro%20ni%20e-mail.)" target="_blank" rel="noopener">Je me propose <span aria-hidden="true">→</span><span class="sr">, relire les contenus santé (s'ouvre dans un nouvel onglet)</span></a>
+        </li>
+        <li class="reveal">
+          <svg aria-hidden="true"><use href="#s-pin"/></svg>
+          <h3>Lieux, clubs et associations</h3>
+          <p>Tu animes un lieu ou une association ? Parlons de ce que nous pourrions faire ensemble.</p>
+          <a class="link" href="https://github.com/Charmel7/vibes/issues/new?title=Contribution%20%3A%20lieu%2C%20club%20ou%20association&body=Salut%20!%20Je%20repr%C3%A9sente%20un%20lieu%2C%20un%20club%20ou%20une%20association%20et%20je%20voudrais%20en%20parler.%0A%0ANom%20%3A%20%0A%0ACe%20que%20nous%20pourrions%20faire%20ensemble%20%3A%20%0A%0A(Cette%20page%20est%20publique%20%3A%20ne%20partage%20ni%20num%C3%A9ro%20ni%20e-mail.)" target="_blank" rel="noopener">Je me propose <span aria-hidden="true">→</span><span class="sr">, lieux, clubs et associations (s'ouvre dans un nouvel onglet)</span></a>
+        </li>
+      </ul>
+
+      <div class="give__more reveal">
+        <a class="btn btn--yellow" href="https://github.com/Charmel7/vibes/issues/new?title=Une%20id%C3%A9e%20pour%20VIBES&body=Salut%20!%20J'ai%20une%20id%C3%A9e%20pour%20VIBES%20%3A%0A%0A(Cette%20page%20est%20publique%20%3A%20ne%20partage%20ni%20num%C3%A9ro%20ni%20e-mail.)" target="_blank" rel="noopener">J'ai une autre idée <span aria-hidden="true">→</span><span class="sr"> (s'ouvre dans un nouvel onglet)</span></a>
+        <p class="note">Les messages passent par GitHub et sont publics : n'y mets ni numéro de téléphone ni adresse e-mail.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Questions fréquentes ============ -->
+  <section class="section section--white" id="faq">
+    <div class="wrap faq">
+      <header class="section__head reveal">
+        <p class="eyebrow eyebrow--blue">Questions fréquentes</p>
+        <h2>On te répond simplement.</h2>
+      </header>
+
+      <div class="faq__list reveal">
+        <details>
+          <summary>VIBES est-il déjà disponible ?</summary>
+          <p>Pas encore. Le projet est en cours de conception : les maquettes existent, mais l'application n'est pas encore téléchargeable.</p>
+        </details>
+        <details>
+          <summary>VIBES, est-ce un service médical ?</summary>
+          <p>Non. C'est une initiative de prévention et de bien-être. VIBES ne pose pas de diagnostic, ne donne pas de score, et t'oriente vers une personne ou un service fiable si cela te dépasse.</p>
+        </details>
+        <details>
+          <summary>Ce que j'écris reste-t-il privé ?</summary>
+          <p>Ce que tu écris dans My Safe Place est privé, selon les règles prévues par VIBES. Les réponses sur ton ressenti sont facultatives.</p>
+        </details>
+        <details>
+          <summary>C'est quoi, le Crew ?</summary>
+          <p>Un petit groupe qui se forme autour d'une activité, pour s'organiser et confirmer les présences. L'idée : ne pas avoir à venir seul·e la première fois.</p>
+        </details>
+        <details>
+          <summary>VIBES est-il un réseau social ou une application de rencontres ?</summary>
+          <p>Non. Pas de fil public, pas de likes, pas de classements. Les activités sont publiques et se vivent en petits groupes.</p>
+        </details>
+        <details>
+          <summary>Faut-il beaucoup de données mobiles ?</summary>
+          <p>L'objectif est une application web légère, pensée pour les petits forfaits et les téléphones plus anciens.</p>
+        </details>
+        <details>
+          <summary>Qui est derrière VIBES ?</summary>
+          <p>Une équipe d'étudiants de l'UNSTIM, à Abomey, au Bénin. Les contenus de l'application sont écrits avec des jeunes, et les contenus de santé sont relus avant publication.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 9. Appel à l'action final ============ -->
   <section class="final">
+    <svg class="deco" style="--s:56px;top:40px;left:5%" aria-hidden="true"><use href="#s-spark"/></svg>
+    <svg class="deco" style="--s:64px;top:70px;right:6%" aria-hidden="true"><use href="#s-ball"/></svg>
     <div class="wrap final__inner">
-      <h2>Et si la prochaine bonne chose commençait ici ?</h2>
-      <p>Une passion à découvrir. Une activité à essayer. Une habitude à construire.</p>
-      <p>VIBES veut aider les étudiants à faire davantage de place à ce qui leur fait du bien.</p>
-      <a class="btn btn--yellow" href="#constat">Découvrir notre vision <span aria-hidden="true">→</span></a>
+      <div class="final__text reveal">
+        <h2>Et si la prochaine bonne chose commençait ici ?</h2>
+        <p>Une passion à découvrir. Une activité à essayer. Une habitude à construire.</p>
+        <p>VIBES veut aider les étudiants à faire davantage de place à ce qui leur fait du bien.</p>
+        <div class="actions">
+          <a class="btn btn--yellow" href="#constat">Découvrir notre vision <span aria-hidden="true">→</span></a>
+          <a class="btn btn--ghost-light" href="#contribuer">Contribuer</a>
+        </div>
+      </div>
+      <div class="final__crowd" aria-hidden="true">
+        <svg class="fig" style="--skin:#7A4A2E;--cloth:#FDDF32;--acc:#B0EEF2"><use href="#p-wrap"/></svg>
+        <svg class="fig fig--tall" style="--skin:#A06A45;--cloth:#B0EEF2;--hair:#1B1410"><use href="#p-afro"/></svg>
+        <svg class="fig" style="--skin:#5A3322;--cloth:#0154AE;--hair:#1B1410;--acc:#FDDF32"><use href="#p-phones"/></svg>
+        <svg class="fig fig--tall" style="--skin:#8C5A3A;--cloth:#FDDF32;--hair:#1B1410"><use href="#p-bun"/></svg>
+      </div>
     </div>
   </section>
 
 </main>
 
-<!-- 10. FOOTER -->
+<!-- ============ 10. Footer ============ -->
 <footer class="footer">
   <div class="wrap footer__grid">
     <div>
-      <a class="logo logo--light" href="#haut" aria-label="VIBES, retour en haut de page">VIBES</a>
+      <a class="logo logo--light" href="#haut" aria-label="VIBES, retour en haut de page"><span>VIBES</span><svg class="logo__sun" aria-hidden="true"><use href="#s-logo-sun"/></svg></a>
       <p class="footer__tag">Moins de scroll. Plus de vie. Plus de nous.</p>
       <p class="footer__note">Projet étudiant, UNSTIM, Abomey (Bénin). En cours de conception.</p>
     </div>
@@ -282,6 +723,9 @@
       <a href="#intentions">Approche</a>
       <a href="#experience">Expérience</a>
       <a href="#engagements">Engagements</a>
+      <a href="#etat">Où en est VIBES ?</a>
+      <a href="#contribuer">Contribuer</a>
+      <a href="#faq">Questions</a>
     </nav>
   </div>
 </footer>
