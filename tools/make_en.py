@@ -19,12 +19,12 @@ T = [
     # --- <head> ---
     ('<html lang="fr">', '<html lang="en">'),
     ('<title>VIBES · Moins de scroll. Plus de vie. Plus de nous.</title>',
-     '<title>VIBES · Less scroll. More life. More us.</title>'),
+     '<title>VIBES · Makes lives happen</title>'),
     ("VIBES est une initiative étudiante pour le bien-être sur les campus : retrouver des jeunes qui partagent tes passions, prendre soin de toi et construire des habitudes qui te font du bien.",
      "VIBES is a student-led initiative for well-being on campus: find young people who share your passions, take care of yourself and build habits that do you good."),
     ('content="fr_FR"', 'content="en_US"'),
     ('<meta property="og:title" content="VIBES · Moins de scroll. Plus de vie. Plus de nous.">',
-     '<meta property="og:title" content="VIBES · Less scroll. More life. More us.">'),
+     '<meta property="og:title" content="VIBES · Makes lives happen">'),
     ("Le bien-être étudiant autrement : découvrir, s'outiller, ancrer de bonnes habitudes.",
      "Student well-being, differently: discover, equip yourself, anchor good habits."),
 
@@ -43,7 +43,7 @@ T = [
     # --- hero ---
     ("VIBES · Le bien-être étudiant autrement", "VIBES · Student well-being, differently"),
     ('Moins de scroll.<br><span class="hl">Plus de vie.</span> Plus de nous.',
-     'Less scroll.<br><span class="hl">More life.</span> More us.'),
+     'Makes <span class="hl">lives</span> happen.'),
     ("Et si ton téléphone t'aidait à vivre davantage, plutôt qu'à rester connecté toute la journée ?",
      "What if your phone helped you live more, instead of keeping you connected all day?"),
     ("VIBES t'aide à retrouver des jeunes qui partagent tes passions, à prendre soin de toi et à construire des habitudes qui te font du bien.",
@@ -337,7 +337,7 @@ T = [
     ("Photos : Iwaria Inc et Muhammad-Taha Ibrahim, via Unsplash.", "Photos: Iwaria Inc and Muhammad-Taha Ibrahim, via Unsplash."),
 
     # --- footer ---
-    ("Moins de scroll. Plus de vie. Plus de nous.</p>", "Less scroll. More life. More us.</p>"),
+    ("Moins de scroll. Plus de vie. Plus de nous.</p>", "Makes lives happen.</p>"),
     ("Projet étudiant, UNSTIM, Abomey (Bénin). En cours de conception.",
      "Student project, UNSTIM, Abomey (Benin). In design."),
     ('aria-label="Pied de page"', 'aria-label="Footer"'),
