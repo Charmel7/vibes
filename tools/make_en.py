@@ -393,6 +393,7 @@ def main():
     # chemins relatifs depuis /en/
     s = s.replace('href="styles.css"', 'href="../styles.css"').replace('src="main.js"', 'src="../main.js"')
     s = s.replace('src="assets/', 'src="../assets/')
+    s = s.replace('href="favicon.svg"', 'href="../favicon.svg"').replace('href="assets/brand/', 'href="../assets/brand/')
 
     OUT.parent.mkdir(exist_ok=True)
     OUT.write_text(s, encoding="utf-8")
