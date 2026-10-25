@@ -3,13 +3,13 @@
 Each block matches one point the reviewers look for. Check the form's character limits and trim if needed. Nothing here claims a result.
 
 ## The team
-We are three students aged 19 to 21 in Mathematical Engineering and Modelling at UNSTIM, Abomey, Benin: Adéyinka Laurinda Adanlao (machine learning engineer in training), Prosper Affoukou (team lead, systems thinker and data scientist) and Abel Kpokouta (full stack developer and video maker). We designed VIBES ourselves for about three months.
+We are three students aged 19 to 21 in Mathematical Engineering and Modelling at UNSTIM, Abomey, Benin: Adéyinka Laurinda Adanlao (machine learning engineer in training), Charmel Prosper Affoukou (team lead, systems thinker and data scientist) and Abel Kpokouta (full stack developer and video maker). We have designed VIBES ourselves for about three months.
 
 ## The problem
 Many students here lose whole nights to scrolling, games, anime and manga. These passions are not the issue. The issue is that scrolling is designed to hold you, nothing as attractive waits outside, and few young people dare to say what they need. The result is a very connected generation that is also very lonely. The WHO reports that 1 in 6 people worldwide is affected by loneliness, and that 17 to 21% of people aged 13 to 29 feel lonely. We see four layers: attraction, the void, the silence, and the invisible (well-being tools exist, but students do not know them or do not see themselves in them).
 
 ## The people
-University students at UNSTIM first, then other campuses in Benin. We prioritise students with tight budgets, long commutes, little reliable information, or who hesitate to join an activity alone: newcomers, students from the provinces, young women. Since 21 September we have surveyed students on campus: more than 100 have answered and the welcome is very positive. This is a first field check, not a representative sample.
+University students at UNSTIM first, then other campuses in Benin. We prioritise students with tight budgets, long commutes, little reliable information, or who hesitate to join an activity alone: newcomers, students from the provinces, young women. A student survey is under way; we do not claim any result yet.
 
 ## The idea
 VIBES is a lightweight web app with three gestures. Discover: find young people who share your passions and join activities, clubs or a small Crew, so the first time is never alone. Equip: My Safe Place, a private space to note your mood and get small practical gestures, and Tips VIBES, short cards written by young Beninese people in their own words and reviewed for health content. Anchor: small Étincelles (Sparks) instead of pressure, with no streaks, no rankings and no guilt. VIBES is prevention, not care: it gives no diagnosis or score and points to a trusted person or service when it is too much.

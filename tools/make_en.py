@@ -42,8 +42,7 @@ T = [
 
     # --- hero ---
     ("VIBES · Le bien-être étudiant autrement", "VIBES · Student well-being, differently"),
-    ('Moins de scroll.<br><span class="hl">Plus de vie.</span> Plus de nous.',
-     'Makes <span class="hl">lives</span> happen.'),
+    ('Makes <span class="hl">lives</span> happen.', 'Makes <span class="hl">lives</span> happen.'),
     ("Et si ton téléphone t'aidait à vivre davantage, plutôt qu'à rester connecté toute la journée ?",
      "What if your phone helped you live more, instead of keeping you connected all day?"),
     ("VIBES t'aide à retrouver des jeunes qui partagent tes passions, à prendre soin de toi et à construire des habitudes qui te font du bien.",
@@ -247,10 +246,10 @@ T = [
     ("<li>Un dossier de conception du projet</li>", "<li>A project design document</li>"),
     ("<li>Un Design System</li>", "<li>A Design System</li>"),
     ("<li>10 écrans de maquette</li>", "<li>10 mockup screens</li>"),
-    ("<li>Une enquête sur le campus de l'UNSTIM, lancée le 21 septembre</li>",
-     "<li>A survey on the UNSTIM campus, launched on 21 September</li>"),
     ("En cours</h3>", "In progress</h3>"),
     ("<li>La construction d'un premier MVP web léger</li>", "<li>Building a first lightweight web MVP</li>"),
+    ("<li>Une enquête auprès des étudiants de l'UNSTIM, sans résultat publié à ce stade</li>",
+     "<li>A survey of UNSTIM students, with no results published at this stage</li>"),
     ("<li>La conception avec les étudiants : entretiens et tests de maquettes</li>",
      "<li>Designing with students: interviews and mockup tests</li>"),
     ("Envisagé</h3>", "Envisioned</h3>"),
