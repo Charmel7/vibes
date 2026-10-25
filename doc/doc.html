@@ -30,7 +30,7 @@ table{width:100%;border-collapse:collapse;font-size:9pt}
 th{text-align:left;background:var(--blue);color:#fff;padding:2.2mm 3mm;font-weight:600}
 th:first-child{border-radius:3mm 0 0 0}th:last-child{border-radius:0 3mm 0 0}
 td{padding:2.8mm 3mm;font-size:9.5pt;vertical-align:top;background:#fff;border-bottom:1px solid #ecebe4}
-td:first-child{font-weight:700;width:24%}td:last-child{white-space:nowrap}
+td:first-child{font-weight:700;width:24%}.crit td:last-child{white-space:nowrap}
 .phone{width:44mm;margin:0 auto;background:none}
 .phone img{display:block;width:100%;mix-blend-mode:multiply}
 .note{background:var(--yellow);border-radius:4mm;padding:3mm 4mm;font-size:8.5pt;font-weight:600}
@@ -57,7 +57,7 @@ td:first-child{font-weight:700;width:24%}td:last-child{white-space:nowrap}
     <div class="phone" style="position:absolute;right:6mm;top:-22mm;width:54mm;background:#fff;border-radius:8mm;padding:3mm 3mm 0;box-shadow:0 3mm 8mm rgba(0,0,0,.25)"><img src="img/01_accueil.jpg"></div>
   </div>
   <div style="position:absolute;left:0;right:0;bottom:0;background:var(--canvas);color:var(--ink);padding:9mm 16mm 10mm;display:flex;justify-content:space-between;align-items:center">
-    <div style="font-size:8.5pt;line-height:1.45"><b style="font-size:9.5pt">Team VIBES</b> · UNSTIM, Abomey, Benin<br>Three students aged 19 to 21<br>Mathematical Engineering and Modelling</div>
+    <div style="font-size:8.5pt;line-height:1.45"><b style="font-size:9.5pt">Team VIBES</b> · UNSTIM, Abomey, Benin<br>Two students<br>Mathematical Engineering and Modelling</div>
     <div style="display:flex;align-items:center;gap:4mm;flex:none"><span class="small" style="font-size:7pt;white-space:nowrap">Submitted to</span><img src="img/etr.png" style="height:9mm"><div style="background:#14A9B5;border-radius:2mm;padding:0 2mm;line-height:0"><img src="img/yth.png" style="height:6mm"></div></div>
   </div>
 </section>
@@ -70,7 +70,7 @@ td:first-child{font-weight:700;width:24%}td:last-child{white-space:nowrap}
   <p class="lead" style="margin-bottom:6mm">Imagine a generation that puts the phone down, not out of obligation, but because something better is waiting outside. <b>VIBES is the first step toward that world.</b></p>
   <div class="grid g2">
     <div class="card"><div class="num">1</div><h3>The problem</h3><p class="small" style="color:var(--ink)">Students lose nights to the scroll. Nothing as attractive waits outside, and few dare to say what they need. A very connected generation, and a very lonely one.</p></div>
-    <div class="card"><div class="num">2</div><h3>The people</h3><p class="small" style="color:var(--ink)">University students at UNSTIM first, then other campuses in Benin. Priority: tight budgets, long commutes, newcomers, and anyone who hesitates to show up alone.</p></div>
+    <div class="card"><div class="num">2</div><h3>The people</h3><p class="small" style="color:var(--ink)">University students at UNSTIM first, then other campuses in Benin. Priority: those with no one to go with, who live far from activities, newcomers, and anyone who hesitates to show up alone.</p></div>
     <div class="card"><div class="num">3</div><h3>The idea</h3><p class="small" style="color:var(--ink)">A lightweight web app with three gestures: <b>Discover</b> shared passions and activities, <b>Equip</b> yourself with a private space and tips, <b>Anchor</b> small habits.</p></div>
     <div class="card"><div class="num">4</div><h3>The value</h3><p class="small" style="color:var(--ink)">A first step that is easier: find a small group, know the real cost before going, take a private moment, and get pointed to trusted help when it is too much.</p></div>
     <div class="card"><div class="num">5</div><h3>The difference</h3><p class="small" style="color:var(--ink)">Most apps win when you stay. VIBES wins when you leave. Success is measured in <b>lived hours</b>, not screen time.</p></div>
@@ -79,9 +79,9 @@ td:first-child{font-weight:700;width:24%}td:last-child{white-space:nowrap}
   <div class="grid g3" style="margin-top:6mm">
     <div class="stat"><b>3</b><span>months of design work led by students</span></div>
     <div class="stat"><b>5</b><span>dimensions of well-being: social, physical, emotional, mental, food</span></div>
-    <div class="stat"><b>10</b><span>mockup screens and a Design System v1</span></div>
+    <div class="stat"><b>10</b><span>students in our first survey, plus 10 mockup screens and a Design System v1</span></div>
   </div>
-  <p class="small" style="margin-top:3mm">A student survey is under way. No results are claimed at this stage.</p>
+  <p class="small" style="margin-top:3mm">First survey: 10 students (page 3). It is a signal, not proof; a larger survey comes next.</p>
   <div style="display:grid;grid-template-columns:1.2fr 1fr;gap:4mm;margin-top:5mm">
     <img src="img/amies-terrain.jpg" style="width:100%;height:50mm;object-fit:cover;border-radius:5mm">
     <div class="card" style="display:flex;flex-direction:column;justify-content:center;background:var(--turq)"><div style="font-size:16pt;font-weight:800;line-height:1.2;letter-spacing:-.02em">Makes<br><span style="color:var(--blue)">lives</span><br>happen.</div></div>
@@ -95,8 +95,8 @@ td:first-child{font-weight:700;width:24%}td:last-child{white-space:nowrap}
   <div class="kick">The challenge</div>
   <h2>The scroll became their only option.</h2>
   <p class="lead">Our observation on campus is not "young people scroll too much". It is that <span class="hl"><b>nobody helps them listen to themselves</b></span>, and nothing as appealing waits outside. The problem has four layers, from the most visible to the deepest.</p>
-  <div class="grid g2" style="margin-top:5mm">
-    <div class="card"><div class="num">1</div><h3>Attraction</h3><p class="small" style="color:var(--ink)">Scrolling is designed to hold you. A student who stays is not lacking willpower; they face apps built to keep them.</p></div>
+  <div class="grid g2" style="margin-top:4mm">
+    <div class="card"><div class="num">1</div><h3>Attraction</h3><p class="small" style="color:var(--ink)">Scrolling is designed to hold you. A student who stays is not lacking willpower. Some of the scrolling is also work (research, freelance); we are not against the phone.</p></div>
     <div class="card"><div class="num">2</div><h3>The void</h3><p class="small" style="color:var(--ink)">When the phone goes down, they do not know what to do that is as good, or with whom. So they go back.</p></div>
     <div class="card"><div class="num">3</div><h3>The silence</h3><p class="small" style="color:var(--ink)">Young people know what they need: talk, move, meet, create. What is missing is a place to admit it without being judged.</p></div>
     <div class="card"><div class="num">4</div><h3>The invisible</h3><p class="small" style="color:var(--ink)">Well-being tools exist, but many students do not know them, or do not see themselves in them.</p></div>
@@ -105,15 +105,25 @@ td:first-child{font-weight:700;width:24%}td:last-child{white-space:nowrap}
   <div class="grid g3">
     <div class="stat"><b>1 in 6</b><span>people worldwide is affected by loneliness (WHO, 2025)</span></div>
     <div class="stat"><b>17–21%</b><span>of people aged 13 to 29 report feeling lonely (WHO, 2025)</span></div>
-    <div class="stat"><b style="font-size:22pt;padding-top:1.5mm">24% / 11%</b><span>reported loneliness in low-income vs high-income countries (WHO, 2025)</span></div>
+    <div class="stat" style="background:var(--purple)"><b>7 of 10</b><span>students we asked spend more than 6 hours a day on their phone in free time (our survey, n = 10)</span></div>
   </div>
-  <div class="card" style="margin-top:4mm;display:grid;grid-template-columns:34mm 1fr;gap:5mm;align-items:center">
-    <div style="font-size:26pt;font-weight:800;color:var(--purple);letter-spacing:-.03em;line-height:1">55.9%</div>
-    <p class="small" style="color:var(--ink);margin:0">of 766 students of the Faculty of Health Sciences in Cotonou showed depressive disorders in a published study. Associated factors include difficulty adjusting and thinking of dropping out. <i>This concerns one health faculty and depression, not all students; it shows that student well-being in Benin is a real subject.</i></p>
+  <div class="card" style="margin-top:3.5mm;display:grid;grid-template-columns:24mm 1fr;gap:4mm;align-items:center">
+    <div style="font-size:21pt;font-weight:800;color:var(--purple);letter-spacing:-.03em;line-height:1">55.9%</div>
+    <p class="small" style="color:var(--ink);margin:0">of 766 students of the Faculty of Health Sciences in Cotonou showed depressive disorders in a published study. <i>One health faculty and depression only: it shows that student well-being in Benin is a real subject, not that it applies to all students.</i></p>
   </div>
-  <div class="note" style="margin-top:4mm">The WHO also calls for technology that strengthens human connection instead of weakening it. That is the line VIBES takes.</div>
-  <img src="img/etudiants-marches.jpg" style="width:100%;height:38mm;object-fit:cover;object-position:50% 55%;border-radius:5mm;margin-top:5mm">
-  <div class="ft"><span>Sources: WHO news release, 30 June 2025; Klikpo et al., Health Sciences and Disease, 2020. Full list on the last page.</span><span>3</span></div>
+  <div class="kick" style="margin-top:4mm">Our first survey: 10 students, four schools</div>
+  <div class="card" style="font-size:9pt">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5mm 6mm">
+      <div>• <b>5 of 10</b> say their phone time is too long for them</div>
+      <div>• <b>10 of 10</b> put social media or videos in their top 3 for free time; 5 add series, anime or manga</div>
+      <div>• Top barriers to offline activities: <b>no one to go with (4)</b>, <b>too far (4)</b>, shyness (3), lack of time (3)</div>
+      <div>• <b>3 of 10</b> often lack company; 1 sometimes; 5 rarely; 1 preferred not to answer</div>
+      <div>• Interest in VIBES after a short description: <b>7 yes, 3 maybe, 0 no</b></div>
+      <div>• Budget for a group activity: <b>7 of 10</b> up to 1,000 FCFA; 2 would pay nothing</div>
+    </div>
+    <p class="small" style="margin:2.5mm 0 0;color:var(--ink)"><b>What it does not show:</b> nobody picked budget or "I don't know what exists" as a main barrier. With 10 respondents, a convenience sample, answers after a favourable description and no link to cause, we read this as a first signal, not proof. A larger survey is the first use of the award.</p>
+  </div>
+  <div class="ft"><span>Sources: WHO, 30 June 2025; Klikpo et al., Health Sciences and Disease, 2020. Survey: team data, n = 10.</span><span>3</span></div>
 </section>
 
 <!-- 4 THE IDEA -->
@@ -167,31 +177,35 @@ td:first-child{font-weight:700;width:24%}td:last-child{white-space:nowrap}
   <div class="kick">What sets us apart</div>
   <h2>A platform that wins when you leave it.</h2>
   <div style="display:grid;grid-template-columns:1.1fr 1fr;gap:5mm">
-    <div class="card dark" style="background:var(--blue);color:#fff">
-      <div class="kick" style="color:var(--turq)">Our central indicator</div>
+    <div class="card dark" style="background:var(--blue);color:#fff;padding:3mm 4.5mm">
+      <div class="kick" style="color:var(--turq);margin-bottom:1.5mm">Our central indicator</div>
       <div style="font-size:30pt;font-weight:800;letter-spacing:-.03em;line-height:1;color:var(--yellow)">Lived hours</div>
       <p style="margin-top:3mm;font-size:10pt;color:#fff">The real hours of matches, walks, choir rehearsals and creating that VIBES helped trigger, confirmed on the spot. Time in the app is tracked only as a warning signal: if it rises without lived hours rising too, we fix it.</p>
     </div>
     <div class="card"><h3>What we do differently</h3>
-      <p class="small" style="color:var(--ink);margin-bottom:1.5mm">• Answer all four layers, not only the screen</p>
-      <p class="small" style="color:var(--ink);margin-bottom:1.5mm">• A place to tell the truth, without judgment</p>
-      <p class="small" style="color:var(--ink);margin-bottom:1.5mm">• A small group removes the fear of coming alone</p>
-      <p class="small" style="color:var(--ink);margin-bottom:1.5mm">• Content in the students' own words</p>
+      <p class="small" style="color:var(--ink);margin-bottom:1mm">• Answer all four layers, not only the screen</p>
+      <p class="small" style="color:var(--ink);margin-bottom:1mm">• A place to tell the truth, without judgment</p>
+      <p class="small" style="color:var(--ink);margin-bottom:1mm">• A small group removes the fear of coming alone</p>
       <p class="small" style="color:var(--ink);margin:0">• Real cost, distance and data use shown before you commit</p></div>
   </div>
-  <p class="small" style="margin-top:2mm">These are our hypotheses. We do not claim that no other solution exists: a benchmark of existing solutions in Benin and West Africa is part of the project. WhatsApp groups and club pages already do part of the job; VIBES builds on them as channels.</p>
-  <div class="kick" style="margin-top:6mm">Young people lead</div>
-  <div class="grid g3">
+  <div class="kick" style="margin-top:4mm">How we compare</div>
+  <table style="font-size:8.5pt">
+    <tr><th style="width:27%">Solution</th><th>What it does</th><th>How VIBES differs</th></tr>
+    <tr><td>ChillChezCharlee<br><span style="font-weight:500;color:var(--mute)">France</span></td><td>Mobile app: you share a weekend wish and it groups 2 to 5 nearby people for a first meeting, then circles of 3 to 6. For students; reporting and verified profiles. Prix Pépite 2025 (its site).</td><td>The closest idea, and a sign the need is real. VIBES adds a private well-being space, tips by young Beninese, a Benin context (light web app, cost and distance first) and a different measure: lived hours.</td></tr>
+    <tr><td>Lynk<br><span style="font-weight:500;color:var(--mute)">letslynk.com</span></td><td>Live video platform: timed one-on-one chats, for dating, friends or hosted events.</td><td>Online and one-to-one. VIBES is about meeting in person, in small groups, and is not a dating service.</td></tr>
+    <tr><td>WhatsApp groups and club pages</td><td>Already used by clubs to organise.</td><td>VIBES builds on them as channels and adds discovery, a first group to join, and cost and distance up front.</td></tr>
+  </table>
+  <p class="small" style="margin-top:1.5mm;font-size:7.5pt">Based on their public websites; we have not tested these products. A wider benchmark in Benin and West Africa is part of the project.</p>
+  <div class="kick" style="margin-top:4mm">Young people lead</div>
+  <div class="grid g2">
     <div class="card"><div class="num" style="background:var(--purple)">A</div><h3 style="font-size:10.5pt">Adéyinka Laurinda ADANLAO</h3><p class="small" style="margin:0">Machine learning engineer in training</p></div>
-    <div class="card"><div class="num" style="background:var(--purple)">P</div><h3 style="font-size:10.5pt">Charmel Prosper AFFOUKOU</h3><p class="small" style="margin:0">Team lead · Systems Thinker and Data Scientist</p></div>
-    <div class="card"><div class="num" style="background:var(--purple)">A</div><h3 style="font-size:10.5pt">Abel KPOKOUTA</h3><p class="small" style="margin:0">Full Stack developer and video maker</p></div>
+    <div class="card"><div class="num" style="background:var(--purple)">C</div><h3 style="font-size:10.5pt">Charmel Prosper AFFOUKOU</h3><p class="small" style="margin:0">Team lead · Systems Thinker and Data Scientist</p></div>
   </div>
-  <p class="small" style="margin-top:3mm">Three students aged 19 to 21 in Mathematical Engineering and Modelling at UNSTIM. Systems thinking, data analysis and development: this is what makes our plan realistic and measurable.</p>
-  <div class="grid g2" style="margin-top:4mm">
-    <div class="card"><h3>How young people shaped the idea</h3><p class="small" style="color:var(--ink);margin:0">The idea comes from what we see around us. We are now checking it with students: a survey is under way, and interviews and mockup tests come next. No results are claimed at this stage. All app text is written by a youth editorial committee.</p></div>
-    <div class="card"><h3>Health content is reviewed</h3><p class="small" style="color:var(--ink);margin:0">We come from maths, not health. Final-year medical students already review health content. With the award, licensed health professionals will supervise it.</p></div>
+  <p class="small" style="margin-top:2mm;margin-bottom:0">Two students in Mathematical Engineering and Modelling at UNSTIM: systems thinking, data analysis, design and web development.</p>
+  <div class="grid g2" style="margin-top:3mm">
+    <div class="card"><h3>How young people shape the idea</h3><p class="small" style="color:var(--ink);margin:0">The idea comes from what we see around us. We have started checking it with students: a first survey of 10 (page 3), then interviews and mockup tests. App content is planned to be written with a youth editorial committee.</p></div>
+    <div class="card"><h3>Health content will be reviewed</h3><p class="small" style="color:var(--ink);margin:0">We come from maths, not health. We have asked final-year medical students to review health content. With the award, licensed health professionals will supervise it.</p></div>
   </div>
-  <img src="img/amies-terrain.jpg" style="width:100%;height:38mm;object-fit:cover;border-radius:5mm;margin-top:4mm">
   <div class="ft"><span>VIBES · Makes lives happen</span><span>6</span></div>
 </section>
 
@@ -209,15 +223,15 @@ td:first-child{font-weight:700;width:24%}td:last-child{white-space:nowrap}
     <tr><td>Language</td><td>French first, written with young Beninese people; local languages being studied</td></tr>
     <tr><td>Shyness, disability, first-generation students</td><td>Beginner-friendly activities, accessibility information shown, accompanied first visit</td></tr>
   </table>
-  <div class="kick" style="margin-top:4mm">Safety, privacy, misinformation</div>
+  <div class="kick" style="margin-top:4mm">Safeguards we are designing in (planned, not yet built)</div>
   <div class="grid g2">
-    <div class="card"><h3>Activities</h3><p class="small" style="color:var(--ink);margin:0">Public activities only, in small groups for the first time. Student events are checked before publication; the most exposed ones require a public place, daytime hours and posted rules.</p></div>
-    <div class="card"><h3>Crew chat</h3><p class="small" style="color:var(--ink);margin:0">Only for people signed up, no private messages, no phone numbers shown, reporting available, closed 48 hours after the event.</p></div>
-    <div class="card"><h3>Data</h3><p class="small" style="color:var(--ink);margin:0">Minimum collected. No precise location shared between strangers. What you write in My Safe Place is private. Feelings questions are optional. Photos private by default.</p></div>
-    <div class="card"><h3>Reliable information</h3><p class="small" style="color:var(--ink);margin:0">Tips written by young people, reviewed by professionals for health content. Organisers are verified.</p></div>
+    <div class="card"><h3>Activities</h3><p class="small" style="color:var(--ink);margin:0">Public activities only, in small groups for the first time. Student events will be checked before publication; the most exposed ones will require a public place, daytime hours and posted rules.</p></div>
+    <div class="card"><h3>Crew chat</h3><p class="small" style="color:var(--ink);margin:0">Planned: only for people signed up, no private messages, no phone numbers shown, reporting available, closed 48 hours after the event.</p></div>
+    <div class="card"><h3>Data</h3><p class="small" style="color:var(--ink);margin:0">We will collect the minimum. No precise location shared between strangers. What you write in My Safe Place stays private. Feelings questions are optional. Photos private by default.</p></div>
+    <div class="card"><h3>Reliable information</h3><p class="small" style="color:var(--ink);margin:0">Tips written with young people and reviewed by professionals for health content. Organisers will be verified.</p></div>
   </div>
-  <div class="card" style="margin-top:3.5mm;background:var(--turq)"><h3>When it is too much</h3><p class="small" style="color:var(--ink);margin:0">A "Need help now?" access stays visible on every screen and points to a trusted person or service. Ambassadors are trained in listening and referral. The whole system is tested with young people before any wide opening.</p></div>
-  <div class="card" style="margin-top:3.5mm;background:var(--ink);color:#fff"><h3 style="color:var(--yellow)">A clear limit</h3><p class="small" style="color:#fff;margin:0">VIBES is a prevention and well-being initiative. It is not a care service, not a diagnostic tool, not medical or psychological advice, and not a dating app. No notification pressure: two a day by default (morning and evening) plus reminders for events you joined. No challenge on tobacco, alcohol, drugs or betting without a professional, and none on restrictive eating or weight.</p></div>
+  <div class="card" style="margin-top:3.5mm;background:var(--turq)"><h3>When it is too much</h3><p class="small" style="color:var(--ink);margin:0">A "Need help now?" access will stay visible on every screen and point to a trusted person or service. Ambassadors will be trained in listening and referral. The whole system will be tested with young people before any wide opening.</p></div>
+  <div class="card" style="margin-top:3.5mm;background:var(--ink);color:#fff"><h3 style="color:var(--yellow)">A clear limit</h3><p class="small" style="color:#fff;margin:0">VIBES is a prevention and well-being initiative. It is not a care service, not a diagnostic tool, not medical or psychological advice, and not a dating app. Our starting rule for notifications: two a day (morning and evening) plus reminders for events you joined, to be tested with students. No challenge on tobacco, alcohol, drugs or betting without a professional, and none on restrictive eating or weight.</p></div>
   <div class="ft"><span>VIBES · Makes lives happen</span><span>7</span></div>
 </section>
 
@@ -227,7 +241,7 @@ td:first-child{font-weight:700;width:24%}td:last-child{white-space:nowrap}
   <div class="kick">The plan</div>
   <h2>We build first. The award takes it to the next level.</h2>
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:5mm">
-    <div class="card"><h3>Already here</h3><p class="small" style="color:var(--ink);margin:0">• Project design document<br>• Design System v1<br>• 10 mockup screens<br>• A student survey, under way (no results yet)</p></div>
+    <div class="card"><h3>Already here</h3><p class="small" style="color:var(--ink);margin:0">• Project design document<br>• Design System v1<br>• 10 mockup screens<br>• A first survey of 10 students</p></div>
     <div class="card"><h3>We fund and build ourselves</h3><p class="small" style="color:var(--ink);margin:0">• The lightweight web MVP<br>• Interviews and mockup tests with students<br>• First field work on campus</p></div>
   </div>
   <p class="small" style="margin-top:2mm">The award does not start VIBES. It carries it from a prototype on one campus to a solid base for several universities.</p>
@@ -246,7 +260,7 @@ td:first-child{font-weight:700;width:24%}td:last-child{white-space:nowrap}
     <div class="card"><div class="kick">Indicators</div><p class="small" style="color:var(--ink);margin:0">Lived hours · self-reported well-being (connection, confidence, participation) · students who return on their own · real participation · habits installed · accessibility and safety feedback · and, as a warning signal, time in the app.</p></div>
   </div>
   <div class="card" style="margin-top:4mm;background:var(--yellow)"><h3>What we give back to the YTH community</h3><p class="small" style="color:var(--ink);margin:0">An open learning report: what worked, what did not, and anonymised survey data. VIBES is not a closed product. It is a method another campus or country can take up.</p></div>
-  <div class="ft"><span>Allocation proposed by the team and open to adjustment.</span><span>8</span></div>
+  <div class="ft"><span>Allocation is indicative and will be confirmed with local quotes.</span><span>8</span></div>
 </section>
 
 <!-- 9 WHY + CRITERIA -->
@@ -255,26 +269,26 @@ td:first-child{font-weight:700;width:24%}td:last-child{white-space:nowrap}
   <div class="kick">Why us, why now</div>
   <h2>We build before we ask.</h2>
   <div class="grid g2" style="margin-bottom:5mm">
-    <div class="card"><p class="small" style="color:var(--ink);margin:0"><b>We build before asking.</b> Three months of work, a student survey under way, and a self-funded MVP.<br><b>We see the problem up close.</b> We know those screen nights, those empty weekends, and the fear of the first step.</p></div>
+    <div class="card"><p class="small" style="color:var(--ink);margin:0"><b>We build before asking.</b> Three months of design work, a first survey of 10 students, and an MVP we are building ourselves.<br><b>We see the problem up close.</b> We know those screen nights, those empty weekends, and the fear of the first step.</p></div>
     <div class="card"><p class="small" style="color:var(--ink);margin:0"><b>We know how to measure.</b> We say what the data does not prove.<br><b>We start from the ground.</b> Our campus, its habits, its WhatsApp groups.<br><b>We go against the grain.</b> An app judged by what it gives back.</p></div>
   </div>
   <div class="kick">How VIBES answers the selection criteria</div>
-  <table>
+  <table class="crit">
     <tr><th>Criterion</th><th>Our answer</th><th style="width:14mm">Page</th></tr>
-    <tr><td>Relevance</td><td>Student isolation and screen overuse, described in four layers with WHO and Benin data</td><td>3</td></tr>
-    <tr><td>Youth leadership</td><td>Three students aged 19–21 lead; a youth editorial committee writes all content</td><td>6</td></tr>
+    <tr><td>Relevance</td><td>Student isolation and screen overuse: four layers, WHO and Benin data, a first survey of 10 students</td><td>3</td></tr>
+    <tr><td>Youth leadership</td><td>Two students lead; app content is planned with a youth editorial committee</td><td>6</td></tr>
     <tr><td>Usefulness</td><td>Find a group, know the real cost, take a private moment, build habits</td><td>2, 4, 5</td></tr>
     <tr><td>Innovation</td><td>Success measured in lived hours; the app is judged by how well it sends you offline</td><td>6</td></tr>
     <tr><td>Feasibility</td><td>Self-funded MVP; award mapped to a 4–6 week supervised pilot</td><td>8</td></tr>
     <tr><td>Access</td><td>Light web app, cost and distance filters, French first, beginner-friendly</td><td>7</td></tr>
-    <tr><td>Safety</td><td>Private data, verified organisers, reviewed health content, help access on every screen</td><td>7</td></tr>
+    <tr><td>Safety</td><td>Planned: private data, verified organisers, reviewed health content, help access on every screen</td><td>7</td></tr>
     <tr><td>Clarity</td><td>One page summary, annotated screens, a clear plan and budget</td><td>2, 5, 8</td></tr>
   </table>
   <div class="card" style="background:var(--blue);color:#fff;margin-top:4mm;display:grid;grid-template-columns:1fr auto;gap:5mm;align-items:center">
     <div style="font-size:19pt;font-weight:800;letter-spacing:-.03em;line-height:1.1">What if the next good thing started <span style="color:var(--yellow)">here</span>?</div>
-    <div style="text-align:right"><p style="font-size:13pt;font-weight:800;color:var(--turq);margin:0">On se VIBES ?</p><p class="small" style="color:#fff;margin:0">charmel7.github.io/vibes</p></div>
+    <div style="text-align:right"><p style="font-size:13pt;font-weight:800;color:var(--turq);margin:0">On se VIBES ?</p><p class="small" style="color:#fff;margin:0">charmel7.github.io/vibes<br>prosperaffou@outlook.com</p></div>
   </div>
-  <div style="display:flex;align-items:center;gap:5mm;margin-top:auto;padding-top:4mm"><img src="img/vibes-icone.svg" style="height:11mm"><span class="small" style="font-size:7pt;line-height:1.4">Photos: Iwaria Inc and Muhammad-Taha Ibrahim via Unsplash. Sources: WHO, 30 June 2025 (who.int); Klikpo T. et al., Health Sciences and Disease, 2020 (doi 10.5281/hsd.v21i1.1753). Screens are mockups subject to change.</span></div>
+  <div style="display:flex;align-items:center;gap:5mm;margin-top:auto;padding-top:4mm"><img src="img/vibes-icone.svg" style="height:11mm"><span class="small" style="font-size:7pt;line-height:1.4">Photos: Iwaria Inc and Muhammad-Taha Ibrahim via Unsplash. Sources: WHO, 30 June 2025 (who.int); Klikpo T. et al., Health Sciences and Disease, 2020 (doi 10.5281/hsd.v21i1.1753). Competitors: public websites of ChillChezCharlee and Lynk. Screens are mockups subject to change.</span></div>
   <div class="ft" style="padding-top:2mm"><span>VIBES · Makes lives happen</span><span>9</span></div>
 </section>
 </body></html>

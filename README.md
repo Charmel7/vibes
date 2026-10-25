@@ -48,4 +48,4 @@ Tant qu'un fichier manque, un cadre en pointillés indique son nom.
 - Logo : redessiné en vectoriel dans `assets/brand/` (icône, version verticale, version horizontale, favicons, `og-image.png`). Mot en Poppins Bold converti en tracés.
 - Photographies : trois photos Unsplash (Iwaria Inc, Muhammad-Taha Ibrahim) dans `assets/photos/`, versions web optimisées. Les originaux sont dans `assets/photos/source/`. Crédit affiché dans le pied de page.
 - Section « Contribuer » : les boutons ouvrent un nouveau ticket sur `github.com/Charmel7/vibes/issues` (public). À remplacer par un formulaire ou une adresse officielle quand elle existe.
-- Contact, réseaux sociaux, pages légales, lien de téléchargement ou d'inscription : aucun.
+- Contact : adresse e-mail de l'équipe (landing, PDF). Pas de réseaux sociaux, pages légales, lien de téléchargement ou d'inscription.
