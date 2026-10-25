@@ -18,12 +18,12 @@ OUT = ROOT / "en" / "index.html"
 T = [
     # --- <head> ---
     ('<html lang="fr">', '<html lang="en">'),
-    ('<title>VIBES · Moins de scroll. Plus de vie. Plus de nous.</title>',
+    ('<title>VIBES · Makes lives happen</title>',
      '<title>VIBES · Makes lives happen</title>'),
     ("VIBES est une initiative étudiante pour le bien-être sur les campus : retrouver des jeunes qui partagent tes passions, prendre soin de toi et construire des habitudes qui te font du bien.",
      "VIBES is a student-led initiative for well-being on campus: find young people who share your passions, take care of yourself and build habits that do you good."),
     ('content="fr_FR"', 'content="en_US"'),
-    ('<meta property="og:title" content="VIBES · Moins de scroll. Plus de vie. Plus de nous.">',
+    ('<meta property="og:title" content="VIBES · Makes lives happen">',
      '<meta property="og:title" content="VIBES · Makes lives happen">'),
     ("Le bien-être étudiant autrement : découvrir, s'outiller, ancrer de bonnes habitudes.",
      "Student well-being, differently: discover, equip yourself, anchor good habits."),
@@ -337,7 +337,7 @@ T = [
     ("Photos : Iwaria Inc et Muhammad-Taha Ibrahim, via Unsplash.", "Photos: Iwaria Inc and Muhammad-Taha Ibrahim, via Unsplash."),
 
     # --- footer ---
-    ("Moins de scroll. Plus de vie. Plus de nous.</p>", "Makes lives happen.</p>"),
+    ("Makes lives happen.</p>", "Makes lives happen.</p>"),
     ("Projet étudiant, UNSTIM, Abomey (Bénin). En cours de conception.",
      "Student project, UNSTIM, Abomey (Benin). In design."),
     ('aria-label="Pied de page"', 'aria-label="Footer"'),
