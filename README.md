@@ -30,16 +30,16 @@ Puis ouvrir http://localhost:8000.
 ## Maquettes à ajouter
 
 Les écrans ne sont pas recréés : la page utilise tes PNG du Drive, tels quels.
-Copier depuis le dossier Drive `vibes_10_ecrans_image_choisie` vers `assets/screens/` :
+Les écrans actuels (générés, en anglais) sont dans `assets/screens/` en `.jpg`. Les anciens sont dans `assets/screens/archive/`. Correspondance :
 
 | Fichier | Section |
 | --- | --- |
-| `01_accueil.png` | Hero |
-| `02_explorer_activites.png` | Expérience, explorer |
-| `03_detail_activite.png` | Expérience, explorer |
-| `07_mon_mood.png` | Expérience, moment pour soi |
-| `09_tips_vibes.png` | Expérience, habitudes |
-| `05_mon_crew.png` | Crew |
+| `01_accueil.jpg` | Hero |
+| `02_explorer_activites.jpg` | Expérience, explorer |
+| `03_detail_activite.jpg` | Expérience, explorer |
+| `07_mon_mood.jpg` | Expérience, moment pour soi |
+| `09_tips_vibes.jpg` | Expérience, habitudes |
+| `05_mon_crew.jpg` | Crew |
 
 Tant qu'un fichier manque, un cadre en pointillés indique son nom.
 
