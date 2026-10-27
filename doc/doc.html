@@ -31,8 +31,8 @@ th{text-align:left;background:var(--blue);color:#fff;padding:2.2mm 3mm;font-weig
 th:first-child{border-radius:3mm 0 0 0}th:last-child{border-radius:0 3mm 0 0}
 td{padding:2.8mm 3mm;font-size:9.5pt;vertical-align:top;background:#fff;border-bottom:1px solid #ecebe4}
 td:first-child{font-weight:700;width:24%}.crit td:last-child{white-space:nowrap}
-.phone{width:44mm;margin:0 auto;background:none}
-.phone img{display:block;width:100%;mix-blend-mode:multiply}
+.phone{width:40mm;margin:0 auto;background:none}
+.phone img{display:block;width:100%;filter:drop-shadow(0 2mm 3mm rgba(20,30,46,.28))}
 .note{background:var(--yellow);border-radius:4mm;padding:3mm 4mm;font-size:8.5pt;font-weight:600}
 .dark{background:var(--ink);color:#fff}
 .bar{height:5mm;border-radius:99px;background:var(--blue)}
@@ -54,7 +54,7 @@ td:first-child{font-weight:700;width:24%}.crit td:last-child{white-space:nowrap}
   </div>
   <div style="position:absolute;left:16mm;right:16mm;top:128mm;height:112mm">
     <img src="img/etudiants-marches.jpg" style="width:122mm;height:112mm;object-fit:cover;border-radius:6mm;border:1.6mm solid #fff;display:block">
-    <div class="phone" style="position:absolute;right:6mm;top:-22mm;width:54mm;background:#fff;border-radius:8mm;padding:3mm 3mm 0;box-shadow:0 3mm 8mm rgba(0,0,0,.25)"><img src="img/01_accueil.jpg"></div>
+    <div class="phone" style="position:absolute;right:4mm;top:-26mm;width:56mm"><img src="img/01_accueil.webp"></div>
   </div>
   <div style="position:absolute;left:0;right:0;bottom:0;background:var(--canvas);color:var(--ink);padding:9mm 16mm 10mm;display:flex;justify-content:space-between;align-items:center">
     <div style="font-size:8.5pt;line-height:1.45"><b style="font-size:9.5pt">Team VIBES</b> · UNSTIM, Abomey, Benin<br>Three students<br>Mathematical Engineering and Modelling</div>
@@ -160,11 +160,11 @@ td:first-child{font-weight:700;width:24%}.crit td:last-child{white-space:nowrap}
   <h2>Made for the real moments of student life.</h2>
   <p>Technology opens the door. Experiences are lived outside.</p>
   <div class="grid" style="grid-template-columns:repeat(3,1fr);gap:6mm 5mm;margin-top:3mm">
-    <div><div class="phone"><img src="img/02_explorer_activites.jpg"></div><h3 style="margin-top:3mm">Discover activities</h3><p class="small">Filter by day, free or nearby. Date, place and cost shown up front.</p></div>
-    <div><div class="phone"><img src="img/03_detail_activite.jpg"></div><h3 style="margin-top:3mm">Join with confidence</h3><p class="small">Practical info first: public venue, free, all levels welcome.</p></div>
-    <div><div class="phone"><img src="img/05_mon_crew.jpg"></div><h3 style="margin-top:3mm">Go with a Crew</h3><p class="small">A small group around an activity. A chat only for people signed up, no private messages.</p></div>
-    <div><div class="phone"><img src="img/07_mon_mood.jpg"></div><h3 style="margin-top:3mm">Take a moment</h3><p class="small">Mon Mood: optional, private, no score, no diagnosis.</p></div>
-    <div><div class="phone"><img src="img/09_tips_vibes.jpg"></div><h3 style="margin-top:3mm">Tips VIBES</h3><p class="small">Short tips shared by young people. Health content is planned to be reviewed by professionals.</p></div>
+    <div><div class="phone"><img src="img/02_explorer_activites.webp"></div><h3 style="margin-top:3mm">Discover activities</h3><p class="small">Filter by day, free or nearby. Date, place and cost shown up front.</p></div>
+    <div><div class="phone"><img src="img/03_detail_activite.webp"></div><h3 style="margin-top:3mm">Join with confidence</h3><p class="small">Practical info first: public venue, free, all levels welcome.</p></div>
+    <div><div class="phone"><img src="img/05_mon_crew.webp"></div><h3 style="margin-top:3mm">Go with a Crew</h3><p class="small">A small group around an activity. A chat only for people signed up, no private messages.</p></div>
+    <div><div class="phone"><img src="img/07_mon_mood.webp"></div><h3 style="margin-top:3mm">Take a moment</h3><p class="small">Mon Mood: optional, private, no score, no diagnosis.</p></div>
+    <div><div class="phone"><img src="img/09_tips_vibes.webp"></div><h3 style="margin-top:3mm">Tips VIBES</h3><p class="small">Short tips shared by young people. Health content is planned to be reviewed by professionals.</p></div>
     <div class="card" style="background:var(--yellow);display:flex;flex-direction:column;justify-content:center"><h3>How it plays out</h3><p class="small" style="color:var(--ink);margin:0">1. You spot an activity that speaks to you.<br>2. You join a small group to get organised.<br>3. You meet up in person, for real.</p></div>
   </div>
   <div class="note" style="margin-top:6mm">Screens are working mockups and are subject to change. They show the direction; the first web MVP is being built.</div>
@@ -197,11 +197,9 @@ td:first-child{font-weight:700;width:24%}.crit td:last-child{white-space:nowrap}
   </table>
   <p class="small" style="margin-top:1.5mm;font-size:7.5pt">Based on their public websites; we have not tested these products. A wider benchmark in Benin and West Africa is part of the project.</p>
   <div class="kick" style="margin-top:4mm">Young people lead</div>
-  <div class="grid g2">
+  <div class="grid" style="grid-template-columns:repeat(3,1fr);gap:3mm">
     <div class="card"><div class="num" style="background:var(--purple)">A</div><h3 style="font-size:10.5pt">Adéyinka Laurinda ADANLAO</h3><p class="small" style="margin:0">ML Engineer in training &amp; Front-end Developer</p></div>
     <div class="card"><div class="num" style="background:var(--purple)">C</div><h3 style="font-size:10.5pt">Charmel Prosper AFFOUKOU</h3><p class="small" style="margin:0">Team lead · Systems Thinker and Data Scientist</p></div>
-  </div>
-  <div class="grid g2" style="margin-top:3mm">
     <div class="card"><div class="num" style="background:var(--purple)">J</div><h3 style="font-size:10.5pt">Judicaël Karol DOBOEVI</h3><p class="small" style="margin:0">Business Development &amp; Product Marketing Manager</p></div>
   </div>
   <p class="small" style="margin-top:2mm;margin-bottom:0">Three students at UNSTIM: systems thinking, data analysis, business development, design and web development.</p>
@@ -244,10 +242,13 @@ td:first-child{font-weight:700;width:24%}.crit td:last-child{white-space:nowrap}
   <div class="kick">The plan</div>
   <h2>We build first. The award takes it to the next level.</h2>
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:5mm">
-    <div class="card"><h3>Already here</h3><p class="small" style="color:var(--ink);margin:0">• Project design document<br>• Design System v1<br>• 10 mockup screens<br>• A first survey of 10 students</p></div>
-    <div class="card"><h3>We fund and build ourselves</h3><p class="small" style="color:var(--ink);margin:0">• The lightweight web MVP<br>• Interviews and mockup tests with students<br>• First field work on campus</p></div>
+    <div class="card"><h3>Already here</h3><p class="small" style="color:var(--ink);margin:0">Design document · Design System v1 · 10 mockup screens · a first survey of 10 students</p></div>
+    <div class="card"><h3>We fund and build ourselves</h3><p class="small" style="color:var(--ink);margin:0">The lightweight web MVP · interviews and mockup tests with students · first field work on campus</p></div>
   </div>
   <p class="small" style="margin-top:2mm">The award does not start VIBES. It carries it from a prototype on one campus to a solid base for several universities.</p>
+  <div class="kick" style="margin-top:3mm">Roadmap in months (targets)</div>
+  <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:2mm"><div style="background:#fff;border-radius:3mm;padding:2.5mm 2.5mm 3mm;border-top:1.2mm solid var(--blue)"><div style="font-size:7pt;font-weight:700;color:var(--blue)">Nov – Dec 2026</div><div style="font-weight:800;font-size:10pt;margin:.5mm 0 1mm">Listen</div><div style="font-size:7.5pt;line-height:1.3">Survey to 30+ students. Mockup tests with 5 to 10 students. Clickable prototype.</div><div style="font-size:6.5pt;font-weight:700;margin-top:1.2mm;opacity:.75">Self-funded</div></div><div style="background:#fff;border-radius:3mm;padding:2.5mm 2.5mm 3mm;border-top:1.2mm solid var(--blue)"><div style="font-size:7pt;font-weight:700;color:var(--blue)">Jan – Mar 2027</div><div style="font-weight:800;font-size:10pt;margin:.5mm 0 1mm">Build</div><div style="font-size:7.5pt;line-height:1.3">Web MVP v1: discover, join, Mon Mood, Tips. 20 to 30 testers on campus.</div><div style="font-size:6.5pt;font-weight:700;margin-top:1.2mm;opacity:.75">Self-funded</div></div><div style="background:#fff;border-radius:3mm;padding:2.5mm 2.5mm 3mm;border-top:1.2mm solid var(--purple)"><div style="font-size:7pt;font-weight:700;color:var(--purple)">Apr – Jun 2027</div><div style="font-weight:800;font-size:10pt;margin:.5mm 0 1mm">Prepare</div><div style="font-size:7.5pt;line-height:1.3">Wider surveys, ambassadors, health review, awareness campaign, hosting.</div><div style="font-size:6.5pt;font-weight:700;margin-top:1.2mm;opacity:.75">With the award</div></div><div style="background:#fff;border-radius:3mm;padding:2.5mm 2.5mm 3mm;border-top:1.2mm solid var(--purple)"><div style="font-size:7pt;font-weight:700;color:var(--purple)">Jul – Sep 2027</div><div style="font-weight:800;font-size:10pt;margin:.5mm 0 1mm">Pilot</div><div style="font-size:7.5pt;line-height:1.3">4 to 6 supervised weeks outside exam periods. Lived hours measured.</div><div style="font-size:6.5pt;font-weight:700;margin-top:1.2mm;opacity:.75">With the award</div></div><div style="background:#fff;border-radius:3mm;padding:2.5mm 2.5mm 3mm;border-top:1.2mm solid #14A9B5"><div style="font-size:7pt;font-weight:700;color:#14A9B5">Oct – Dec 2027</div><div style="font-weight:800;font-size:10pt;margin:.5mm 0 1mm">Share</div><div style="font-size:7.5pt;line-height:1.3">Open learning report. Decision on a second campus.</div><div style="font-size:6.5pt;font-weight:700;margin-top:1.2mm;opacity:.75">With the award</div></div></div>
+  <p class="small" style="margin-top:1.5mm;font-size:7.5pt">Dates are targets. Phases marked "With the award" start when funds arrive; if they come later, the schedule moves with them.</p>
   <div class="kick" style="margin-top:4mm">What $5,000 makes possible (proposed allocation)</div>
   <div style="display:grid;grid-template-columns:1fr 14mm;row-gap:2.2mm;column-gap:4mm;align-items:center;font-size:9pt">
     <div><b>Wider surveys</b> in other schools and universities, with larger samples and sturdier methods<div class="bar" style="width:100%;margin-top:1mm"></div></div><b style="text-align:right">$1,000</b>
@@ -257,12 +258,12 @@ td:first-child{font-weight:700;width:24%}.crit td:last-child{white-space:nowrap}
     <div><b>Health and safety</b>: licensed professionals supervise content, ambassadors trained in listening<div class="bar" style="width:75%;margin-top:1mm;background:var(--purple)"></div></div><b style="text-align:right">$750</b>
     <div><b>Measurement and sharing</b>: lived hours, before and after, learning report, first local-language content<div class="bar" style="width:50%;margin-top:1mm;background:#14A9B5"></div></div><b style="text-align:right">$500</b>
   </div>
-  <p class="small" style="margin-top:3mm"><b>If the award is smaller.</b> At $2,000 or $1,000 we keep the same split and scale the pilot down: fewer campuses, fewer testers, a shorter run. The MVP stays self-funded either way.</p>
-  <div class="grid g2" style="margin-top:4mm">
+  <p class="small" style="margin-top:2mm"><b>If the award is smaller.</b> At $2,000 or $1,000 we keep the same split and scale the pilot down: fewer campuses, fewer testers, a shorter run. The MVP stays self-funded either way.</p>
+  <div class="grid g2" style="margin-top:2.5mm">
     <div class="card" style="background:var(--blue);color:#fff"><div class="kick" style="color:var(--turq)">The pilot question</div><p class="small" style="color:#fff;margin:0">Do students who use VIBES feel more connected after a few weeks, come back on their own, and take up new habits? We measure with two or three short questions before and after, a well-being tool validated with professionals, and total lived hours. <b>No result is claimed at this stage.</b></p></div>
     <div class="card"><div class="kick">Indicators</div><p class="small" style="color:var(--ink);margin:0">Lived hours · self-reported well-being (connection, confidence, participation) · students who return on their own · real participation · habits installed · accessibility and safety feedback · and, as a warning signal, time in the app.</p></div>
   </div>
-  <div class="card" style="margin-top:4mm;background:var(--yellow)"><h3>What we give back to the YTH community</h3><p class="small" style="color:var(--ink);margin:0">An open learning report: what worked, what did not, and anonymised survey data. VIBES is not a closed product. It is a method another campus or country can take up.</p></div>
+  <div class="card" style="margin-top:3mm;background:var(--yellow);padding:2.5mm 4mm"><p class="small" style="color:var(--ink);margin:0"><b>What we give back to the YTH community.</b> An open learning report: what worked, what did not, and anonymised survey data. VIBES is not a closed product. It is a method another campus or country can take up.</p></div>
   <div class="ft"><span>Allocation is indicative and will be confirmed with local quotes.</span><span>8</span></div>
 </section>
 

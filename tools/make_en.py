@@ -316,8 +316,8 @@ T = [
     ("L'objectif est une application web légère, pensée pour les petits forfaits et les téléphones plus anciens.",
      "The goal is a lightweight web app, designed for small data plans and older phones."),
     ("<summary>Qui est derrière VIBES ?</summary>", "<summary>Who is behind VIBES?</summary>"),
-    ("Une équipe de deux étudiants de l'UNSTIM, à Abomey, au Bénin. Les contenus de l'application sont écrits avec des jeunes, et les contenus de santé seront relus avant publication.",
-     "A team of two UNSTIM students in Abomey, Benin. The app's content is written with young people, and health content will be reviewed before publication."),
+    ("Une équipe de trois étudiants de l'UNSTIM, à Abomey, au Bénin : Charmel Prosper Affoukou (Team Lead), Laurinda Adéyinka Adanlao et Judicaël Karol Doboevi. Les contenus de l'application sont écrits avec des jeunes, et les contenus de santé seront relus avant publication.",
+     "A team of three UNSTIM students in Abomey, Benin: Charmel Prosper Affoukou (Team Lead), Laurinda Adéyinka Adanlao and Judicaël Karol Doboevi. The app's content is written with young people, and health content will be reviewed before publication."),
 
     # --- CTA final ---
     ("Et si la prochaine bonne chose commençait ici ?", "What if the next good thing started here?"),
@@ -333,15 +333,25 @@ T = [
     ("Quatre étudiants assis sur des marches avec des ordinateurs portables, l'un d'eux prend un selfie",
      "Four students sitting on steps with laptops, one of them taking a selfie"),
     ("Cinq mains qui forment une étoile vers le ciel", "Five hands forming a star against the sky"),
-    ("Photos : Iwaria Inc et Muhammad-Taha Ibrahim, via Unsplash.", "Photos: Iwaria Inc and Muhammad-Taha Ibrahim, via Unsplash."),
+    ("Photos&nbsp;: Iwaria Inc et Muhammad-Taha Ibrahim, via Unsplash.", "Photos: Iwaria Inc and Muhammad-Taha Ibrahim, via Unsplash."),
+    ("Équipe&nbsp;: Charmel Prosper Affoukou, Laurinda Adéyinka Adanlao, Judicaël Karol Doboevi.", "Team: Charmel Prosper Affoukou, Laurinda Adéyinka Adanlao, Judicaël Karol Doboevi."),
 
     # --- footer ---
     ("Makes lives happen.</p>", "Makes lives happen.</p>"),
     ("Projet étudiant, UNSTIM, Abomey (Bénin). En cours de conception.",
      "Student project, UNSTIM, Abomey (Benin). In design."),
     ('aria-label="Pied de page"', 'aria-label="Footer"'),
-    ('<a href="#intentions">Approche</a>\n      <a href="#experience">Expérience</a>\n      <a href="#engagements">Engagements</a>\n      <a href="#etat">Où en est VIBES ?</a>\n      <a href="#contribuer">Contribuer</a>\n      <a href="#faq">Questions</a>',
-     '<a href="#intentions">Approach</a>\n      <a href="#experience">Experience</a>\n      <a href="#engagements">Commitments</a>\n      <a href="#etat">Where is VIBES at?</a>\n      <a href="#contribuer">Contribute</a>\n      <a href="#faq">Questions</a>'),
+    ('<a href="#intentions">Approche</a>\n      <a href="#experience">Expérience</a>\n      <a href="#engagements">Engagements</a>\n      <a href="#etat">Où en est VIBES ?</a>\n      <a href="#equipe">L\'équipe</a>\n      <a href="#contribuer">Contribuer</a>\n      <a href="#faq">Questions</a>',
+     '<a href="#intentions">Approach</a>\n      <a href="#experience">Experience</a>\n      <a href="#engagements">Commitments</a>\n      <a href="#etat">Where is VIBES at?</a>\n      <a href="#equipe">The team</a>\n      <a href="#contribuer">Contribute</a>\n      <a href="#faq">Questions</a>'),
+    # --- section équipe ---
+    ('<p class="eyebrow eyebrow--blue">L\'équipe</p>', '<p class="eyebrow eyebrow--blue">The team</p>'),
+    ('<h2>Ceux qui construisent VIBES.</h2>', '<h2>The people building VIBES.</h2>'),
+    ('<p class="section__intro">Un projet étudiant porté par trois personnes de l\'<abbr title="Université Nationale des Sciences, Technologies, Ingénierie et Mathématiques d\'Abomey">UNSTIM</abbr>, au Bénin.</p>', '<p class="section__intro">A student project carried by three people from <abbr title="National University of Sciences, Technology, Engineering and Mathematics of Abomey">UNSTIM</abbr>, in Benin.</p>'),
+    ('<p class="team__school"><abbr title="Université Nationale des Sciences, Technologies, Ingénierie et Mathématiques d\'Abomey">UNSTIM</abbr> · Abomey, Bénin</p>', '<p class="team__school"><abbr title="National University of Sciences, Technology, Engineering and Mathematics of Abomey">UNSTIM</abbr> · Abomey, Benin</p>'),
+    ('<p class="team__role">ML Engineer en formation &amp; Développeuse Front-end</p>', '<p class="team__role">ML Engineer in training &amp; Front-end Developer</p>'),
+    ('alt="Photo de Charmel Prosper Affoukou"', 'alt="Photo of Charmel Prosper Affoukou"'),
+    ('alt="Photo de Laurinda Adéyinka Adanlao"', 'alt="Photo of Laurinda Adéyinka Adanlao"'),
+    ('alt="Photo de Judicaël Karol Doboevi"', 'alt="Photo of Judicaël Karol Doboevi"'),
 ]
 
 # Tickets GitHub pré-remplis : titre français -> (titre, corps) anglais.
@@ -391,7 +401,7 @@ def main():
 
     # chemins relatifs depuis /en/
     s = s.replace('href="styles.css"', 'href="../styles.css"').replace('src="main.js"', 'src="../main.js"')
-    s = s.replace('src="assets/', 'src="../assets/')
+    s = s.replace('src="assets/', 'src="../assets/').replace('src="assets_1/', 'src="../assets_1/')
     s = s.replace('href="favicon.svg"', 'href="../favicon.svg"').replace('href="assets/brand/', 'href="../assets/brand/')
 
     OUT.parent.mkdir(exist_ok=True)
