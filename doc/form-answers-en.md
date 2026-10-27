@@ -33,3 +33,5 @@ We build the MVP ourselves, with our own means. Roadmap (targets, in months): No
 Your 4:30 script (section 9 of the French dossier) already follows the required order: team, challenge, idea and use, how young people informed it, what is different, use of funds.
 
 Note on visuals: the app mockups and the illustrations inside them were generated with AI tools because we have no designer yet. They are illustrative and subject to change, and are in English for this application (the app will be French first). The photos in the document are real photos credited on page 9.
+
+Note on listening and help: when screens isolate young people, it also becomes harder to find real listening, for example in harassment or a health problem. VIBES therefore plans a "Need help now?" access on every screen, pointing to easy-to-reach trusted contacts and free helplines, one tap away. Which helplines we list is still being verified. VIBES is not a care service.
