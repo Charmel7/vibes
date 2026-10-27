@@ -594,3 +594,37 @@ details p { padding: 0 var(--space-6) var(--space-6); max-width: 680px; }
   .final__photo { width: min(80%, 320px); }
   .scene-card--photo { min-height: 300px; }
 }
+
+/* ===== Refonte : page plus courte ===== */
+.section { padding-block: var(--space-12); }
+@media (min-width: 640px) { .section { padding-block: var(--space-16); } }
+.wrap--follow { margin-top: var(--space-12); }
+.callout { margin-top: var(--space-6); padding: var(--space-6); border-radius: var(--radius-feature); background: var(--color-vibes-yellow); display: grid; gap: var(--space-2); max-width: 880px; }
+.callout p { font-size: 17px; }
+.wrap--follow .note { margin-top: var(--space-4); max-width: 720px; }
+.dimline { margin-top: var(--space-8); font-size: 16px; max-width: 760px; }
+.gallery { display: flex; gap: var(--space-6); overflow-x: auto; scroll-snap-type: x mandatory; padding: var(--space-4) var(--space-1) var(--space-6); -webkit-overflow-scrolling: touch; }
+.gal__item { flex: 0 0 min(72%, 260px); scroll-snap-align: center; display: grid; gap: var(--space-2); align-content: start; }
+.gal__item .phone { width: 100%; margin-bottom: var(--space-3); }
+.gal__item h3 { font-size: 18px; }
+.gal__item p { font-size: 15px; }
+.gallery__note { margin-top: var(--space-4); max-width: 720px; }
+@media (min-width: 960px) {
+  .gallery { display: grid; grid-template-columns: repeat(5, 1fr); overflow: visible; gap: var(--space-6); }
+  .gal__item { flex: none; }
+}
+.crewshot--solo { padding-bottom: 0; }
+.subhead { margin-top: var(--space-12); }
+.subhead h3 { font-size: 24px; margin-bottom: var(--space-2); }
+.timeline { margin-top: var(--space-10); }
+.timeline h3 { font-size: 24px; margin-bottom: var(--space-4); }
+.tl { display: grid; gap: var(--space-3); }
+.tl li { display: grid; gap: var(--space-1); padding: var(--space-4); border-radius: var(--radius-card); background: var(--color-surface); border: 1px solid var(--line); border-top: 4px solid var(--color-vibes-blue); align-content: start; }
+.tl li:nth-child(3), .tl li:nth-child(4) { border-top-color: var(--color-vibes-purple); }
+.tl li:nth-child(5) { border-top-color: #14A9B5; }
+.tl b { font-size: 13px; color: var(--color-vibes-blue); }
+.tl span { font-size: 18px; font-weight: 800; }
+.tl p { font-size: 14px; }
+.timeline .note { margin-top: var(--space-4); }
+@media (min-width: 960px) { .tl { grid-template-columns: repeat(5, 1fr); } }
+@media (min-width: 960px) { .give { grid-template-columns: repeat(2, 1fr); max-width: 980px; } }
