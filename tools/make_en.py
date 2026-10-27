@@ -290,8 +290,8 @@ T = [
     (", lieux, clubs et associations (s'ouvre dans un nouvel onglet)", ", venues, clubs and associations (opens in a new tab)"),
     ("J'ai une autre idée <span", "I have another idea <span"),
     (" (s'ouvre dans un nouvel onglet)</span>", " (opens in a new tab)</span>"),
-    ("Les messages passent par GitHub et sont publics : n'y mets ni numéro de téléphone ni adresse e-mail. Pour écrire en privé : <a href=\"mailto:prosperaffou@outlook.com\">prosperaffou@outlook.com</a>.",
-     "Messages go through GitHub and are public: don't put a phone number or an e-mail address in them. To write privately: <a href=\"mailto:prosperaffou@outlook.com\">prosperaffou@outlook.com</a>."),
+    ("Les messages passent par GitHub et sont publics : n'y mets ni numéro de téléphone ni adresse e-mail. Pour écrire en privé : <a href=\"mailto:prosperaffoukou@outlook.com\">prosperaffoukou@outlook.com</a>.",
+     "Messages go through GitHub and are public: don't put a phone number or an e-mail address in them. To write privately: <a href=\"mailto:prosperaffoukou@outlook.com\">prosperaffoukou@outlook.com</a>."),
 
     # --- FAQ ---
     ("Questions fréquentes", "Frequently asked questions"),

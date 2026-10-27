@@ -3,7 +3,7 @@
 Each block matches one point the reviewers look for. Check the form's character limits and trim if needed. Nothing here claims a result.
 
 ## The team
-We are three students at UNSTIM, Abomey, Benin: Charmel Prosper Affoukou (team lead, systems thinker and data scientist), Adéyinka Laurinda Adanlao (machine learning engineer in training and front-end developer) and Judicaël Karol Doboevi (business development and product marketing). We have designed VIBES ourselves for about three months and are building the first web MVP.
+We are three students at UNSTIM, Abomey, Benin, building VIBES by young people, for young people: Adéyinka Laurinda Adanlao (team lead, machine learning engineer in training and front-end developer), Charmel Prosper Affoukou (systems thinker and data scientist) and Judicaël Karol Doboevi (business development and product marketing). We have designed VIBES ourselves for about three months and are building the first web MVP.
 
 ## The problem
 Many students here lose whole nights to scrolling, games, anime and manga. These passions are not the issue. The issue is that scrolling is designed to hold you, nothing as attractive waits outside, and few young people dare to say what they need. The result is a very connected generation that is also very lonely. The WHO reports that 1 in 6 people worldwide is affected by loneliness, and that 17 to 21% of people aged 13 to 29 feel lonely. We see four layers: attraction, the void, the silence, and the invisible (well-being tools exist, but students do not know them or do not see themselves in them).
