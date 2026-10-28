@@ -90,22 +90,23 @@
 <main id="contenu">
 
   <!-- ============ 2. Hero ============ -->
-  <section class="hero">
-    <div class="wrap hero__grid">
-      <div class="hero__text">
-        <p class="eyebrow">VIBES · Student well-being, differently</p>
-        <h1 class="hero__title">Makes <span class="hl">lives</span> happen.</h1>
-        <p class="lead">What if your phone helped you live more, instead of keeping you connected all day?</p>
-        <p class="hero__sub">An app designed <strong>by young people, for young people</strong>: find young people who share your passions, take care of yourself and build habits that do you good.</p>
-        <div class="actions">
-          <a class="btn btn--yellow" href="#intentions">Discover VIBES <span aria-hidden="true">→</span></a>
-          <a class="btn btn--ghost" href="#equipe">Meet the team</a>
+  <section class="hero hero--v2">
+    <div class="wrap hero2">
+      <h1 class="hero2__title">Makes lives<br>happen.</h1>
+      <div class="hero2__row">
+        <div class="hero2__text">
+          <p class="lead">What if your phone helped you live more, instead of keeping you connected all day?</p>
+          <p class="hero__sub">An app designed <strong>by young people, for young people</strong>: find young people who share your passions, take care of yourself and build habits that do you good.</p>
+          <div class="actions">
+            <a class="btn btn--yellow" href="#intentions">Discover VIBES <span aria-hidden="true">→</span></a>
+            <a class="btn btn--ghost-light" href="#equipe">Meet the team</a>
+          </div>
+          <p class="status">In design: the app is not available to download yet. Want to lend a hand? <a href="#contribuer">Contribute</a></p>
         </div>
-        <p class="status">In design: the app is not available to download yet. Want to lend a hand? <a href="#contribuer">Contribute</a></p>
-      </div>
-
-      <div class="hero__visual stage stage--img">
-        <img class="hero__mockup" src="../assets_1/page_accueil.png" alt="Mockup of the VIBES home screen: today's small Spark, this week's activities and access to help" decoding="async" fetchpriority="high">
+        <div class="hero2__art">
+          <img class="hero2__photo" src="../assets/photos/amies-terrain.jpg" width="1200" height="800" alt="Students laughing together on a sports court" decoding="async" fetchpriority="high">
+          <img class="hero2__phone" src="../assets_1/page_accueil.png" alt="Mockup of the VIBES home screen: today's small Spark, this week's activities and access to help" decoding="async">
+        </div>
       </div>
     </div>
   </section>
@@ -210,25 +211,23 @@
         <h2>Three gestures. Another way to live campus life.</h2>
       </header>
 
-      <div class="cards3">
-        <article class="card card--blue reveal">
-          <img class="card__scene card__scene--photo" src="../assets_1/Discover.jpeg" alt="Discover activities and meet young people who share your passions" loading="lazy" decoding="async">
+      <ul class="gestures">
+        <li class="gesture gesture--blue reveal">
           <h3>Discover</h3>
           <p>Meet young people who share your passions. Explore activities, discover clubs and find chances to take the first step.</p>
-        </article>
-
-        <article class="card card--turq reveal">
-          <img class="card__scene card__scene--photo" src="../assets_1/equip yourself.jpeg" alt="A student takes a moment for himself on his phone" loading="lazy" decoding="async">
+          <img class="card__scene card__scene--photo" src="../assets_1/Discover.jpeg" alt="Discover activities and meet young people who share your passions" loading="lazy" decoding="async">
+        </li>
+        <li class="gesture gesture--turq reveal">
           <h3>Equip yourself</h3>
           <p>Take a moment for yourself, put words on your mood and discover simple tips to take better care of yourself.</p>
-        </article>
-
-        <article class="card card--purple reveal">
-          <img class="card__scene card__scene--photo" src="../assets_1/anchor.jpeg" alt="Anchoring good habits and moving at your own pace" loading="lazy" decoding="async">
+          <img class="card__scene card__scene--photo" src="../assets_1/equip yourself.jpeg" alt="A student takes a moment for himself on his phone" loading="lazy" decoding="async">
+        </li>
+        <li class="gesture gesture--purple reveal">
           <h3>Anchor</h3>
           <p>Turn small intentions into habits. Try new activities, take on small Étincelles (Sparks) and move at your own pace.</p>
-        </article>
-      </div>
+          <img class="card__scene card__scene--photo" src="../assets_1/anchor.jpeg" alt="Anchoring good habits and moving at your own pace" loading="lazy" decoding="async">
+        </li>
+      </ul>
 
       <p class="dimline reveal"><strong>Five dimensions of well-being:</strong> social connection · physical well-being · emotional balance · mental well-being · food.</p>
       <p class="closing reveal">No need to change everything. Sometimes one small action is enough to get started.</p>
@@ -236,7 +235,7 @@
   </section>
 
   <!-- ============ 6. Aperçu de l'expérience ============ -->
-  <section class="section section--white" id="experience">
+  <section class="section section--turq" id="experience">
     <div class="wrap">
       <header class="section__head reveal">
         <p class="eyebrow eyebrow--blue">The experience</p>

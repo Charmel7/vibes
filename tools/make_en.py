@@ -400,6 +400,7 @@ T = [
     ("Découvrir des activités et rencontrer des jeunes qui partagent tes passions", "Discover activities and meet young people who share your passions"),
     ("Un étudiant prend un moment pour lui sur son téléphone", "A student takes a moment for himself on his phone"),
     ("Ancrer de bonnes habitudes et avancer à son rythme", "Anchoring good habits and moving at your own pace"),
+    ('Makes lives<br>happen.', 'Makes lives<br>happen.'),
 ]
 
 # Tickets GitHub pré-remplis : titre français -> (titre, corps) anglais.

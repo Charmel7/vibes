@@ -90,22 +90,23 @@
 <main id="contenu">
 
   <!-- ============ 2. Hero ============ -->
-  <section class="hero">
-    <div class="wrap hero__grid">
-      <div class="hero__text">
-        <p class="eyebrow">VIBES · Le bien-être étudiant autrement</p>
-        <h1 class="hero__title">Makes <span class="hl">lives</span> happen.</h1>
-        <p class="lead">Et si ton téléphone t'aidait à vivre davantage, plutôt qu'à rester connecté toute la journée ?</p>
-        <p class="hero__sub">Une application pensée <strong>par des jeunes, pour des jeunes</strong> : retrouver des jeunes qui partagent tes passions, prendre soin de toi et construire des habitudes qui te font du bien.</p>
-        <div class="actions">
-          <a class="btn btn--yellow" href="#intentions">Découvrir VIBES <span aria-hidden="true">→</span></a>
-          <a class="btn btn--ghost" href="#equipe">Rencontrer l'équipe</a>
+  <section class="hero hero--v2">
+    <div class="wrap hero2">
+      <h1 class="hero2__title">Makes lives<br>happen.</h1>
+      <div class="hero2__row">
+        <div class="hero2__text">
+          <p class="lead">Et si ton téléphone t'aidait à vivre davantage, plutôt qu'à rester connecté toute la journée ?</p>
+          <p class="hero__sub">Une application pensée <strong>par des jeunes, pour des jeunes</strong> : retrouver des jeunes qui partagent tes passions, prendre soin de toi et construire des habitudes qui te font du bien.</p>
+          <div class="actions">
+            <a class="btn btn--yellow" href="#intentions">Découvrir VIBES <span aria-hidden="true">→</span></a>
+            <a class="btn btn--ghost-light" href="#equipe">Rencontrer l'équipe</a>
+          </div>
+          <p class="status">En cours de conception : l'application n'est pas encore disponible au téléchargement. Envie de donner un coup de main ? <a href="#contribuer">Contribuer</a></p>
         </div>
-        <p class="status">En cours de conception : l'application n'est pas encore disponible au téléchargement. Envie de donner un coup de main ? <a href="#contribuer">Contribuer</a></p>
-      </div>
-
-      <div class="hero__visual stage stage--img">
-        <img class="hero__mockup" src="assets_1/page_accueil.png" alt="Maquette de l'écran d'accueil de VIBES : petite Étincelle du jour, activités de la semaine et accès à l'aide" decoding="async" fetchpriority="high">
+        <div class="hero2__art">
+          <img class="hero2__photo" src="assets/photos/amies-terrain.jpg" width="1200" height="800" alt="Étudiantes qui rient ensemble sur un terrain de sport" decoding="async" fetchpriority="high">
+          <img class="hero2__phone" src="assets_1/page_accueil.png" alt="Maquette de l'écran d'accueil de VIBES : petite Étincelle du jour, activités de la semaine et accès à l'aide" decoding="async">
+        </div>
       </div>
     </div>
   </section>
@@ -210,25 +211,23 @@
         <h2>Trois gestes. Une autre façon de vivre le campus.</h2>
       </header>
 
-      <div class="cards3">
-        <article class="card card--blue reveal">
-          <img class="card__scene card__scene--photo" src="assets_1/Discover.jpeg" alt="Découvrir des activités et rencontrer des jeunes qui partagent tes passions" loading="lazy" decoding="async">
+      <ul class="gestures">
+        <li class="gesture gesture--blue reveal">
           <h3>Découvrir</h3>
           <p>Retrouve des jeunes qui partagent tes passions. Explore les activités, découvre les clubs et trouve des occasions de faire le premier pas.</p>
-        </article>
-
-        <article class="card card--turq reveal">
-          <img class="card__scene card__scene--photo" src="assets_1/equip yourself.jpeg" alt="Un étudiant prend un moment pour lui sur son téléphone" loading="lazy" decoding="async">
+          <img class="card__scene card__scene--photo" src="assets_1/Discover.jpeg" alt="Découvrir des activités et rencontrer des jeunes qui partagent tes passions" loading="lazy" decoding="async">
+        </li>
+        <li class="gesture gesture--turq reveal">
           <h3>S'outiller</h3>
           <p>Prends un moment pour toi, mets des mots sur ton humeur et découvre des conseils simples pour mieux prendre soin de toi.</p>
-        </article>
-
-        <article class="card card--purple reveal">
-          <img class="card__scene card__scene--photo" src="assets_1/anchor.jpeg" alt="Ancrer de bonnes habitudes et avancer à son rythme" loading="lazy" decoding="async">
+          <img class="card__scene card__scene--photo" src="assets_1/equip yourself.jpeg" alt="Un étudiant prend un moment pour lui sur son téléphone" loading="lazy" decoding="async">
+        </li>
+        <li class="gesture gesture--purple reveal">
           <h3>Ancrer</h3>
           <p>Transforme les petites intentions en habitudes. Essaie de nouvelles activités, relève de petites Étincelles et avance à ton rythme.</p>
-        </article>
-      </div>
+          <img class="card__scene card__scene--photo" src="assets_1/anchor.jpeg" alt="Ancrer de bonnes habitudes et avancer à son rythme" loading="lazy" decoding="async">
+        </li>
+      </ul>
 
       <p class="dimline reveal"><strong>Cinq dimensions du bien-être :</strong> le lien social · le bien-être physique · l'équilibre émotionnel · le bien-être mental · l'alimentation.</p>
       <p class="closing reveal">Pas besoin de tout changer. Parfois, une petite action suffit pour commencer.</p>
@@ -236,7 +235,7 @@
   </section>
 
   <!-- ============ 6. Aperçu de l'expérience ============ -->
-  <section class="section section--white" id="experience">
+  <section class="section section--turq" id="experience">
     <div class="wrap">
       <header class="section__head reveal">
         <p class="eyebrow eyebrow--blue">L'expérience</p>
