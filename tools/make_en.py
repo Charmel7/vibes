@@ -428,6 +428,8 @@ T = [
     ("<strong>Le gratuit d'abord.</strong>", "<strong>Free first.</strong>"),
     ("<strong>Dans nos mots.</strong>", "<strong>In our own words.</strong>"),
     ("<strong>Pour les débutants.</strong>", "<strong>For beginners.</strong>"),
+    ("Premier questionnaire (10 étudiants, 4 écoles) : 5 sur 10 trouvent leur temps d'écran trop long, 4 sur 10 disent n'avoir personne avec qui sortir, 3 sur 10 manquent souvent de compagnie. L'échantillon est trop petit pour conclure : c'est un premier signal.", "First questionnaire (10 students, 4 schools): 5 in 10 find their screen time too long, 4 in 10 say they have no one to go out with, 3 in 10 often lack company. The sample is too small to conclude: it is a first signal."),
+    ("La distance freine 4 étudiants sur 10, et la plupart dépenseraient 1 000 FCFA au plus pour une activité : on y pense dès la conception.", "Distance holds back 4 students in 10, and most would spend 1,000 FCFA or less on an activity: we think about it from the start."),
 ]
 
 # Tickets GitHub pré-remplis : titre français -> (titre, corps) anglais.
