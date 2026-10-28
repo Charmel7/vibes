@@ -939,3 +939,30 @@ h2 { font-size: clamp(28px, 3.6vw, 44px); line-height: 1.1; letter-spacing: -.03
 
 .eng__here .pill { display: inline-block; background: #fff; color: var(--color-text-primary); padding: 2px 10px; border-radius: 99px; font-size: 13px; font-weight: 700; margin-left: 6px; }
 .eng__side .eyebrow { margin-bottom: 12px; }
+
+/* ===== Équipe : portraits sans cartes ===== */
+.team { display: grid; gap: 40px 24px; margin-top: 32px; align-items: start; }
+.team__card, .team__card:hover { background: none !important; border: 0 !important; box-shadow: none !important; padding: 0 !important; display: grid; gap: 14px; text-align: left; border-radius: 0; transform: none; }
+.team__card::before { display: none !important; }
+.team__photo-wrap, .team__card:nth-child(n) .team__photo-wrap { position: relative; width: 100%; max-width: 320px; aspect-ratio: 4 / 5; border: 0; border-radius: 28px; box-shadow: 10px 10px 0 var(--color-vibes-yellow); overflow: visible; transform: rotate(-2deg); transition: transform .25s; }
+.team__card:nth-child(2) .team__photo-wrap { box-shadow: 10px 10px 0 var(--color-vibes-turquoise); transform: rotate(1.5deg); }
+.team__card:nth-child(3) .team__photo-wrap { box-shadow: 10px 10px 0 var(--color-vibes-purple); transform: rotate(-1deg); }
+.team__card:hover .team__photo-wrap { transform: rotate(0); }
+.team__photo-wrap img, .team__card:nth-child(n) .team__photo-wrap img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 25%; border-radius: 28px; border: 3px solid var(--color-text-primary); display: block; }
+.team__body { align-items: flex-start; text-align: left; padding: 0; gap: 4px; margin-top: 8px; }
+.team__meta { justify-content: flex-start; }
+.team__name { text-align: left; font-size: 15px; font-weight: 600; letter-spacing: 0; color: var(--color-text-secondary, #4a5568); }
+.team__name strong { display: block; font-size: 26px; font-weight: 800; letter-spacing: -.03em; line-height: 1.1; color: var(--color-text-primary) !important; }
+.team__role { font-size: 16px; text-align: left; margin: 2px 0 0; }
+.team__school { text-align: left; font-size: 14px; }
+@media (min-width: 760px) {
+  .team { grid-template-columns: 1.15fr 1fr 1fr; gap: 48px 40px; }
+  .team__card:first-child .team__photo-wrap { max-width: 380px; }
+  .team__card:nth-child(2) { margin-top: 40px; }
+}
+.team__photo-wrap, .team__card:nth-child(n) .team__photo-wrap { height: auto !important; min-height: 0; }
+.team__photo-wrap img, .team__card:nth-child(n) .team__photo-wrap img { position: absolute; inset: 0; width: 100% !important; height: 100% !important; max-width: none; }
+.team { padding-inline: 8px 14px; }
+.team__photo-wrap { background: var(--color-vibes-turquoise); }
+.team__card { overflow: visible !important; }
+.team__photo-wrap { margin-right: 12px; width: calc(100% - 12px); }
