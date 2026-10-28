@@ -781,3 +781,107 @@ summary { font-size: 18px; }
   #engagements .subhead { grid-row: 2; }
   #engagements .here { grid-row: 3; }
 }
+
+/* ===================== Passe 3 : tailles, caractère, détails ===================== */
+/* Tailles plus mesurées */
+.hero2__title { font-size: clamp(46px, 9.5vw, 128px); line-height: .92; letter-spacing: -.055em; }
+h2 { font-size: clamp(28px, 3.6vw, 44px); line-height: 1.1; letter-spacing: -.03em; }
+.constat__text h2 { font-size: clamp(30px, 4vw, 50px); line-height: 1.05; letter-spacing: -.035em; }
+.help__head h2 { font-size: clamp(30px, 4.2vw, 52px); line-height: 1.02; max-width: 16ch; }
+#engagements .section__head h2 { font-size: clamp(28px, 3.4vw, 44px); }
+.gesture h3 { font-size: clamp(32px, 5.2vw, 60px); letter-spacing: -.04em; line-height: 1; }
+.layer h3 { font-size: 22px; }
+.layer__n { font-size: 20px; }
+.tl span { font-size: 20px; }
+.subhead h3, .timeline h3 { font-size: 22px; }
+
+/* Texture et profondeur : trame de points discrète */
+.hero--v2 { background-image: radial-gradient(rgba(255, 255, 255, .13) 1.6px, transparent 1.7px); background-size: 24px 24px; }
+.section--turq { background-image: radial-gradient(rgba(20, 30, 46, .10) 1.4px, transparent 1.5px); background-size: 24px 24px; }
+.section--help { background-image: radial-gradient(rgba(255, 255, 255, .10) 1.5px, transparent 1.6px); background-size: 24px 24px; }
+
+/* Hero : pastille « par des jeunes, pour des jeunes » */
+.hero2__badge { position: absolute; z-index: 6; left: 1%; bottom: 6%; width: 124px; height: 124px; border-radius: 50%; background: var(--color-vibes-yellow); color: var(--color-text-primary); display: grid; place-items: center; text-align: center; font-weight: 800; font-size: 15px; line-height: 1.15; letter-spacing: -.02em; transform: rotate(-9deg); box-shadow: 4px 4px 0 var(--color-text-primary); }
+@media (min-width: 960px) { .hero2__badge { width: 140px; height: 140px; font-size: 17px; left: -2%; bottom: 14%; } }
+
+/* Bandeau des passions : emojis ciblés */
+.marquee li::before { font-size: 24px; margin-right: var(--space-2); }
+.marquee li:nth-child(1)::before { content: "⚽"; }
+.marquee li:nth-child(2)::before { content: "🎶"; }
+.marquee li:nth-child(3)::before { content: "📸"; }
+.marquee li:nth-child(4)::before { content: "✨"; }
+.marquee li:nth-child(5)::before { content: "🎤"; }
+.marquee li:nth-child(6)::before { content: "🚶🏾"; }
+.marquee li:nth-child(7)::before { content: "🎲"; }
+.marquee li:nth-child(8)::before { content: "🎬"; }
+.marquee li:nth-child(9)::before { content: "📚"; }
+.marquee li:nth-child(10)::before { content: "✏️"; }
+.marquee li { font-size: 22px; }
+
+/* Encadré « adultes » : mot épinglé */
+.callout { background: var(--color-vibes-yellow); border-radius: var(--radius-card); transform: rotate(-.8deg); box-shadow: 6px 6px 0 var(--color-text-primary); position: relative; padding: var(--space-8); max-width: 820px; }
+.callout::before { content: "📌"; position: absolute; top: -22px; left: 24px; font-size: 28px; transform: rotate(-12deg); }
+.callout h3 { font-size: 22px; }
+.callout p { font-size: 17px; }
+
+/* Gestes : emoji devant le mot */
+.gesture h3::before { display: block; font-size: .5em; margin-bottom: .15em; }
+.gesture:nth-child(1) h3::before { content: "🧭"; }
+.gesture:nth-child(2) h3::before { content: "🧰"; }
+.gesture:nth-child(3) h3::before { content: "⚓"; }
+.gesture img { border-radius: 28px 28px 28px 6px; }
+.gesture:nth-child(even) img { border-radius: 28px 28px 6px 28px; }
+
+/* Aide : vrai bouton de l'app + liste en rangées */
+.help__demo { margin-top: var(--space-6); }
+.help__demo span { display: inline-flex; align-items: center; gap: var(--space-2); padding: 14px 24px; border-radius: 999px; background: var(--color-vibes-yellow); color: var(--color-text-primary); font-weight: 800; font-size: 18px; box-shadow: 0 0 0 6px rgba(253, 223, 50, .28), 0 0 0 14px rgba(253, 223, 50, .12); }
+.help__demo span::before { content: "🤍"; }
+.help__list { background: #fff; border-radius: var(--radius-feature); padding: var(--space-2) var(--space-6); gap: 0; }
+.help__list li { border-radius: 0; border: 0; border-top: 1px solid var(--line); padding: var(--space-6) 0; grid-template-columns: 44px 1fr; column-gap: var(--space-4); }
+.help__list li:first-child { border-top: 0; }
+.help__list li:nth-child(n) { border-bottom: 0; }
+.help__list h3 { font-size: 19px; grid-column: 2; }
+.help__list h3::before { position: absolute; margin-left: -60px; font-size: 30px; }
+.help__list li { position: relative; padding-left: 60px; display: block; }
+.help__list li:nth-child(1) h3::before { content: "🛡️"; }
+.help__list li:nth-child(2) h3::before { content: "🩺"; }
+.help__list li:nth-child(3) h3::before { content: "💬"; }
+.help__list li:nth-child(4) h3::before { content: "🤝"; }
+.help__list h3 { position: relative; }
+.help__list p { font-size: 16px; }
+@media (min-width: 640px) { .help__list { grid-template-columns: 1fr; } }
+
+/* Engagements : un emoji sobre par ligne */
+.trust h3::before { margin-right: 8px; }
+.trust article:nth-child(1) h3::before { content: "🔒"; }
+.trust article:nth-child(2) h3::before { content: "🧭"; }
+.trust article:nth-child(3) h3::before { content: "🌿"; }
+.trust article:nth-child(4) h3::before { content: "✅"; }
+.trust article:nth-child(5) h3::before { content: "🤝"; }
+.trust .trust__limit h3::before { content: "ℹ️"; }
+
+/* Calendrier : emoji + points sur le fil */
+.tl li span::before { margin-right: 6px; }
+.tl li:nth-child(1) span::before { content: "🎧"; }
+.tl li:nth-child(2) span::before { content: "🛠️"; }
+.tl li:nth-child(3) span::before { content: "🧳"; }
+.tl li:nth-child(4) span::before { content: "🚀"; }
+.tl li:nth-child(5) span::before { content: "📣"; }
+.tl li { position: relative; }
+.tl li::before { content: ""; position: absolute; top: -9px; left: 0; width: 14px; height: 14px; border-radius: 50%; background: var(--color-vibes-yellow); border: 3px solid var(--color-text-primary); }
+
+/* Équipe : photos légèrement penchées */
+.team__card:nth-child(odd) .team__photo-wrap { transform: rotate(-3deg); }
+.team__card:nth-child(even) .team__photo-wrap { transform: rotate(3deg); }
+
+/* Contribuer : rangées plutôt que cartes */
+.give { gap: 0; }
+.give li { background: none; border: 0; border-top: 2px solid var(--color-text-primary); border-radius: 0; padding: var(--space-6) var(--space-2); box-shadow: none; transition: background .15s; }
+.give li:hover { background: rgba(255, 255, 255, .55); }
+.give h3 { font-size: 21px; }
+.give h3::before { margin-right: 10px; }
+.give li:nth-child(1) h3::before { content: "✍️"; }
+.give li:nth-child(2) h3::before { content: "🧪"; }
+.give li:nth-child(3) h3::before { content: "⚽"; }
+.give li:nth-child(4) h3::before { content: "🩺"; }
+@media (min-width: 960px) { .give { column-gap: var(--space-12); } }

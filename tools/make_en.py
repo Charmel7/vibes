@@ -416,6 +416,8 @@ T = [
     ("Nous vérifions chaque service avec des partenaires avant de l'afficher. Au Bénin, la ligne gratuite 138 s'adresse aux enfants victimes de violences.",
      "We verify each service with partners before listing it. In Benin, the free 138 line is for children who are victims of violence."),
     ("VIBES oriente, il ne remplace pas un professionnel : ce n'est pas un service de soins.", "VIBES points you to help; it does not replace a professional. It is not a care service."),
+    ("Par des jeunes<br>pour des jeunes", "By young people<br>for young people"),
+    ("<span>Besoin d'aide ?</span>", "<span>Need help?</span>"),
 ]
 
 # Tickets GitHub pré-remplis : titre français -> (titre, corps) anglais.
