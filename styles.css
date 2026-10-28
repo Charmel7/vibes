@@ -872,3 +872,41 @@ h2 { font-size: clamp(28px, 3.6vw, 44px); line-height: 1.1; letter-spacing: -.03
 }
 #engagements .here li, #engagements .here li:nth-child(n+4) { grid-column: auto; }
 #engagements .here svg { grid-row: span 2; margin-bottom: 0; }
+
+/* ===== Correctif : hero resserré + engagements lisibles ===== */
+@media (min-width: 960px) {
+  .hero2 { grid-template-columns: 7fr 5fr; column-gap: var(--space-8); row-gap: var(--space-6); align-items: start; padding-bottom: 0; }
+  .hero2__title { grid-column: 1; grid-row: 1; }
+  .hero2__row { display: contents; }
+  .hero2__text { grid-column: 1; grid-row: 2; padding-bottom: var(--space-16); }
+  .hero2__art { grid-column: 2; grid-row: 1 / span 2; min-height: 600px; margin: var(--space-4) 0 -120px; }
+  .hero2__photo { width: 80%; left: 0; top: 0; }
+  .hero2__phone { width: 46%; right: 0; bottom: 40px; }
+  .hero2__badge { left: -6%; bottom: 22%; }
+}
+
+@media (min-width: 960px) {
+  #engagements .wrap { display: block; }
+  #engagements .section__head { position: static; max-width: 760px; margin-bottom: var(--space-8); }
+  #engagements .section__head h2 { font-size: clamp(32px, 3.6vw, 48px); }
+  #engagements .trust { grid-template-columns: repeat(3, 1fr); gap: var(--space-4); }
+  #engagements .trust article { background: var(--color-surface); border: 1px solid var(--line); border-top: 4px solid var(--color-vibes-blue); border-radius: var(--radius-card); padding: var(--space-5); }
+  #engagements .trust article:nth-child(2n) { border-top-color: var(--color-vibes-purple); }
+  #engagements .trust article:nth-child(3n) { border-top-color: var(--color-vibes-yellow); }
+  #engagements .trust .trust__limit { background: var(--color-vibes-turquoise); border: 0; border-top: 4px solid var(--color-text-primary); }
+  #engagements .trust .trust__limit .trust__ico { display: none; }
+  #engagements .trust p { font-size: 15.5px; }
+  #engagements .subhead { margin: var(--space-12) 0 var(--space-5); display: flex; gap: var(--space-6); align-items: baseline; flex-wrap: wrap; max-width: none; }
+  #engagements .subhead h3 { font-size: 22px; }
+  #engagements .subhead .section__intro { font-size: 16px; margin: 0; }
+  #engagements .here { grid-template-columns: repeat(5, 1fr); gap: var(--space-4); }
+  #engagements .here li { display: block; border-top: 3px solid var(--color-vibes-turquoise); padding: var(--space-3) 0 0; }
+  #engagements .here svg { width: 30px; height: 30px; margin-bottom: var(--space-2); display: block; }
+  #engagements .here h3 { font-size: 17px; margin-bottom: 4px; }
+  #engagements .here p { font-size: 14.5px; line-height: 1.5; }
+}
+@media (min-width: 960px) {
+  .hero2__art { margin-bottom: -50px; min-height: 560px; }
+  .hero2__text { padding-bottom: var(--space-12); }
+  .marquee { padding-top: 76px; }
+}
