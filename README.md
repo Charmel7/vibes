@@ -40,7 +40,7 @@ assets_1/      — maquettes et visuels sources du site
 
 ## Maquettes
 
-Les écrans actifs sont dans `assets/screens/` en `.webp` (fond transparent ; originaux dans `assets/screens/source/`). Les anciennes maquettes PNG sont archivées dans `assets/screens/archive/`. Les deux versions du site utilisent aussi les visuels de `assets_1/` :
+Les 5 écrans de la galerie sont dans `assets/screens/` en `.webp` (fond transparent), détourés à partir des JPEG de `assets_1/` (les JPEG restent les sources). Les anciennes versions sont dans `assets/screens/source/` et `archive/`. Les autres visuels de `assets_1/` :
 
 | Fichier assets_1/ | Section |
 | --- | --- |
@@ -50,7 +50,11 @@ Les écrans actifs sont dans `assets/screens/` en `.webp` (fond transparent ; or
 | `equip yourself.jpeg` | Approche — s'outiller |
 | `anchor.jpeg` | Approche — ancrer |
 
-Les autres maquettes de `assets_1/` illustrent l'expérience de l'application.
+Les maquettes sont générées avec des outils d'IA (mention sur le site et dans le dossier de candidature).
+
+## Branche `refonte`
+
+Version raccourcie du site (9 sections au lieu de 15). Pour la prévisualiser : Settings → Pages → Branch `refonte`. À fusionner dans `main` après validation, puis remettre Pages sur `main`.
 
 ## Éléments non fournis (non inventés)
 
