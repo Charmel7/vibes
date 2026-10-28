@@ -78,6 +78,7 @@ T = [
     ("C'est de cette idée qu'est né VIBES.", "That's the idea VIBES was born from."),
     ("<figcaption>Dans l'écran</figcaption>", "<figcaption>On the screen</figcaption>"),
     ("<figcaption>Dehors</figcaption>", "<figcaption>Outside</figcaption>"),
+    ("<figcaption>Derrière l'écran</figcaption>", "<figcaption>Behind the screen</figcaption>"),
     ("Illustration : une personne seule devant un écran plein de notifications",
      "Illustration: a person alone in front of a screen full of notifications"),
 
@@ -341,8 +342,8 @@ T = [
     ("Projet étudiant, UNSTIM, Abomey (Bénin). En cours de conception.",
      "Student project, UNSTIM, Abomey (Benin). In design."),
     ('aria-label="Pied de page"', 'aria-label="Footer"'),
-    ('<a href="#intentions">Approche</a>\n      <a href="#experience">Expérience</a>\n      <a href="#engagements">Engagements</a>\n      <a href="#etat">Où en est VIBES ?</a>\n      <a href="#equipe">L\'équipe</a>\n      <a href="#contribuer">Contribuer</a>\n      <a href="#faq">Questions</a>',
-     '<a href="#intentions">Approach</a>\n      <a href="#experience">Experience</a>\n      <a href="#engagements">Commitments</a>\n      <a href="#etat">Where is VIBES at?</a>\n      <a href="#equipe">The team</a>\n      <a href="#contribuer">Contribute</a>\n      <a href="#faq">Questions</a>'),
+    ('<a href="#intentions">Approche</a>\n      <a href="#experience">Expérience</a>\n      <a href="#engagements">Engagements</a>\n      <a href="#aide">Besoin d\'aide ?</a>\n      <a href="#etat">Où en est VIBES ?</a>\n      <a href="#equipe">L\'équipe</a>\n      <a href="#contribuer">Contribuer</a>\n      <a href="#faq">Questions</a>',
+     '<a href="#intentions">Approach</a>\n      <a href="#experience">Experience</a>\n      <a href="#engagements">Commitments</a>\n      <a href="#aide">Need help?</a>\n      <a href="#etat">Where is VIBES at?</a>\n      <a href="#equipe">The team</a>\n      <a href="#contribuer">Contribute</a>\n      <a href="#faq">Questions</a>'),
     # --- section équipe ---
     ('<p class="eyebrow eyebrow--blue">L\'équipe</p>', '<p class="eyebrow eyebrow--blue">The team</p>'),
     ('<h2>Ceux qui construisent VIBES.</h2>', '<h2>The people building VIBES.</h2>'),
@@ -401,6 +402,20 @@ T = [
     ("Un étudiant prend un moment pour lui sur son téléphone", "A student takes a moment for himself on his phone"),
     ("Ancrer de bonnes habitudes et avancer à son rythme", "Anchoring good habits and moving at your own pace"),
     ('Makes lives<br>happen.', 'Makes lives<br>happen.'),
+    ("Quand c'est trop, tu n'es pas seul·e.", "When it is too much, you are not alone."),
+    ("Un accès « Besoin d'aide ? » sera visible sur chaque écran. En un clic, il t'oriente vers le bon service spécialisé, selon ce dont tu as besoin.",
+     "A \"Need help?\" access will be visible on every screen. In one tap, it points you to the right specialised service, depending on what you need."),
+    ("Harcèlement et violences", "Harassment and violence"),
+    ("Des services d'écoute et de signalement, pour en parler et savoir quoi faire.", "Listening and reporting services, to talk about it and know what to do."),
+    ("Santé physique", "Physical health"),
+    ("Des centres de santé et des professionnels vers qui te tourner.", "Health centres and professionals to turn to."),
+    ("Santé mentale", "Mental health"),
+    ("Des professionnels de l'écoute et du soutien psychologique.", "Professionals in listening and psychological support."),
+    ("Une personne de confiance", "A trusted person"),
+    ("Un proche, un enseignant ou un camarade : tu choisis qui prévenir.", "A relative, a teacher or a classmate: you choose who to tell."),
+    ("Nous vérifions chaque service avec des partenaires avant de l'afficher. Au Bénin, la ligne gratuite 138 s'adresse aux enfants victimes de violences.",
+     "We verify each service with partners before listing it. In Benin, the free 138 line is for children who are victims of violence."),
+    ("VIBES oriente, il ne remplace pas un professionnel : ce n'est pas un service de soins.", "VIBES points you to help; it does not replace a professional. It is not a care service."),
 ]
 
 # Tickets GitHub pré-remplis : titre français -> (titre, corps) anglais.
