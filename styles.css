@@ -504,7 +504,6 @@ details { border: 1px solid var(--line); border-radius: var(--radius-card); back
 summary { list-style: none; display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); min-height: 60px; padding: var(--space-3) var(--space-6); font-weight: 600; font-size: 17px; cursor: pointer; border-radius: var(--radius-card); }
 summary::-webkit-details-marker { display: none; }
 summary::after { content: "+"; flex-shrink: 0; width: 32px; height: 32px; display: grid; place-items: center; border-radius: 50%; background: var(--color-vibes-yellow); border: 2px solid var(--color-text-primary); font-size: 20px; line-height: 1; transition: transform .2s ease; }
-details[open] summary::after { content: "–"; }
 details p { padding: 0 var(--space-6) var(--space-6); max-width: 680px; }
 
 /* CTA final */
@@ -630,7 +629,7 @@ details p { padding: 0 var(--space-6) var(--space-6); max-width: 680px; }
 @media (min-width: 960px) { .give { grid-template-columns: repeat(2, 1fr); max-width: 980px; } }
 
 /* ===== Structure v2 : typographie d'abord, moins d'autocollants ===== */
-.deco, .stk, .layer__ico, .give svg, .here svg, .chips li svg, .marquee li svg, .blob { display: none !important; }
+.stk, .blob { display: none !important; }
 .eyebrow { display: none; }
 h2 { font-size: clamp(30px, 5vw, 52px); line-height: 1.05; letter-spacing: -.03em; font-weight: 800; }
 
@@ -805,68 +804,33 @@ h2 { font-size: clamp(28px, 3.6vw, 44px); line-height: 1.1; letter-spacing: -.03
 @media (min-width: 960px) { .hero2__badge { width: 140px; height: 140px; font-size: 17px; left: -2%; bottom: 14%; } }
 
 /* Bandeau des passions : emojis ciblés */
-.marquee li::before { font-size: 24px; margin-right: var(--space-2); }
-.marquee li:nth-child(1)::before { content: "⚽"; }
-.marquee li:nth-child(2)::before { content: "🎶"; }
-.marquee li:nth-child(3)::before { content: "📸"; }
-.marquee li:nth-child(4)::before { content: "✨"; }
-.marquee li:nth-child(5)::before { content: "🎤"; }
-.marquee li:nth-child(6)::before { content: "🚶🏾"; }
-.marquee li:nth-child(7)::before { content: "🎲"; }
-.marquee li:nth-child(8)::before { content: "🎬"; }
-.marquee li:nth-child(9)::before { content: "📚"; }
-.marquee li:nth-child(10)::before { content: "✏️"; }
 .marquee li { font-size: 22px; }
 
 /* Encadré « adultes » : mot épinglé */
 .callout { background: var(--color-vibes-yellow); border-radius: var(--radius-card); transform: rotate(-.8deg); box-shadow: 6px 6px 0 var(--color-text-primary); position: relative; padding: var(--space-8); max-width: 820px; }
-.callout::before { content: "📌"; position: absolute; top: -22px; left: 24px; font-size: 28px; transform: rotate(-12deg); }
 .callout h3 { font-size: 22px; }
 .callout p { font-size: 17px; }
 
 /* Gestes : emoji devant le mot */
-.gesture h3::before { display: block; font-size: .5em; margin-bottom: .15em; }
-.gesture:nth-child(1) h3::before { content: "🧭"; }
-.gesture:nth-child(2) h3::before { content: "🧰"; }
-.gesture:nth-child(3) h3::before { content: "⚓"; }
 .gesture img { border-radius: 28px 28px 28px 6px; }
 .gesture:nth-child(even) img { border-radius: 28px 28px 6px 28px; }
 
 /* Aide : vrai bouton de l'app + liste en rangées */
 .help__demo { margin-top: var(--space-6); }
 .help__demo span { display: inline-flex; align-items: center; gap: var(--space-2); padding: 14px 24px; border-radius: 999px; background: var(--color-vibes-yellow); color: var(--color-text-primary); font-weight: 800; font-size: 18px; box-shadow: 0 0 0 6px rgba(253, 223, 50, .28), 0 0 0 14px rgba(253, 223, 50, .12); }
-.help__demo span::before { content: "🤍"; }
 .help__list { background: #fff; border-radius: var(--radius-feature); padding: var(--space-2) var(--space-6); gap: 0; }
 .help__list li { border-radius: 0; border: 0; border-top: 1px solid var(--line); padding: var(--space-6) 0; grid-template-columns: 44px 1fr; column-gap: var(--space-4); }
 .help__list li:first-child { border-top: 0; }
 .help__list li:nth-child(n) { border-bottom: 0; }
 .help__list h3 { font-size: 19px; grid-column: 2; }
-.help__list h3::before { position: absolute; margin-left: -60px; font-size: 30px; }
 .help__list li { position: relative; padding-left: 60px; display: block; }
-.help__list li:nth-child(1) h3::before { content: "🛡️"; }
-.help__list li:nth-child(2) h3::before { content: "🩺"; }
-.help__list li:nth-child(3) h3::before { content: "💬"; }
-.help__list li:nth-child(4) h3::before { content: "🤝"; }
 .help__list h3 { position: relative; }
 .help__list p { font-size: 16px; }
 @media (min-width: 640px) { .help__list { grid-template-columns: 1fr; } }
 
 /* Engagements : un emoji sobre par ligne */
-.trust h3::before { margin-right: 8px; }
-.trust article:nth-child(1) h3::before { content: "🔒"; }
-.trust article:nth-child(2) h3::before { content: "🧭"; }
-.trust article:nth-child(3) h3::before { content: "🌿"; }
-.trust article:nth-child(4) h3::before { content: "✅"; }
-.trust article:nth-child(5) h3::before { content: "🤝"; }
-.trust .trust__limit h3::before { content: "ℹ️"; }
 
 /* Calendrier : emoji + points sur le fil */
-.tl li span::before { margin-right: 6px; }
-.tl li:nth-child(1) span::before { content: "🎧"; }
-.tl li:nth-child(2) span::before { content: "🛠️"; }
-.tl li:nth-child(3) span::before { content: "🧳"; }
-.tl li:nth-child(4) span::before { content: "🚀"; }
-.tl li:nth-child(5) span::before { content: "📣"; }
 .tl li { position: relative; }
 .tl li::before { content: ""; position: absolute; top: -9px; left: 0; width: 14px; height: 14px; border-radius: 50%; background: var(--color-vibes-yellow); border: 3px solid var(--color-text-primary); }
 
@@ -879,9 +843,32 @@ h2 { font-size: clamp(28px, 3.6vw, 44px); line-height: 1.1; letter-spacing: -.03
 .give li { background: none; border: 0; border-top: 2px solid var(--color-text-primary); border-radius: 0; padding: var(--space-6) var(--space-2); box-shadow: none; transition: background .15s; }
 .give li:hover { background: rgba(255, 255, 255, .55); }
 .give h3 { font-size: 21px; }
-.give h3::before { margin-right: 10px; }
-.give li:nth-child(1) h3::before { content: "✍️"; }
-.give li:nth-child(2) h3::before { content: "🧪"; }
-.give li:nth-child(3) h3::before { content: "⚽"; }
-.give li:nth-child(4) h3::before { content: "🩺"; }
 @media (min-width: 960px) { .give { column-gap: var(--space-12); } }
+
+/* ===== Illustrations (sans emojis système) ===== */
+.layer__ico { display: block; width: 44px; height: 44px; margin: 0; grid-column: 1; grid-row: 1 / span 2; }
+.layer__n { display: none; }
+.layer { grid-template-columns: 56px 1fr; }
+.layer h3, .layer p { grid-column: 2; }
+@media (min-width: 960px) {
+  .layer { grid-template-columns: 56px 280px 1fr; align-items: center; }
+  .layer__ico { grid-row: 1; }
+  .layer h3 { grid-column: 2; } .layer p { grid-column: 3; }
+}
+.gesture__ico { grid-column: 1 / -1; width: 56px; height: 56px; }
+.help__ico { position: absolute; left: 0; top: var(--space-6); width: 42px; height: 42px; }
+.help__list li:first-child .help__ico { top: var(--space-4); }
+.ico-btn { width: 26px; height: 26px; }
+.trust__ico { width: 42px; height: 42px; margin-bottom: var(--space-1); }
+.trust .trust__limit .trust__ico { display: none; }
+.callout__pin { position: absolute; top: -26px; left: 22px; width: 44px; height: 44px; transform: rotate(-10deg); }
+.here li { grid-template-columns: 52px 1fr; column-gap: var(--space-4); }
+.give svg { width: 52px; height: 52px; }
+.marquee li svg { width: 30px; height: 30px; }
+.chips li svg { width: 26px; height: 26px; }
+@media (min-width: 960px) {
+  .gesture { grid-template-columns: 64px minmax(0, 1.2fr) minmax(0, 1fr) 240px; }
+  .gesture__ico { grid-column: auto; }
+}
+#engagements .here li, #engagements .here li:nth-child(n+4) { grid-column: auto; }
+#engagements .here svg { grid-row: span 2; margin-bottom: 0; }
