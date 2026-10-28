@@ -418,6 +418,10 @@ T = [
     ("VIBES oriente, il ne remplace pas un professionnel : ce n'est pas un service de soins.", "VIBES points you to help; it does not replace a professional. It is not a care service."),
     ("Par des jeunes<br>pour des jeunes", "By young people<br>for young people"),
     ('<span><svg class="ico-btn" aria-hidden="true"><use href="#s-heart"/></svg>Besoin d\'aide ?</span>', '<span><svg class="ico-btn" aria-hidden="true"><use href="#s-heart"/></svg>Need help?</span>'),
+    ('<p class="help__num">Institut National de la Femme : <strong>114</strong></p>', '<p class="help__num">National Institute for Women (INF): <strong>114</strong></p>'),
+    ('<p class="help__num">Santé : <strong>136</strong> · Urgence médicale (SAMU) : <strong>112</strong></p>', '<p class="help__num">Health: <strong>136</strong> · Medical emergency (SAMU): <strong>112</strong></p>'),
+    ('<p class="help__num">Contacts en cours de vérification</p>', '<p class="help__num">Contacts being verified</p>'),
+    ("Numéros issus de la liste officielle des numéros courts publiée par l'ARCEP Bénin. Nous vérifions chaque service avec ses responsables avant de l'afficher dans l'application. Le 138 s'adresse aux enfants victimes de violences.", "Numbers taken from the official short-number list published by ARCEP Benin. We verify each service with its managers before showing it in the app. The 138 line is for children who are victims of violence."),
 ]
 
 # Tickets GitHub pré-remplis : titre français -> (titre, corps) anglais.

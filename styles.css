@@ -910,3 +910,5 @@ h2 { font-size: clamp(28px, 3.6vw, 44px); line-height: 1.1; letter-spacing: -.03
   .hero2__text { padding-bottom: var(--space-12); }
   .marquee { padding-top: 76px; }
 }
+.help__num { margin-top: 6px; font-size: 15px; font-weight: 600; color: var(--color-vibes-purple); }
+.help__num strong { background: var(--color-vibes-yellow); color: var(--color-text-primary); padding: 1px 8px; border-radius: 99px; font-weight: 800; }
