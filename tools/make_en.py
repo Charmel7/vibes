@@ -422,6 +422,12 @@ T = [
     ('<p class="help__num">Santé : <strong>136</strong> · Urgence médicale (SAMU) : <strong>112</strong></p>', '<p class="help__num">Health: <strong>136</strong> · Medical emergency (SAMU): <strong>112</strong></p>'),
     ('<p class="help__num">Contacts en cours de vérification</p>', '<p class="help__num">Contacts being verified</p>'),
     ("Numéros issus de la liste officielle des numéros courts publiée par l'ARCEP Bénin. Nous vérifions chaque service avec ses responsables avant de l'afficher dans l'application. Le 138 s'adresse aux enfants victimes de violences.", "Numbers taken from the official short-number list published by ARCEP Benin. We verify each service with its managers before showing it in the app. The 138 line is for children who are victims of violence."),
+    ("<strong>Une limite claire.</strong>", "<strong>A clear limit.</strong>"),
+    ("<strong>Une application légère.</strong>", "<strong>A lightweight app.</strong>"),
+    ("<strong>Tout savoir avant d'y aller.</strong>", "<strong>Know before you go.</strong>"),
+    ("<strong>Le gratuit d'abord.</strong>", "<strong>Free first.</strong>"),
+    ("<strong>Dans nos mots.</strong>", "<strong>In our own words.</strong>"),
+    ("<strong>Pour les débutants.</strong>", "<strong>For beginners.</strong>"),
 ]
 
 # Tickets GitHub pré-remplis : titre français -> (titre, corps) anglais.
