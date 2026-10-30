@@ -430,6 +430,10 @@ T = [
     ("<strong>Pour les débutants.</strong>", "<strong>For beginners.</strong>"),
     ("Premier questionnaire (10 étudiants, 4 écoles) : 5 sur 10 trouvent leur temps d'écran trop long, 4 sur 10 disent n'avoir personne avec qui sortir, 3 sur 10 manquent souvent de compagnie. L'échantillon est trop petit pour conclure : c'est un premier signal.", "First questionnaire (10 students, 4 schools): 5 in 10 find their screen time too long, 4 in 10 say they have no one to go out with, 3 in 10 often lack company. The sample is too small to conclude: it is a first signal."),
     ("La distance freine 4 étudiants sur 10, et la plupart dépenseraient 1 000 FCFA au plus pour une activité : on y pense dès la conception.", "Distance holds back 4 students in 10, and most would spend 1,000 FCFA or less on an activity: we think about it from the start."),
+    ("Questionnaire auprès de 99 étudiants (ENSGMM, ENSTP, ENSGEP et autres) : 73 % passent 4 h ou plus par jour sur leur téléphone, 48 % trouvent ce temps trop long, 28 % manquent souvent de compagnie. Échantillon de convenance, déclaratif : il ne représente pas tous les étudiants.", "Questionnaire of 99 students (ENSGMM, ENSTP, ENSGEP and others): 73% spend 4 hours or more a day on their phone, 48% find that time too long, 28% often lack company. Convenience sample, self-reported: it does not represent all students."),
+    ("Près d'un étudiant sur cinq n'a pas d'accès régulier à Internet, et 71 % dépenseraient 1 000 FCFA au plus pour une activité : on y pense dès la conception.", "Nearly one student in five has no regular internet access, and 71% would spend 1,000 FCFA or less on an activity: we think about it from the start."),
+    ("Un questionnaire auprès de 99 étudiants (échantillon de convenance, premiers signaux)", "A questionnaire of 99 students (convenience sample, first signals)"),
+    ("Entretiens approfondis et tests des maquettes auprès des étudiants.", "In-depth interviews and mockup tests with students."),
 ]
 
 # Tickets GitHub pré-remplis : titre français -> (titre, corps) anglais.
