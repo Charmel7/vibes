@@ -966,3 +966,11 @@ h2 { font-size: clamp(28px, 3.6vw, 44px); line-height: 1.1; letter-spacing: -.03
 .team__photo-wrap { background: var(--color-vibes-turquoise); }
 .team__card { overflow: visible !important; }
 .team__photo-wrap { margin-right: 12px; width: calc(100% - 12px); }
+
+/* ===== Contribuer : bandeau questionnaire ===== */
+.poll { display: grid; gap: 20px; align-items: center; margin-bottom: 40px; padding: 28px 24px; background: var(--color-text-primary); color: #fff; border-radius: 24px; box-shadow: 8px 8px 0 var(--color-vibes-purple); }
+.poll h3 { font-size: clamp(22px, 3.4vw, 30px); letter-spacing: -.03em; line-height: 1.15; color: #fff; margin: 4px 0 8px; }
+.poll p { margin: 0; font-size: 16.5px; line-height: 1.55; color: #dfe7f2; max-width: 52ch; }
+.poll .poll__tag { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--color-text-primary); background: var(--color-vibes-yellow); padding: 4px 10px; border-radius: 99px; margin-bottom: 8px; }
+.poll .btn { justify-self: start; }
+@media (min-width: 760px) { .poll { grid-template-columns: 1fr auto; gap: 40px; padding: 34px 40px; } }

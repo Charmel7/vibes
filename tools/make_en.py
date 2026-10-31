@@ -435,6 +435,10 @@ T = [
     ("Un questionnaire auprès de 99 étudiants (échantillon de convenance, premiers signaux)", "A questionnaire of 99 students (convenience sample, first signals)"),
     ("Entretiens approfondis et tests des maquettes auprès des étudiants.", "In-depth interviews and mockup tests with students."),
     ("Chaque bouton ouvre un e-mail déjà rédigé à l'équipe : <a href=\"mailto:prosperaffoukou@outlook.com\">prosperaffoukou@outlook.com</a>. Pas besoin de nous donner ton numéro de téléphone.", "Each button opens a ready-written e-mail to the team: <a href=\"mailto:prosperaffoukou@outlook.com\">prosperaffoukou@outlook.com</a>. No need to give us your phone number."),
+    ('<p class="poll__tag">3 minutes · anonyme</p>', '<p class="poll__tag">3 minutes · anonymous</p>'),
+    ("Réponds au questionnaire étudiant.", "Answer the student questionnaire."),
+    ("Ton temps libre, ton téléphone, ce qui manque sur ton campus. Ni nom, ni e-mail, ni numéro de téléphone.", "Your free time, your phone, what your campus is missing. No name, no e-mail, no phone number. (The questionnaire is in French.)"),
+    ('href="questionnaire/">Répondre au questionnaire <span aria-hidden="true">→</span>', 'href="../questionnaire/">Take the questionnaire <span aria-hidden="true">→</span>'),
 ]
 
 # Tickets GitHub pré-remplis : titre français -> (titre, corps) anglais.
