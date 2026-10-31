@@ -434,10 +434,11 @@ T = [
     ("Près d'un étudiant sur cinq n'a pas d'accès régulier à Internet, et 71 % dépenseraient 1 000 FCFA au plus pour une activité : on y pense dès la conception.", "Nearly one student in five has no regular internet access, and 71% would spend 1,000 FCFA or less on an activity: we think about it from the start."),
     ("Un questionnaire auprès de 99 étudiants (échantillon de convenance, premiers signaux)", "A questionnaire of 99 students (convenience sample, first signals)"),
     ("Entretiens approfondis et tests des maquettes auprès des étudiants.", "In-depth interviews and mockup tests with students."),
+    ("Chaque bouton ouvre un e-mail déjà rédigé à l'équipe : <a href=\"mailto:prosperaffoukou@outlook.com\">prosperaffoukou@outlook.com</a>. Pas besoin de nous donner ton numéro de téléphone.", "Each button opens a ready-written e-mail to the team: <a href=\"mailto:prosperaffoukou@outlook.com\">prosperaffoukou@outlook.com</a>. No need to give us your phone number."),
 ]
 
 # Tickets GitHub pré-remplis : titre français -> (titre, corps) anglais.
-ISSUE_SIGNOFF = "(This page is public: don't share a phone number or an e-mail.)"
+ISSUE_SIGNOFF = ""
 ISSUES = {
     "Contribution : écrire des Tips": ("Contribution: write Tips",
         "Hi! I'd like to contribute to VIBES by writing Tips.\n\nWhat I'm offering: \n\nMy field / school: \n\n" + ISSUE_SIGNOFF),
@@ -464,11 +465,12 @@ def translate_issue(m):
     url = m.group(0)
     parts = urlsplit(url)
     q = dict(parse_qsl(parts.query, keep_blank_values=True))
-    title = q.get("title", "")
+    title = q.get("subject", "")
     if title not in ISSUES:
-        fail("ticket GitHub non traduit : %r" % title)
+        fail("lien e-mail non traduit : %r" % title)
     t, b = ISSUES[title]
-    return "%s://%s%s?title=%s&body=%s" % (parts.scheme, parts.netloc, parts.path, quote(t, safe=""), quote(b, safe="'!"))
+    b = b.rstrip() + "\n"
+    return "mailto:%s?subject=%s&amp;body=%s" % (parts.path, quote(t, safe=""), quote(b, safe="'!"))
 
 
 OBSOLETE = []
@@ -477,7 +479,7 @@ OBSOLETE = []
 def main():
     s = SRC.read_text(encoding="utf-8")
 
-    s = re.sub(r"https://github\.com/Charmel7/vibes/issues/new\?[^\"]+", translate_issue, s)
+    s = re.sub(r"mailto:prosperaffoukou@outlook\.com\?[^\"]+", translate_issue, s)
 
     for fr, en in sorted(T, key=lambda p: -len(p[0])):
         if fr not in s:
