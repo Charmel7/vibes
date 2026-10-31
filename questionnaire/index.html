@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VIBES · Questionnaire étudiants</title>
+  <meta name="description" content="Trois minutes, anonyme : dis-nous comment tu vis ton temps libre et ton téléphone sur le campus.">
+  <meta name="theme-color" content="#0154AE">
+  <link rel="icon" href="../assets/brand/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <style>
+    :root{--blue:#0154AE;--purple:#4A2987;--turq:#B0EEF2;--yellow:#FDDF32;--canvas:#F5F4EF;--ink:#141E2E;--muted:#4b5668;--line:#d9d6cc;--white:#fff;--ok:#0b7a4b;--r:20px}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:var(--blue);min-height:100vh;
+      background-image:radial-gradient(rgba(255,255,255,.13) 1.6px,transparent 1.7px);background-size:24px 24px;-webkit-font-smoothing:antialiased}
+    .shell{max-width:720px;margin:0 auto;padding:max(16px,env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) 48px max(16px,env(safe-area-inset-left))}
+    .top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:6px 0 18px}
+    .top .logo{background:#fff;border:2px solid var(--ink);border-radius:999px;padding:6px 16px;box-shadow:3px 3px 0 rgba(20,30,46,.35);display:inline-flex}
+    .top img{height:30px;width:auto;display:block}
+    .top a.back{color:#fff;font-weight:600;font-size:14px;text-decoration:none;opacity:.9}
+    .top a.back:hover{text-decoration:underline}
+    .card{background:var(--canvas);border-radius:28px;box-shadow:10px 10px 0 rgba(20,30,46,.32);overflow:hidden}
+    .bar{height:8px;background:#d7d4c9}
+    .bar i{display:block;height:100%;width:0;background:var(--yellow);border-right:2px solid var(--ink);transition:width .35s ease}
+    .inner{padding:28px 24px 26px}
+    @media(min-width:640px){.inner{padding:40px 44px 34px}}
+    .meta{display:flex;justify-content:space-between;gap:10px;font-size:13px;font-weight:600;color:var(--muted);margin-bottom:18px}
+    .eyebrow{font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--blue)}
+    h1,h2{margin:6px 0 10px;letter-spacing:-.035em;line-height:1.1;text-wrap:balance}
+    h1{font-size:clamp(30px,6vw,44px);font-weight:800}
+    h2{font-size:clamp(23px,4.4vw,31px);font-weight:800}
+    p{margin:0 0 12px;font-size:17px;line-height:1.6;max-width:60ch}
+    .hint{font-size:14px;color:var(--muted);margin:-2px 0 14px}
+    ul.facts{list-style:none;padding:0;margin:18px 0 20px;display:grid;gap:10px}
+    ul.facts li{display:flex;gap:12px;align-items:flex-start;font-size:16px;line-height:1.5}
+    ul.facts b{flex:none;width:26px;height:26px;border-radius:50%;background:var(--yellow);border:2px solid var(--ink);display:grid;place-items:center;font-size:13px}
+    .consent{display:flex;gap:12px;align-items:flex-start;margin:18px 0 6px;padding:14px 16px;background:var(--white);border:2px solid var(--ink);border-radius:16px;font-size:15px;line-height:1.5;cursor:pointer}
+    .consent input{width:22px;height:22px;margin-top:1px;accent-color:var(--blue);flex:none}
+    .opts{display:grid;gap:10px;margin:14px 0 4px}
+    .opt{position:relative;display:flex;align-items:center;gap:14px;padding:15px 16px;min-height:56px;background:var(--white);border:2px solid var(--line);border-radius:16px;font-size:17px;font-weight:500;line-height:1.35;cursor:pointer;transition:border-color .12s,background .12s,transform .12s}
+    .opt:hover{border-color:var(--blue)}
+    .opt input{position:absolute;opacity:0;pointer-events:none}
+    .opt .mark{flex:none;width:24px;height:24px;border:2px solid #98a2b3;border-radius:50%;display:grid;place-items:center;background:#fff;transition:all .12s}
+    .opt.multi .mark{border-radius:7px}
+    .opt .mark::after{content:"";width:11px;height:6px;border-left:3px solid var(--ink);border-bottom:3px solid var(--ink);transform:rotate(-45deg) translate(1px,-1px);opacity:0}
+    .opt:has(input:checked){border-color:var(--ink);background:#fffbe0;box-shadow:4px 4px 0 var(--ink);transform:translate(-1px,-1px)}
+    .opt:has(input:checked) .mark{background:var(--yellow);border-color:var(--ink)}
+    .opt:has(input:checked) .mark::after{opacity:1}
+    .opt:has(input:focus-visible){outline:3px solid var(--blue);outline-offset:2px}
+    .opt.off{opacity:.45;cursor:not-allowed}
+    textarea{width:100%;min-height:130px;margin-top:10px;padding:14px 16px;font:inherit;font-size:17px;line-height:1.5;border:2px solid var(--line);border-radius:16px;background:#fff;color:var(--ink);resize:vertical}
+    textarea:focus{outline:3px solid var(--blue);outline-offset:2px;border-color:var(--ink)}
+    .nav{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:26px}
+    button{font:inherit;cursor:pointer}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:52px;padding:0 26px;border-radius:999px;border:2px solid var(--ink);font-size:17px;font-weight:700;background:var(--yellow);color:var(--ink);box-shadow:4px 4px 0 var(--ink);transition:transform .1s,box-shadow .1s}
+    .btn:hover{transform:translate(-1px,-1px);box-shadow:5px 5px 0 var(--ink)}
+    .btn:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--ink)}
+    .btn[disabled]{background:#e4e1d6;color:#7b8494;border-color:#b9b5a8;box-shadow:none;cursor:not-allowed;transform:none}
+    .btn:focus-visible,.ghost:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+    .ghost{background:none;border:0;color:var(--blue);font-weight:700;font-size:16px;padding:12px 6px;text-decoration:underline;text-underline-offset:3px}
+    .ghost[hidden]{visibility:hidden;display:inline-block!important}
+    .err{color:#a11a1a;font-weight:600;font-size:15px;min-height:20px;margin:10px 0 0}
+    .fade{animation:in .28s ease both}
+    @keyframes in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+    @media(prefers-reduced-motion:reduce){.fade{animation:none}.bar i{transition:none}}
+    .done{text-align:left}
+    .done .big{width:76px;height:76px;border-radius:50%;background:var(--yellow);border:3px solid var(--ink);display:grid;place-items:center;box-shadow:5px 5px 0 var(--ink);margin-bottom:18px}
+    .done .big svg{width:38px;height:38px}
+    .help{margin-top:22px;padding:16px 18px;background:var(--turq);border-radius:16px;font-size:15px;line-height:1.55}
+    .help b{display:block;margin-bottom:4px}
+    .foot{color:#dbe8f7;font-size:13px;text-align:center;margin-top:20px;line-height:1.5}
+    .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+  </style>
+</head>
+<body>
+<div class="shell">
+  <div class="top">
+    <a class="logo" href="../" aria-label="Retour au site VIBES"><img src="../assets/brand/vibes-horizontal.svg" alt="VIBES"></a>
+    <a class="back" href="../">← Le site</a>
+  </div>
+
+  <main class="card">
+    <div class="bar" role="progressbar" aria-label="Avancement du questionnaire" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i id="fill"></i></div>
+    <form class="inner" id="form" novalidate autocomplete="off">
+      <div class="hp" aria-hidden="true"><label>Ne pas remplir <input type="text" name="site" id="hp" tabindex="-1"></label></div>
+      <div id="stage" aria-live="polite"></div>
+      <p class="err" id="err" role="alert"></p>
+      <div class="nav" id="nav">
+        <button type="button" class="ghost" id="prev" hidden>← Retour</button>
+        <button type="button" class="btn" id="next">Continuer →</button>
+      </div>
+    </form>
+  </main>
+
+  <p class="foot">VIBES est un projet étudiant de l'UNSTIM, à Abomey. Questionnaire anonyme : aucune adresse e-mail, aucun numéro de téléphone, aucun nom.</p>
+</div>
+
+<script>
+/* ===== Configuration ===== */
+// Colle ici l'adresse de ton application web Google Apps Script (voir questionnaire/LISEZ-MOI.md).
+const ENDPOINT = "";
+const VERSION = "2026-10-v2";
+
+/* ===== Questions ===== */
+const OTHER = "Autre";
+const SKIP = "Je préfère ne pas répondre";
+const Q = [
+  {id:"ecole", t:"Dans quel établissement étudies-tu ?", type:"one", o:["ENSGMM","ENSTP","ENSGEP","Autre école de l'UNSTIM","Autre université ou école"]},
+  {id:"niveau", t:"Quel est ton niveau ?", type:"one", o:["L1","L2","L3","Master 1","Master 2","Autre"]},
+  {id:"arrivee", t:"Depuis quand es-tu à l'UNSTIM ?", type:"one", o:["Depuis cette année","Depuis 1 à 2 ans","Depuis plus de 2 ans"]},
+  {id:"logement", t:"Où vis-tu pendant les cours ?", type:"one", o:["Chez ma famille","Chez un proche (oncle, tante, amis de mes parents)","En cité ou résidence universitaire","En location, seul(e) ou en colocation","Dans une situation instable ou temporaire","Autre",SKIP]},
+  {id:"tel", t:"Combien de temps passes-tu sur ton téléphone par jour ?", hint:"Estime en gros, tous usages compris.", type:"one", o:["Moins de 2 h","2 à 4 h","4 à 6 h","Plus de 6 h"]},
+  {id:"tel_avis", t:"Ce temps, tu le trouves…", type:"one", o:["Trop long pour moi","Il me convient","Peu importe","Je ne sais pas"]},
+  {id:"libre", t:"Quand tu as du temps libre, tu fais surtout quoi ?", hint:"Choisis jusqu'à 3 réponses.", type:"multi", max:3, o:["Réseaux sociaux et vidéos","Jeux vidéo","Séries, films, anime, manga","Sport","Sorties avec des amis","Révisions ou travail de groupe","Activités culturelles ou associatives","Repos, sommeil","Autre"]},
+  {id:"freins", t:"Qu'est-ce qui te retient de faire des activités hors écran ?", hint:"Choisis jusqu'à 3 réponses.", type:"multi", max:3, o:["Je ne sais pas ce qui existe","Je n'ai pas le budget","Je n'ai personne avec qui y aller","C'est trop loin","Je suis timide ou je n'ose pas","Je manque de temps","Je ne me sens pas en sécurité","Rien de particulier","Autre"]},
+  {id:"compagnie", t:"Tu te sens seul(e), sans personne avec qui partager du temps ?", type:"one", o:["Jamais","Rarement","Parfois","Souvent","Très souvent",SKIP]},
+  {id:"ecoute", t:"Si un souci te pèse (harcèlement, santé, moral), sais-tu à qui t'adresser ?", hint:"On ne te demande aucun détail personnel.", type:"one", o:["Oui, clairement","Un peu","Pas vraiment","Non",SKIP]},
+  {id:"budget", t:"Pour une activité en groupe, combien pourrais-tu dépenser ?", type:"one", o:["Rien","Jusqu'à 500 FCFA","500 à 1 000 FCFA","1 001 à 2 000 FCFA","Plus de 2 000 FCFA"]},
+  {id:"connexion", t:"Comment te connectes-tu à Internet ?", type:"one", o:["Forfait data suffisant","Forfait data limité, je fais attention","Wi-Fi surtout (campus, maison)","Accès irrégulier ou qui dépend d'un proche","Pas d'accès personnel régulier"]},
+  {id:"interet", t:"Une application gratuite qui t'aide à trouver des activités près de toi, à rejoindre un petit groupe et à prendre soin de toi, ça te dirait ?", hint:"VIBES : idées d'activités avec coût et distance affichés, petits groupes, un espace privé et des contacts d'aide. L'application est encore en conception.", type:"one", o:["Oui","Peut-être","Non"]},
+  {id:"libre_texte", t:"Un mot, une idée, ce qui manque sur ton campus ?", hint:"Facultatif. N'écris ni nom, ni numéro, ni adresse e-mail.", type:"text"},
+  {id:"citation", t:"Peut-on citer ta phrase, sans ton nom ?", type:"one", o:["Oui, de façon anonyme","Non, merci"], showIf:a=>(a.libre_texte||"").trim().length>0, defaultVal:"Non, merci"}
+];
+const TOTAL = Q.filter(q=>!q.showIf).length;
+
+/* ===== État ===== */
+const A = {}; let step = -1; // -1 = accueil
+const $ = id => document.getElementById(id);
+const stage = $("stage"), err = $("err"), nextBtn = $("next"), prevBtn = $("prev");
+let consent = false, sending = false;
+
+function steps(){ return Q.filter(q=>!q.showIf || q.showIf(A)); }
+function esc(s){ return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
+function progress(n,t){ const p=Math.round(100*n/t); $("fill").style.width=p+"%"; document.querySelector(".bar").setAttribute("aria-valuenow",p); }
+
+function intro(){
+  progress(0,1);
+  stage.innerHTML = `<div class="fade">
+    <p class="eyebrow">Questionnaire étudiants · 3 minutes</p>
+    <h1>Ton temps libre, ton téléphone, ton campus.</h1>
+    <p>On construit VIBES avec des étudiants, pas pour eux. Tes réponses nous aident à décider quoi construire en premier.</p>
+    <ul class="facts">
+      <li><b>1</b><span>C'est <strong>anonyme</strong> : ni nom, ni e-mail, ni numéro de téléphone.</span></li>
+      <li><b>2</b><span>Environ <strong>${TOTAL} questions</strong>, une par écran. Il n'y a pas de bonne réponse.</span></li>
+      <li><b>3</b><span>Tu peux écrire un mot libre à la fin. On ne le cite que si tu es d'accord.</span></li>
+    </ul>
+    <label class="consent"><input type="checkbox" id="ok"> <span>J'ai compris et j'accepte que mes réponses anonymes soient utilisées par l'équipe VIBES pour son projet.</span></label>
+  </div>`;
+  $("ok").checked = consent;
+  $("ok").onchange = e => { consent = e.target.checked; sync(); };
+  prevBtn.hidden = true; nextBtn.textContent = "Commencer →"; sync();
+}
+
+function render(){
+  const list = steps(); const q = list[step];
+  if(!q) return finish();
+  progress(step+1, list.length+1);
+  let body = "";
+  if(q.type==="text"){
+    body = `<textarea id="txt" maxlength="600" aria-label="Ta réponse" placeholder="Ton idée en quelques mots…">${esc(A[q.id]||"")}</textarea>`;
+  } else {
+    const cur = A[q.id] || (q.type==="multi"?[]:"");
+    body = `<div class="opts" role="${q.type==="one"?"radiogroup":"group"}" aria-label="${esc(q.t)}">` + q.o.map((o,i)=>{
+      const on = q.type==="multi" ? cur.includes(o) : cur===o;
+      return `<label class="opt ${q.type==="multi"?"multi":""}"><input type="${q.type==="one"?"radio":"checkbox"}" name="${q.id}" value="${esc(o)}" ${on?"checked":""}><span class="mark"></span><span>${esc(o)}</span></label>`;
+    }).join("") + `</div>`;
+  }
+  stage.innerHTML = `<div class="fade">
+    <div class="meta"><span>Question ${step+1} sur ${list.length}</span>${q.type==="multi"?`<span>Jusqu'à ${q.max}</span>`:q.id==="libre_texte"||q.id==="citation"?"<span>Facultatif</span>":""}</div>
+    <h2>${esc(q.t)}</h2>${q.hint?`<p class="hint">${esc(q.hint)}</p>`:""}${body}</div>`;
+  prevBtn.hidden = false;
+  nextBtn.textContent = step===list.length-1 ? "Envoyer ✓" : "Continuer →";
+  bind(q); sync();
+  const first = stage.querySelector("input,textarea"); if(first && q.type==="text") first.focus({preventScroll:true});
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+
+function bind(q){
+  if(q.type==="text"){ $("txt").oninput = e => { A[q.id]=e.target.value; if(q.id==="libre_texte") A.citation = A.citation || ""; sync(); }; return; }
+  const inputs = [...stage.querySelectorAll("input")];
+  inputs.forEach(inp=>inp.onchange = ()=>{
+    if(q.type==="one"){ A[q.id]=inp.value; sync(); if(step<steps().length-1) setTimeout(()=>{ if(valid(q) && steps()[step]===q) go(1); },260); }
+    else {
+      let sel = inputs.filter(i=>i.checked).map(i=>i.value);
+      if(sel.length>q.max){ inp.checked=false; sel=sel.filter(v=>v!==inp.value); err.textContent=`Tu peux choisir ${q.max} réponses au maximum.`; } else err.textContent="";
+      A[q.id]=sel;
+      inputs.forEach(i=>i.closest(".opt").classList.toggle("off",!i.checked && sel.length>=q.max));
+      sync();
+    }
+  });
+  if(q.type==="multi"){ const sel=A[q.id]||[]; inputs.forEach(i=>i.closest(".opt").classList.toggle("off",!i.checked && sel.length>=q.max)); }
+}
+
+function valid(q){
+  if(q.type==="text") return true;
+  const v = A[q.id]; return q.type==="multi" ? (v&&v.length>0) : !!v;
+}
+function sync(){
+  if(step===-1){ nextBtn.disabled = !consent; return; }
+  const q = steps()[step]; nextBtn.disabled = sending || (q ? !valid(q) : false);
+}
+function go(d){
+  err.textContent="";
+  if(step===-1 && d>0){ if(!consent) return; step=0; return render(); }
+  if(d<0){ if(step===0){ step=-1; return intro(); } step--; return render(); }
+  const list = steps(); if(step<list.length-1){ step++; render(); } else submit();
+}
+nextBtn.onclick = () => go(1);
+prevBtn.onclick = () => go(-1);
+document.addEventListener("keydown",e=>{ if(e.key==="Enter" && e.target.tagName!=="TEXTAREA" && !nextBtn.disabled){ e.preventDefault(); go(1);} });
+
+async function submit(){
+  if($("hp").value) return finish(true); // robot : on fait semblant
+  sending = true; nextBtn.disabled = true; nextBtn.textContent = "Envoi…"; err.textContent="";
+  const out = {version:VERSION, envoye_le:new Date().toISOString()};
+  Q.forEach(q=>{ const v=A[q.id]; out[q.id]= Array.isArray(v) ? v.join(" | ") : (v||(q.defaultVal && (A.libre_texte||"").trim()? q.defaultVal : "")); });
+  if(!(A.libre_texte||"").trim()) out.citation = "";
+  try{
+    if(ENDPOINT){
+      await fetch(ENDPOINT,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(out)});
+    } else {
+      console.info("Mode démonstration : aucune adresse d'envoi configurée.",out);
+    }
+    try{ localStorage.setItem("vibes_questionnaire_envoye","1"); }catch(_){}
+    finish();
+  }catch(e){
+    sending=false; nextBtn.disabled=false; nextBtn.textContent="Envoyer ✓";
+    err.textContent="L'envoi n'a pas marché (connexion ?). Tes réponses sont toujours là : réessaie dans un instant.";
+  }
+}
+
+function finish(){
+  progress(1,1); $("nav").hidden = true; err.textContent="";
+  stage.innerHTML = `<div class="fade done">
+    <div class="big"><svg viewBox="0 0 24 24" fill="none" stroke="#141E2E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+    <h1>Merci, vraiment.</h1>
+    <p>Tes réponses vont nous aider à décider quoi construire. Si tu veux donner un coup de main (écrire des conseils, proposer une activité, tester), le site t'explique comment.</p>
+    <div class="help"><b>Si quelque chose te pèse en ce moment</b>Parle-en à une personne de confiance. Au Bénin, le <b style="display:inline">114</b> (Institut National de la Femme) écoute et oriente en cas de violences ou de harcèlement ; le <b style="display:inline">136</b> (Ministère de la Santé) informe et oriente pour la santé. VIBES n'est pas un service de soins.</div>
+    <p style="margin-top:22px"><a class="btn" href="../" style="text-decoration:none">Découvrir VIBES →</a></p>
+  </div>`;
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+
+intro();
+</script>
+</body>
+</html>
