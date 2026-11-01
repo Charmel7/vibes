@@ -339,8 +339,8 @@ T = [
 
     # --- footer ---
     ("Makes lives happen.</p>", "Makes lives happen.</p>"),
-    ("Projet étudiant, UNSTIM, Abomey (Bénin). En cours de conception.",
-     "Student project, UNSTIM, Abomey (Benin). In design."),
+    ("Projet étudiant, UNSTIM (Université Nationale des Sciences, Technologies, Ingénierie et Mathématiques d'Abomey), Bénin. En cours de conception.",
+     "Student project, UNSTIM (National University of Sciences, Technologies, Engineering and Mathematics of Abomey), Benin. In design."),
     ('aria-label="Pied de page"', 'aria-label="Footer"'),
     ('<a href="#intentions">Approche</a>\n      <a href="#experience">Expérience</a>\n      <a href="#engagements">Engagements</a>\n      <a href="#aide">Besoin d\'aide ?</a>\n      <a href="#etat">Où en est VIBES ?</a>\n      <a href="#equipe">L\'équipe</a>\n      <a href="#contribuer">Contribuer</a>\n      <a href="#faq">Questions</a>',
      '<a href="#intentions">Approach</a>\n      <a href="#experience">Experience</a>\n      <a href="#engagements">Commitments</a>\n      <a href="#aide">Need help?</a>\n      <a href="#etat">Where is VIBES at?</a>\n      <a href="#equipe">The team</a>\n      <a href="#contribuer">Contribute</a>\n      <a href="#faq">Questions</a>'),
