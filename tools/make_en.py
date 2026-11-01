@@ -16,6 +16,9 @@ OUT = ROOT / "en" / "index.html"
 
 # (français, anglais). Appliqué du plus long au plus court.
 T = [
+    ('<meta property="og:url" content="https://vibes-bj.vercel.app/">', '<meta property="og:url" content="https://vibes-bj.vercel.app/en/">'),
+    ('<link rel="canonical" href="https://vibes-bj.vercel.app/">', '<link rel="canonical" href="https://vibes-bj.vercel.app/en/">'),
+    ('"inLanguage":["fr","en"],"description":"Initiative étudiante pour le bien-être sur les campus, UNSTIM, Abomey (Bénin)."', '"inLanguage":["fr","en"],"description":"Student initiative for well-being on campus, UNSTIM, Abomey (Benin)."'),
     # --- <head> ---
     ('<html lang="fr">', '<html lang="en">'),
     ('<title>VIBES · Makes lives happen</title>',
